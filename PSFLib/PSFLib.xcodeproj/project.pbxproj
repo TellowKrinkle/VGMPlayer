@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202639C31AC4584A00B3316E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20973D921AC36F9800A61474 /* libz.dylib */; };
+		202639C41AC4585500B3316E /* psf2fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973D861AC36EF200A61474 /* psf2fs.c */; };
+		202639C51AC4585500B3316E /* psf2fs.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973D871AC36EF200A61474 /* psf2fs.h */; };
+		202639C61AC4585500B3316E /* psflib.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973D881AC36EF200A61474 /* psflib.c */; };
+		202639C71AC4585500B3316E /* psflib.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973D891AC36EF200A61474 /* psflib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		202639BB1AC4583000B3316E /* libPSFLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPSFLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20973D861AC36EF200A61474 /* psf2fs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psf2fs.c; sourceTree = "<group>"; };
+		20973D871AC36EF200A61474 /* psf2fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psf2fs.h; sourceTree = "<group>"; };
+		20973D881AC36EF200A61474 /* psflib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psflib.c; sourceTree = "<group>"; };
+		20973D891AC36EF200A61474 /* psflib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psflib.h; sourceTree = "<group>"; };
+		20973D921AC36F9800A61474 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		202639B81AC4583000B3316E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202639C31AC4584A00B3316E /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20973D731AC36ECD00A61474 = {
+			isa = PBXGroup;
+			children = (
+				20973D921AC36F9800A61474 /* libz.dylib */,
+				20973D831AC36EF200A61474 /* PSFLib */,
+				20973D7D1AC36ECD00A61474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20973D7D1AC36ECD00A61474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				202639BB1AC4583000B3316E /* libPSFLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20973D831AC36EF200A61474 /* PSFLib */ = {
+			isa = PBXGroup;
+			children = (
+				20973D861AC36EF200A61474 /* psf2fs.c */,
+				20973D871AC36EF200A61474 /* psf2fs.h */,
+				20973D881AC36EF200A61474 /* psflib.c */,
+				20973D891AC36EF200A61474 /* psflib.h */,
+			);
+			path = PSFLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		202639B91AC4583000B3316E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202639C71AC4585500B3316E /* psflib.h in Headers */,
+				202639C51AC4585500B3316E /* psf2fs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		202639BA1AC4583000B3316E /* PSFLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202639BC1AC4583000B3316E /* Build configuration list for PBXNativeTarget "PSFLib" */;
+			buildPhases = (
+				202639B71AC4583000B3316E /* Sources */,
+				202639B81AC4583000B3316E /* Frameworks */,
+				202639B91AC4583000B3316E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSFLib;
+			productName = PSFLib;
+			productReference = 202639BB1AC4583000B3316E /* libPSFLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20973D741AC36ECD00A61474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					202639BA1AC4583000B3316E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 20973D771AC36ECD00A61474 /* Build configuration list for PBXProject "PSFLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20973D731AC36ECD00A61474;
+			productRefGroup = 20973D7D1AC36ECD00A61474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				202639BA1AC4583000B3316E /* PSFLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		202639B71AC4583000B3316E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202639C41AC4585500B3316E /* psf2fs.c in Sources */,
+				202639C61AC4585500B3316E /* psflib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		202639BD1AC4583000B3316E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		202639BE1AC4583000B3316E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20973D7E1AC36ECD00A61474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		20973D7F1AC36ECD00A61474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		202639BC1AC4583000B3316E /* Build configuration list for PBXNativeTarget "PSFLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202639BD1AC4583000B3316E /* Debug */,
+				202639BE1AC4583000B3316E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20973D771AC36ECD00A61474 /* Build configuration list for PBXProject "PSFLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20973D7E1AC36ECD00A61474 /* Debug */,
+				20973D7F1AC36ECD00A61474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20973D741AC36ECD00A61474 /* Project object */;
+}

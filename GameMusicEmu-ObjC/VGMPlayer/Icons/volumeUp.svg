@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="42"
+   height="34"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="volumeUp.svg"
+   inkscape:export-filename="/Users/evan/Dropbox/School/Evan/12th_Grade/SeniorProject/Tests/CoreAudio Tests/GameMusicEmu-ObjC/GameMusicEmu-ObjC/VGMPlayer/Icons/volumeUp@3x.png"
+   inkscape:export-xdpi="135"
+   inkscape:export-ydpi="135">
+  <defs
+     id="defs2987">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5612"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5614" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5616" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="17.23"
+     inkscape:cx="24.162773"
+     inkscape:cy="16.567033"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2993"
+       empspacing="8"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-14)">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#4d4d4d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5630"
+       sodipodi:cx="8"
+       sodipodi:cy="10"
+       sodipodi:rx="8"
+       sodipodi:ry="10"
+       d="m 13.656854,2.9289319 a 8,10 0 0 1 0,14.1421361"
+       transform="translate(7.000146,21)"
+       sodipodi:start="5.4977871"
+       sodipodi:end="7.0685835"
+       sodipodi:open="true" />
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 1,12 8,0 6,-5 0,20 -6,-5 -8,0 z"
+       id="path5622"
+       inkscape:connector-curvature="0"
+       transform="translate(0,14)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;fill-opacity:1;stroke:#4d4d4d;stroke-opacity:1;stroke-linejoin:miter;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round"
+       id="path5643"
+       sodipodi:cx="12"
+       sodipodi:cy="15"
+       sodipodi:rx="12"
+       sodipodi:ry="15"
+       d="m 20.485281,4.3933978 a 12,15 0 0 1 0,21.2132042"
+       transform="translate(6.9999998,16)"
+       sodipodi:start="5.4977871"
+       sodipodi:end="7.0685835"
+       sodipodi:open="true" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;fill-opacity:1;stroke:#4d4d4d;stroke-opacity:1;stroke-width:2.07364412999999992;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round"
+       id="path5645"
+       sodipodi:cx="16"
+       sodipodi:cy="15.5"
+       sodipodi:rx="16"
+       sodipodi:ry="21.5"
+       d="m 27.313708,0.29720354 a 16,21.5 0 0 1 0,30.40559246"
+       transform="matrix(1,0,0,0.93023256,6.9999994,16.581395)"
+       sodipodi:start="5.4977871"
+       sodipodi:end="7.0685835"
+       sodipodi:open="true" />
+  </g>
+</svg>

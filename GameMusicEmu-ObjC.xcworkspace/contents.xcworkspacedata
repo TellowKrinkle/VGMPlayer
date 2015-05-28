@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:GameMusicEmu-ObjC/GameMusicEmu-ObjC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GME/GME.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PSFLib/PSFLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LazyUSF2/LazyUSF2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Vio2SF/Vio2SF.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VGMStream/VGMStream.xcodeproj">
+   </FileRef>
+</Workspace>

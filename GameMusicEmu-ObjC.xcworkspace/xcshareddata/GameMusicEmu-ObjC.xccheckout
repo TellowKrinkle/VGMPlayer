@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10A86F50-F257-485B-ADB2-79DB380BF6B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameMusicEmu-ObjC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA6BDE10E5425D3CEF5332ABB18EA0347A22F79B</key>
+		<string>https://github.com/tellowkrinkle/VGMPlayer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameMusicEmu-ObjC.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA6BDE10E5425D3CEF5332ABB18EA0347A22F79B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tellowkrinkle/VGMPlayer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA6BDE10E5425D3CEF5332ABB18EA0347A22F79B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA6BDE10E5425D3CEF5332ABB18EA0347A22F79B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VGMPlayer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

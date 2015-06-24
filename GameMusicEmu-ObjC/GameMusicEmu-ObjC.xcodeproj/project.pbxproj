@@ -16,21 +16,21 @@
 		20263B051AC4756400B3316E /* VGMPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263B041AC4756400B3316E /* VGMPlayerTests.m */; };
 		202668E81B16E286005AF2AD /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
 		2026690A1B16EA3D005AF2AD /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
-		2026690E1B16EA82005AF2AD /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2026690D1B16EA82005AF2AD /* libogg.a */; };
-		2026690F1B16EA89005AF2AD /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2026690D1B16EA82005AF2AD /* libogg.a */; };
-		202669101B16EA89005AF2AD /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2026690D1B16EA82005AF2AD /* libogg.a */; };
-		202669131B16EB02005AF2AD /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669111B16EB02005AF2AD /* libvorbis.a */; };
-		202669141B16EB02005AF2AD /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669121B16EB02005AF2AD /* libvorbisfile.a */; };
-		202669151B16EB08005AF2AD /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669111B16EB02005AF2AD /* libvorbis.a */; };
-		202669161B16EB08005AF2AD /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669121B16EB02005AF2AD /* libvorbisfile.a */; };
-		202669171B16EB09005AF2AD /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669111B16EB02005AF2AD /* libvorbis.a */; };
-		202669181B16EB09005AF2AD /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202669121B16EB02005AF2AD /* libvorbisfile.a */; };
 		2029586D1AD2EB37008AFC3A /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
 		202958711AD2ED21008AFC3A /* VGMStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 202958701AD2ED21008AFC3A /* VGMStream.m */; };
 		202958721AD2ED21008AFC3A /* VGMStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 202958701AD2ED21008AFC3A /* VGMStream.m */; };
 		202958741AD2F7B0008AFC3A /* VGMStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 202958701AD2ED21008AFC3A /* VGMStream.m */; };
 		203130911B12B8E700495464 /* VGMPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 203130901B12B8E700495464 /* VGMPlayerWindow.m */; };
 		203130941B12BF4F00495464 /* VGMPlayerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 203130931B12BF4F00495464 /* VGMPlayerApplication.m */; };
+		2087AC8F1B3A3EE4001F94E9 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8C1B3A3EE4001F94E9 /* libogg.a */; };
+		2087AC901B3A3EE4001F94E9 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8C1B3A3EE4001F94E9 /* libogg.a */; };
+		2087AC911B3A3EE4001F94E9 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8C1B3A3EE4001F94E9 /* libogg.a */; };
+		2087AC921B3A3EE4001F94E9 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8D1B3A3EE4001F94E9 /* libvorbis.a */; };
+		2087AC931B3A3EE4001F94E9 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8D1B3A3EE4001F94E9 /* libvorbis.a */; };
+		2087AC941B3A3EE4001F94E9 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8D1B3A3EE4001F94E9 /* libvorbis.a */; };
+		2087AC951B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8E1B3A3EE4001F94E9 /* libvorbisfile.a */; };
+		2087AC961B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8E1B3A3EE4001F94E9 /* libvorbisfile.a */; };
+		2087AC971B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2087AC8E1B3A3EE4001F94E9 /* libvorbisfile.a */; };
 		209734EE1AC3672D00A61474 /* GameMusicEmu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 209734E81AC3672D00A61474 /* GameMusicEmu.mm */; };
 		209734EF1AC3672D00A61474 /* LazyUSF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 209734EA1AC3672D00A61474 /* LazyUSF2.m */; };
 		209734F01AC3672D00A61474 /* CLI.m in Sources */ = {isa = PBXBuildFile; fileRef = 209734EB1AC3672D00A61474 /* CLI.m */; };
@@ -98,9 +98,6 @@
 		20263AFE1AC4756300B3316E /* VGMPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGMPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20263B031AC4756400B3316E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20263B041AC4756400B3316E /* VGMPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerTests.m; sourceTree = "<group>"; };
-		2026690D1B16EA82005AF2AD /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = /usr/local/lib/libogg.a; sourceTree = "<absolute>"; };
-		202669111B16EB02005AF2AD /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = /usr/local/lib/libvorbis.a; sourceTree = "<absolute>"; };
-		202669121B16EB02005AF2AD /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = /usr/local/lib/libvorbisfile.a; sourceTree = "<absolute>"; };
 		2029586C1AD2EB37008AFC3A /* libVGMStream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVGMStream.a; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release/libVGMStream.a"; sourceTree = "<group>"; };
 		2029586F1AD2ED21008AFC3A /* VGMStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMStream.h; sourceTree = "<group>"; };
 		202958701AD2ED21008AFC3A /* VGMStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMStream.m; sourceTree = "<group>"; };
@@ -108,6 +105,9 @@
 		203130901B12B8E700495464 /* VGMPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerWindow.m; sourceTree = "<group>"; };
 		203130921B12BF4F00495464 /* VGMPlayerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMPlayerApplication.h; sourceTree = "<group>"; };
 		203130931B12BF4F00495464 /* VGMPlayerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerApplication.m; sourceTree = "<group>"; };
+		2087AC8C1B3A3EE4001F94E9 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = Libraries/libogg.a; sourceTree = "<group>"; };
+		2087AC8D1B3A3EE4001F94E9 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = Libraries/libvorbis.a; sourceTree = "<group>"; };
+		2087AC8E1B3A3EE4001F94E9 /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = Libraries/libvorbisfile.a; sourceTree = "<group>"; };
 		209347111AC3616600A12995 /* GameMusicEmu-ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GameMusicEmu-ObjC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209734E61AC3672D00A61474 /* GameMusicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicDataSource.h; sourceTree = "<group>"; };
 		209734E71AC3672D00A61474 /* GameMusicEmu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicEmu.h; sourceTree = "<group>"; };
@@ -135,12 +135,12 @@
 			files = (
 				202668E81B16E286005AF2AD /* libVGMStream.a in Frameworks */,
 				20CB6E1B1AC4A54700E296AC /* libz.dylib in Frameworks */,
-				2026690F1B16EA89005AF2AD /* libogg.a in Frameworks */,
-				202669181B16EB09005AF2AD /* libvorbisfile.a in Frameworks */,
+				2087AC901B3A3EE4001F94E9 /* libogg.a in Frameworks */,
+				2087AC961B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
 				20CB6E161AC4A53C00E296AC /* libGME.a in Frameworks */,
 				20CB6E181AC4A53C00E296AC /* libPSFLib.a in Frameworks */,
 				20CB6E171AC4A53C00E296AC /* libLazyUSF2.a in Frameworks */,
-				202669171B16EB09005AF2AD /* libvorbis.a in Frameworks */,
+				2087AC931B3A3EE4001F94E9 /* libvorbis.a in Frameworks */,
 				20CB6E191AC4A53C00E296AC /* libVio2SF.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,14 +149,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2026690E1B16EA82005AF2AD /* libogg.a in Frameworks */,
 				20CB6E231AC4A57C00E296AC /* libPSFLib.a in Frameworks */,
 				20CB6E211AC4A57C00E296AC /* libz.dylib in Frameworks */,
-				202669161B16EB08005AF2AD /* libvorbisfile.a in Frameworks */,
+				2087AC911B3A3EE4001F94E9 /* libogg.a in Frameworks */,
+				2087AC971B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
 				20CB6E221AC4A57C00E296AC /* libGME.a in Frameworks */,
 				20CB6E241AC4A57C00E296AC /* libLazyUSF2.a in Frameworks */,
 				20CB6E251AC4A57C00E296AC /* libVio2SF.a in Frameworks */,
-				202669151B16EB08005AF2AD /* libvorbis.a in Frameworks */,
+				2087AC941B3A3EE4001F94E9 /* libvorbis.a in Frameworks */,
 				2026690A1B16EA3D005AF2AD /* libVGMStream.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,14 +165,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202669131B16EB02005AF2AD /* libvorbis.a in Frameworks */,
-				202669141B16EB02005AF2AD /* libvorbisfile.a in Frameworks */,
 				20CB6E201AC4A55F00E296AC /* libz.dylib in Frameworks */,
 				20CB6E1C1AC4A55A00E296AC /* libGME.a in Frameworks */,
-				202669101B16EA89005AF2AD /* libogg.a in Frameworks */,
+				2087AC8F1B3A3EE4001F94E9 /* libogg.a in Frameworks */,
+				2087AC951B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
 				20CB6E1E1AC4A55A00E296AC /* libPSFLib.a in Frameworks */,
 				20CB6E1D1AC4A55A00E296AC /* libLazyUSF2.a in Frameworks */,
 				20CB6E1F1AC4A55A00E296AC /* libVio2SF.a in Frameworks */,
+				2087AC921B3A3EE4001F94E9 /* libvorbis.a in Frameworks */,
 				2029586D1AD2EB37008AFC3A /* libVGMStream.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +280,9 @@
 				20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */,
 				20CB6E151AC4A53C00E296AC /* libVio2SF.a */,
 				2029586C1AD2EB37008AFC3A /* libVGMStream.a */,
-				2026690D1B16EA82005AF2AD /* libogg.a */,
-				202669111B16EB02005AF2AD /* libvorbis.a */,
-				202669121B16EB02005AF2AD /* libvorbisfile.a */,
+				2087AC8C1B3A3EE4001F94E9 /* libogg.a */,
+				2087AC8D1B3A3EE4001F94E9 /* libvorbis.a */,
+				2087AC8E1B3A3EE4001F94E9 /* libvorbisfile.a */,
 			);
 			name = "Libraries and Frameworks";
 			sourceTree = "<group>";
@@ -512,9 +512,8 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
-					/Users/evan/Dropbox/School/Evan/12th_Grade/SeniorProject/Tests/CoreAudio,
 					"Tests/GameMusicEmu-ObjC/Libraries",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
@@ -538,9 +537,8 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
-					/Users/evan/Dropbox/School/Evan/12th_Grade/SeniorProject/Tests/CoreAudio,
 					"Tests/GameMusicEmu-ObjC/Libraries",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
@@ -571,7 +569,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
@@ -599,7 +597,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
@@ -703,7 +701,7 @@
 					"Tests/GameMusicEmu-ObjC/PSFLib/build/Release",
 					/Users/evan/Dropbox/School/Evan/12th_Grade/SeniorProject/Tests/CoreAudio,
 					"Tests/GameMusicEmu-ObjC/Libraries",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
@@ -732,7 +730,7 @@
 					"Tests/GameMusicEmu-ObjC/PSFLib/build/Release",
 					/Users/evan/Dropbox/School/Evan/12th_Grade/SeniorProject/Tests/CoreAudio,
 					"Tests/GameMusicEmu-ObjC/Libraries",
-					/usr/local/lib,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";

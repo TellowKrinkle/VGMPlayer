@@ -28,6 +28,8 @@
 				<string>nus3bank</string>
 				<string>ast</string>
 				<string>afc</string>
+				<string>adx</string>
+				<string>ddsp</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string>VGM</string>

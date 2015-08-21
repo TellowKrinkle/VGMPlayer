@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		202639C31AC4584A00B3316E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20973D921AC36F9800A61474 /* libz.dylib */; };
 		202639C41AC4585500B3316E /* psf2fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973D861AC36EF200A61474 /* psf2fs.c */; };
 		202639C51AC4585500B3316E /* psf2fs.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973D871AC36EF200A61474 /* psf2fs.h */; };
 		202639C61AC4585500B3316E /* psflib.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973D881AC36EF200A61474 /* psflib.c */; };
@@ -20,7 +19,6 @@
 		20973D871AC36EF200A61474 /* psf2fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psf2fs.h; sourceTree = "<group>"; };
 		20973D881AC36EF200A61474 /* psflib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psflib.c; sourceTree = "<group>"; };
 		20973D891AC36EF200A61474 /* psflib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psflib.h; sourceTree = "<group>"; };
-		20973D921AC36F9800A61474 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +26,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202639C31AC4584A00B3316E /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +35,6 @@
 		20973D731AC36ECD00A61474 = {
 			isa = PBXGroup;
 			children = (
-				20973D921AC36F9800A61474 /* libz.dylib */,
 				20973D831AC36EF200A61474 /* PSFLib */,
 				20973D7D1AC36ECD00A61474 /* Products */,
 			);
@@ -148,6 +144,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -157,6 +154,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

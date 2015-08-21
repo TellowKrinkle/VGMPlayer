@@ -48,18 +48,14 @@
 		20CB6E171AC4A53C00E296AC /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
 		20CB6E181AC4A53C00E296AC /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
 		20CB6E191AC4A53C00E296AC /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
-		20CB6E1B1AC4A54700E296AC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E1A1AC4A54700E296AC /* libz.dylib */; };
 		20CB6E1C1AC4A55A00E296AC /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; };
 		20CB6E1D1AC4A55A00E296AC /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
 		20CB6E1E1AC4A55A00E296AC /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
 		20CB6E1F1AC4A55A00E296AC /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
-		20CB6E201AC4A55F00E296AC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E1A1AC4A54700E296AC /* libz.dylib */; };
-		20CB6E211AC4A57C00E296AC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E1A1AC4A54700E296AC /* libz.dylib */; };
 		20CB6E221AC4A57C00E296AC /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; };
 		20CB6E231AC4A57C00E296AC /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
 		20CB6E241AC4A57C00E296AC /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
 		20CB6E251AC4A57C00E296AC /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
-		20CB6E281AC5B88300E296AC /* TKRVolumeSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB6E271AC5B88300E296AC /* TKRVolumeSliderCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +119,6 @@
 		20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLazyUSF2.a; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug/libLazyUSF2.a"; sourceTree = "<group>"; };
 		20CB6E141AC4A53C00E296AC /* libPSFLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPSFLib.a; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug/libPSFLib.a"; sourceTree = "<group>"; };
 		20CB6E151AC4A53C00E296AC /* libVio2SF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVio2SF.a; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Debug/libVio2SF.a"; sourceTree = "<group>"; };
-		20CB6E1A1AC4A54700E296AC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		20CB6E261AC5B88300E296AC /* TKRVolumeSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRVolumeSliderCell.h; sourceTree = "<group>"; };
-		20CB6E271AC5B88300E296AC /* TKRVolumeSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRVolumeSliderCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				202668E81B16E286005AF2AD /* libVGMStream.a in Frameworks */,
-				20CB6E1B1AC4A54700E296AC /* libz.dylib in Frameworks */,
 				2087AC901B3A3EE4001F94E9 /* libogg.a in Frameworks */,
 				2087AC961B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
 				20CB6E161AC4A53C00E296AC /* libGME.a in Frameworks */,
@@ -150,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20CB6E231AC4A57C00E296AC /* libPSFLib.a in Frameworks */,
-				20CB6E211AC4A57C00E296AC /* libz.dylib in Frameworks */,
 				2087AC911B3A3EE4001F94E9 /* libogg.a in Frameworks */,
 				2087AC971B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
 				20CB6E221AC4A57C00E296AC /* libGME.a in Frameworks */,
@@ -165,7 +156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CB6E201AC4A55F00E296AC /* libz.dylib in Frameworks */,
 				20CB6E1C1AC4A55A00E296AC /* libGME.a in Frameworks */,
 				2087AC8F1B3A3EE4001F94E9 /* libogg.a in Frameworks */,
 				2087AC951B3A3EE4001F94E9 /* libvorbisfile.a in Frameworks */,
@@ -274,7 +264,6 @@
 		20973D721AC36D5600A61474 /* Libraries and Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20CB6E1A1AC4A54700E296AC /* libz.dylib */,
 				20CB6E121AC4A53C00E296AC /* libGME.a */,
 				20CB6E141AC4A53C00E296AC /* libPSFLib.a */,
 				20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */,
@@ -294,8 +283,6 @@
 				203130931B12BF4F00495464 /* VGMPlayerApplication.m */,
 				2031308F1B12B8E700495464 /* VGMPlayerWindow.h */,
 				203130901B12B8E700495464 /* VGMPlayerWindow.m */,
-				20CB6E261AC5B88300E296AC /* TKRVolumeSliderCell.h */,
-				20CB6E271AC5B88300E296AC /* TKRVolumeSliderCell.m */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -426,7 +413,6 @@
 				202958721AD2ED21008AFC3A /* VGMStream.m in Sources */,
 				20263AF11AC4756300B3316E /* Document.m in Sources */,
 				20263AEE1AC4756300B3316E /* main.m in Sources */,
-				20CB6E281AC5B88300E296AC /* TKRVolumeSliderCell.m in Sources */,
 				20CB6E031AC4A47400E296AC /* GameMusicEmu.mm in Sources */,
 				20263AEC1AC4756300B3316E /* AppDelegate.m in Sources */,
 				20CB6E041AC4A47400E296AC /* LazyUSF2.m in Sources */,
@@ -515,6 +501,7 @@
 					"Tests/GameMusicEmu-ObjC/Libraries",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
 			};
@@ -540,6 +527,7 @@
 					"Tests/GameMusicEmu-ObjC/Libraries",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
 			};
@@ -571,6 +559,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
 				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../GME ${SOURCE_ROOT}/../PSFLib ${SOURCE_ROOT}/../LazyUSF2 ${SOURCE_ROOT}/../Vio2SF ${SOURCE_ROOT}/../VGMStream";
@@ -599,6 +588,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
 				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../GME ${SOURCE_ROOT}/../PSFLib ${SOURCE_ROOT}/../LazyUSF2 ${SOURCE_ROOT}/../Vio2SF ${SOURCE_ROOT}/../VGMStream";
@@ -703,6 +693,7 @@
 					"Tests/GameMusicEmu-ObjC/Libraries",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
 			};
@@ -732,6 +723,7 @@
 					"Tests/GameMusicEmu-ObjC/Libraries",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
 			};

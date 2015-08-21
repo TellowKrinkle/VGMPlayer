@@ -49,7 +49,6 @@
 		20263AB31AC45ACE00B3316E /* thumb_instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBA1AC372AA00A61474 /* thumb_instructions.h */; };
 		20263AB41AC45ACE00B3316E /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBC1AC372AA00A61474 /* types.h */; };
 		20263AB71AC45B3500B3316E /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20263A7A1AC45A5700B3316E /* libPSFLib.a */; };
-		20263AB81AC45B3A00B3316E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20973FEE1AC3731200A61474 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,7 +100,6 @@
 		20973FBC1AC372AA00A61474 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		20973FBD1AC372AA00A61474 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		20973FBE1AC372AA00A61474 /* trim2sflib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trim2sflib.c; sourceTree = "<group>"; };
-		20973FEE1AC3731200A61474 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20263AB81AC45B3A00B3316E /* libz.dylib in Frameworks */,
 				20263AB71AC45B3500B3316E /* libPSFLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				20973F8F1AC372AA00A61474 /* Vio2SF */,
-				20973FEE1AC3731200A61474 /* libz.dylib */,
 				20263A7A1AC45A5700B3316E /* libPSFLib.a */,
 				20973F891AC3729400A61474 /* Products */,
 			);
@@ -322,6 +318,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -335,6 +332,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

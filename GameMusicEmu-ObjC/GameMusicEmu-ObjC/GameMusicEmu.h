@@ -16,7 +16,7 @@
 @property (nonatomic) int trackNo;
 @property (nonatomic, readonly) long trackLength;
 
-- (instancetype)initWithSampleRate:(int)sampleRate;
+- (instancetype)initWithSampleRate:(int)sampleRate NS_DESIGNATED_INITIALIZER;
 - (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError **)e;
 - (long)tell;
 - (bool)trackHasEnded;

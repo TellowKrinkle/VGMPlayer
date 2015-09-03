@@ -15,6 +15,6 @@
 @property (nonatomic) long position;
 @property (nonatomic, readonly) long trackLength;
 
-- (instancetype)initWithSampleRate:(int)sampleRate;
+- (instancetype)initWithSampleRate:(int)sampleRate NS_DESIGNATED_INITIALIZER;
 
 @end

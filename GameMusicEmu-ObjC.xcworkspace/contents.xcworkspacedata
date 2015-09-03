@@ -17,6 +17,9 @@
       location = "group:Vio2SF/Vio2SF.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:VioGSF/VioGSF.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:VGMStream/VGMStream.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,7 +7,7 @@
 //
 
 #import "GameMusicEmu.h"
-#import "GME/Music_Emu.h"
+#import "GME/GME/Music_Emu.h"
 #define DEFAULT_SAMPLE_RATE 44100
 
 static void makeNSError(NSError **error, NSString *domain, int code, NSString *localizedDescription) {

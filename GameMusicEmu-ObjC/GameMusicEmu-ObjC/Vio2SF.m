@@ -7,8 +7,8 @@
 //
 
 #import "Vio2SF.h"
-#include "PSFLib/psflib.h"
-#include "Vio2SF/desmume/state.h"
+#include "PSFLib/PSFLib/psflib.h"
+#include "Vio2SF/Vio2SF/desmume/state.h"
 #include <zlib.h>
 
 struct twosf_loader_state {
@@ -16,6 +16,7 @@ struct twosf_loader_state {
 	uint8_t *state;
 	size_t rom_size;
 	size_t state_size;
+	void *tags;
 	
 	int initial_frames;
 	int sync_type;
@@ -292,6 +293,7 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	else if (strcasecmp(name, "fade") == 0) {
 		state->fade = parseTime(value);
 	}
+	[(__bridge NSMutableDictionary *)state->tags setObject:[NSString stringWithCString:value encoding:NSUTF8StringEncoding] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
 	
 	return 0;
 }
@@ -382,6 +384,10 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 
 - (long)trackLength {
 	return (_state.length + _state.fade) * self.sampleRate;
+}
+
+- (NSDictionary *)tags {
+	return [(__bridge NSMutableDictionary *)_state.tags copy];
 }
 
 + (bool)canPlay:(NSURL *)file {

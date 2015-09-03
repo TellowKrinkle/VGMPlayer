@@ -7,7 +7,7 @@
 //
 
 #import "VGMStream.h"
-#include "VGMStream/vgmstream.h"
+#include "VGMStream/VGMStream/vgmstream.h"
 
 static void makeNSError(NSError **error, NSString *domain, int code, NSString *localizedDescription) {
 	if (error) {

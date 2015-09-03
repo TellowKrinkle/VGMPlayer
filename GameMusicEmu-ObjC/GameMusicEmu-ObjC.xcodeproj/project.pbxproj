@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201A727A1B98913D003A025A /* VioGSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.m */; settings = {ASSET_TAGS = (); }; };
+		201A727B1B98913D003A025A /* VioGSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.m */; settings = {ASSET_TAGS = (); }; };
+		201A727C1B98913D003A025A /* VioGSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.m */; settings = {ASSET_TAGS = (); }; };
 		20263AEC1AC4756300B3316E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AEB1AC4756300B3316E /* AppDelegate.m */; };
 		20263AEE1AC4756300B3316E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AED1AC4756300B3316E /* main.m */; };
 		20263AF11AC4756300B3316E /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AF01AC4756300B3316E /* Document.m */; };
@@ -72,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		201A72781B98913D003A025A /* VioGSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VioGSF.h; sourceTree = "<group>"; };
+		201A72791B98913D003A025A /* VioGSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VioGSF.m; sourceTree = "<group>"; };
 		20263AE61AC4756300B3316E /* VGMPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGMPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20263AE91AC4756300B3316E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20263AEA1AC4756300B3316E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +166,8 @@
 				209734EA1AC3672D00A61474 /* LazyUSF2.m */,
 				20973FF21AC373BE00A61474 /* Vio2SF.h */,
 				20973FF31AC373BE00A61474 /* Vio2SF.m */,
+				201A72781B98913D003A025A /* VioGSF.h */,
+				201A72791B98913D003A025A /* VioGSF.m */,
 				2029586F1AD2ED21008AFC3A /* VGMStream.h */,
 				202958701AD2ED21008AFC3A /* VGMStream.m */,
 			);
@@ -387,6 +394,7 @@
 				20CB6E051AC4A47400E296AC /* Vio2SF.m in Sources */,
 				20CB6E021AC4A47400E296AC /* TKRPlayer.m in Sources */,
 				202958721AD2ED21008AFC3A /* VGMStream.m in Sources */,
+				201A727B1B98913D003A025A /* VioGSF.m in Sources */,
 				20263AF11AC4756300B3316E /* Document.m in Sources */,
 				20263AEE1AC4756300B3316E /* main.m in Sources */,
 				20CB6E031AC4A47400E296AC /* GameMusicEmu.mm in Sources */,
@@ -401,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201A727C1B98913D003A025A /* VioGSF.m in Sources */,
 				20CB6E061AC4A47700E296AC /* TKRPlayer.m in Sources */,
 				20CB6E081AC4A47700E296AC /* LazyUSF2.m in Sources */,
 				202958741AD2F7B0008AFC3A /* VGMStream.m in Sources */,
@@ -414,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201A727A1B98913D003A025A /* VioGSF.m in Sources */,
 				209734EE1AC3672D00A61474 /* GameMusicEmu.mm in Sources */,
 				209734F11AC3672D00A61474 /* TKRPlayer.m in Sources */,
 				202958711AD2ED21008AFC3A /* VGMStream.m in Sources */,
@@ -479,7 +489,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
 			};
 			name = Debug;
 		};
@@ -505,7 +515,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
 			};
 			name = Release;
 		};
@@ -538,7 +548,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
-				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../GME ${SOURCE_ROOT}/../PSFLib ${SOURCE_ROOT}/../LazyUSF2 ${SOURCE_ROOT}/../Vio2SF ${SOURCE_ROOT}/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/..";
 			};
 			name = Debug;
 		};
@@ -567,7 +577,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGMPlayer.app/Contents/MacOS/VGMPlayer";
-				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../GME ${SOURCE_ROOT}/../PSFLib ${SOURCE_ROOT}/../LazyUSF2 ${SOURCE_ROOT}/../Vio2SF ${SOURCE_ROOT}/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/..";
 			};
 			name = Release;
 		};
@@ -671,7 +681,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
 			};
 			name = Debug;
 		};
@@ -701,7 +711,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../GME $(SOURCE_ROOT)/../PSFLib $(SOURCE_ROOT)/../LazyUSF2 $(SOURCE_ROOT)/../Vio2SF $(SOURCE_ROOT)/../VGMStream";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
 			};
 			name = Release;
 		};

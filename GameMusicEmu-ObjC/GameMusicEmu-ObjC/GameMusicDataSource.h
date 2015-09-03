@@ -21,6 +21,7 @@
 @optional
 @property (nonatomic, readonly) long trackLength; // Track length in samples
 @property (nonatomic) int trackNo;
+@property (nonatomic, readonly) NSDictionary *tags;
 - (instancetype)initWithSampleRate:(int)sampleRate;
 - (long)tell;
 - (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError **)e;

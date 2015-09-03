@@ -70,6 +70,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "201A72301B97F349003A025A"
+               BuildableName = "libVioGSF.a"
+               BlueprintName = "VioGSF"
+               ReferencedContainer = "container:../VioGSF/VioGSF.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "202955DF1AD2DF0B008AFC3A"
                BuildableName = "libVGMStream.a"
                BlueprintName = "VGMStream"

@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>VGMStream.xcscheme</key>
+		<key>VioGSF.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>202955DF1AD2DF0B008AFC3A</key>
+		<key>201A72301B97F349003A025A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

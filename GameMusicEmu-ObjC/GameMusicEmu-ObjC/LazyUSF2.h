@@ -14,6 +14,7 @@
 @property (nonatomic, readonly) int sampleRate;
 @property (nonatomic) long position;
 @property (nonatomic, readonly) long trackLength;
+@property (nonatomic, readonly) NSDictionary *tags;
 
 - (instancetype)initWithSampleRate:(int)sampleRate NS_DESIGNATED_INITIALIZER;
 

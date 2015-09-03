@@ -7,8 +7,8 @@
 //
 
 #import "LazyUSF2.h"
-#include "LazyUSF2/usf/usf.h"
-#include "PSFLib/psflib.h"
+#include "LazyUSF2/LazyUSF2/usf/usf.h"
+#include "PSFLib/PSFLib/psflib.h"
 
 #define DEFAULT_SAMPLE_RATE 44100
 
@@ -17,6 +17,7 @@ struct usfLoaderState {
 	uint32_t enableFifoFull;
 	double	 length;
 	double	 fade;
+	void *tags;
 	void	 *emuState;
 };
 
@@ -101,6 +102,7 @@ static int usfInfo(void *context, const char *name, const char *value) {
 	else if (strcasecmp(name, "fade") == 0) {
 		state->fade = parseTime(value);
 	}
+	[(__bridge NSMutableDictionary *)state->tags setObject:[NSString stringWithCString:value encoding:NSUTF8StringEncoding] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
 	return 0;
 }
 
@@ -121,6 +123,7 @@ static int usfInfo(void *context, const char *name, const char *value) {
 		_position = 0;
 		_sampleRate = sampleRate;
 		_usfState.emuState = malloc(usf_get_state_size());
+		_usfState.tags = (void *)CFBridgingRetain([NSMutableDictionary dictionary]);
 		usf_clear(_usfState.emuState);
 		usf_set_hle_audio(_usfState.emuState, 1);
 	}
@@ -180,6 +183,10 @@ static int usfInfo(void *context, const char *name, const char *value) {
 	return (_usfState.length + _usfState.fade) * self.sampleRate;
 }
 
+- (NSDictionary *)tags {
+	return [(__bridge NSMutableDictionary *)_usfState.tags copy];
+}
+
 + (bool)canPlay:(NSURL *)file {
 	NSError *error = nil;
 	NSFileHandle *handle = [NSFileHandle fileHandleForReadingFromURL:file error:&error];
@@ -201,6 +208,7 @@ static int usfInfo(void *context, const char *name, const char *value) {
 - (void)dealloc {
 	usf_shutdown(_usfState.emuState);
 	free(_usfState.emuState);
+	CFBridgingRelease(_usfState.tags);
 }
 
 @end

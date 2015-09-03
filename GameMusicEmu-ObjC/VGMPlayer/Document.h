@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "VGMPlayerWindow.h"
 
 @interface Document : NSDocument
 
@@ -15,6 +16,8 @@
 @property (weak) IBOutlet NSSlider *playhead;
 @property (weak) IBOutlet NSTextField *leftTimeIndicator;
 @property (weak) IBOutlet NSTextField *rightTimeIndicator;
+@property (weak) IBOutlet VGMPlayerWindow *playerWindow;
+
 
 - (NSString *)formatTime:(long)samples;
 - (IBAction)playPause:(id)sender;

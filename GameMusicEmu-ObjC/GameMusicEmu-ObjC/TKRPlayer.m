@@ -197,6 +197,8 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	AudioQueueRef _queue;
 	AudioQueueBufferRef _buffers[NUM_PLAYBACK_BUFFERS];
 	bool _isPlaying;
+	dispatch_queue_t _seekQueue;
+	bool _isSeeking;
 }
 
 @end
@@ -211,6 +213,8 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		_player.channels = 2;
 		_player.isStopped = true;
 		_isPlaying = false;
+		_isSeeking = false;
+		_seekQueue = dispatch_queue_create("com.tellowkrinkle.vgmplayer.seekqueue", NULL);
 	}
 	return self;
 }
@@ -219,7 +223,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	return [self initWithSampleRate:44100];
 }
 
-- (void)openFile:(NSURL *)file withTrackNo:(int)trackNo error:(NSError **)e {
+- (void)openFile:(NSURL *)file withTrackNo:(int)trackNo error:(NSError **)err {
 	[self stop];
 	if (!_emu || ![[_emu class] canPlay:file]) {
 		if ([GameMusicEmu canPlay:file]) {
@@ -235,15 +239,15 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 			_emu = [[VGMStream alloc] init];
 		}
 		else {
-			makeNSError(e, @"GameMusicEmu", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
+			makeNSError(err, @"GameMusicEmu", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
 			return;
 		}
 	}
 	if ([_emu respondsToSelector:@selector(openFile:atTrack:error:)]) {
-		[_emu openFile:file atTrack:trackNo error:e];
+		[_emu openFile:file atTrack:trackNo error:err];
 	}
 	else {
-		[_emu openFile:file error:e];
+		[_emu openFile:file error:err];
 	}
 	if (![_emu respondsToSelector:@selector(initWithSampleRate:)]) {
 		if (self.sampleRate != _emu.sampleRate) {
@@ -259,8 +263,8 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	CheckError(AudioQueueNewOutput(&_player.format, AQCallbackFunction, &_player, NULL, NULL, 0, &_queue), "AudioQueueNewOutput failed");
 }
 
-- (void)openFile:(NSURL *)file error:(NSError **)e {
-	[self openFile:file withTrackNo:0 error:e];
+- (void)openFile:(NSURL *)file error:(NSError **)err {
+	[self openFile:file withTrackNo:0 error:err];
 }
 
 - (void)fillBuffers {
@@ -280,7 +284,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 }
 
 - (bool)play {
-	if (_emu != nil) {
+	if (_emu != nil && !_isSeeking) {
 		_isPlaying = true;
 		if (_player.isStopped) {
 			_player.isStopped = false;
@@ -288,6 +292,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		}
 //		AUGraphStart(_player.graph);
 		CheckError(AudioQueueStart(_queue, NULL), "AudioStartQueue failed");
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedPlaying" object:nil];
 		return true;
 	}
 	return false;
@@ -298,6 +303,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	if (!_player.isStopped) {
 //		AUGraphStop(_player.graph);
 		CheckError(AudioQueuePause(_queue), "AudioQueuePause failed");
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMPaused" object:nil];
 	}
 }
 
@@ -307,6 +313,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 //		AUGraphStop(_player.graph);
 		_player.isStopped = true;
 		CheckError(AudioQueueStop(_queue, TRUE), "AudioQueueStop failed");
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStoppedPlaying" object:nil];
 	}
 }
 
@@ -360,14 +367,25 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 }
 
 - (void)setPosition:(long)position {
-	if (_isPlaying) {
-		[self stop];
-		[_emu setPosition:position];
-		[self play];
-	}
-	else {
-		[self stop];
-		[_emu setPosition:position];
+	if (!_isSeeking) {
+		if (_isPlaying) {
+			[self stop];
+			dispatch_async(_seekQueue, ^(void) {
+				_isSeeking = true;
+				[_emu setPosition:position];
+				_isSeeking = false;
+				[self play];
+			});
+		}
+		else {
+			[self stop];
+			dispatch_async(_seekQueue, ^(void) {
+				_isSeeking = true;
+				[_emu setPosition:position];
+				_isSeeking = false;
+			});
+		}
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedSeeking" object:nil];
 	}
 }
 

@@ -33,6 +33,10 @@
 		self.leftTimeIndicator.stringValue = @"0:00";
 	}
 	self.rightTimeIndicator.stringValue = @"0:00";
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStartedPlaying) name:@"VGMStartedPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmPaused) name:@"VGMPaused" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStoppedPlaying) name:@"VGMStoppedPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkPlayheadUpdateTimer) name:@"NSWindowDidChangeOcclusionStateNotification" object:nil];
 	[super windowControllerDidLoadNib:aController];
 }
 
@@ -52,16 +56,6 @@
 	// You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
 	return [NSData dataWithContentsOfURL:self.file];
 }
-
-/*
-	- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-	// Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-	// You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-	// If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-	[NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
-	return YES;
-}
-*/
 
 - (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError *__autoreleasing *)outError {
 	if (!_player) {
@@ -92,20 +86,13 @@
 }
 
 - (bool)play {
-	[_playheadUpdateTimer invalidate];
 	if (!_player.isPlaying) {
-		if ([_player play]) {
-			[self.playPauseButton setImage:[NSImage imageNamed:@"pause"]];
-			_playheadUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updatePlayhead) userInfo:nil repeats:YES];
-			return true;
-		}
+		return [_player play];
 	}
 	return false;
 }
 
 - (bool)pause {
-	[_playheadUpdateTimer invalidate];
-	[self.playPauseButton setImage:[NSImage imageNamed:@"play"]];
 	if (_player.isPlaying) {
 		[_player pause];
 		return true;
@@ -123,6 +110,33 @@
 	}
 	else {
 		return [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
+	}
+}
+
+# pragma mark Notifications
+
+- (void)vgmStartedPlaying {
+	[_playheadUpdateTimer invalidate];
+	[self.playPauseButton setImage:[NSImage imageNamed:@"pause"]];
+	[self checkPlayheadUpdateTimer];
+}
+
+- (void)vgmPaused {
+	[self.playPauseButton setImage:[NSImage imageNamed:@"play"]];
+	[self checkPlayheadUpdateTimer];
+}
+
+- (void)vgmStoppedPlaying {
+	// Should act the same as if we paused
+	[self vgmPaused];
+}
+
+- (void)checkPlayheadUpdateTimer {
+	[_playheadUpdateTimer invalidate];
+	if ([self isPlaying] && [self.playerWindow
+							 occlusionState] & NSWindowOcclusionStateVisible) {
+		[self updatePlayhead];
+		_playheadUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(updatePlayhead) userInfo:nil repeats:YES];
 	}
 }
 

@@ -361,6 +361,7 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	}
 	else {
 		seekSamples = position;
+		state_setrom(_emu, _state.rom, (uint32)_state.rom_size, 0);
 		state_loadstate(_emu, _state.state, (uint32)_state.state_size);
 	}
 	_position = position;

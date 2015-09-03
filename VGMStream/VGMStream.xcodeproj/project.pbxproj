@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201A72201B97EC9E003A025A /* libmpg123-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A721E1B97EC9C003A025A /* libmpg123-mac.a */; settings = {ASSET_TAGS = (); }; };
+		201A72211B97ECA2003A025A /* libmpg123-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A721F1B97EC9C003A025A /* libmpg123-ios.a */; settings = {ASSET_TAGS = (); }; };
 		20FDBA0C1B16DD3300A9722D /* acm_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 20FDB8C61B16DD3200A9722D /* acm_decoder.c */; };
 		20FDBA0D1B16DD3300A9722D /* acm_decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20FDB8C71B16DD3200A9722D /* acm_decoder.h */; };
 		20FDBA0E1B16DD3300A9722D /* adx_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 20FDB8C81B16DD3200A9722D /* adx_decoder.c */; };
@@ -326,6 +328,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201A721E1B97EC9C003A025A /* libmpg123-mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmpg123-mac.a"; sourceTree = "<group>"; };
+		201A721F1B97EC9C003A025A /* libmpg123-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmpg123-ios.a"; sourceTree = "<group>"; };
 		202955E01AD2DF0B008AFC3A /* libVGMStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVGMStream.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FDB8C61B16DD3200A9722D /* acm_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acm_decoder.c; sourceTree = "<group>"; };
 		20FDB8C71B16DD3200A9722D /* acm_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acm_decoder.h; sourceTree = "<group>"; };
@@ -658,6 +662,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201A72201B97EC9E003A025A /* libmpg123-mac.a in Frameworks */,
+				201A72211B97ECA2003A025A /* libmpg123-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +675,8 @@
 			children = (
 				20FDB8C41B16DD3200A9722D /* VGMStream */,
 				202955E11AD2DF0B008AFC3A /* Products */,
+				201A721E1B97EC9C003A025A /* libmpg123-mac.a */,
+				201A721F1B97EC9C003A025A /* libmpg123-ios.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1519,6 +1527,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VGMStream",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1533,6 +1542,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VGMStream",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

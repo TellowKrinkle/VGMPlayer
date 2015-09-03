@@ -1121,7 +1121,7 @@ int get_vgmstream_frame_size(VGMSTREAM * vgmstream) {
         case coding_G7221C:
         case coding_G7221:
 #endif
-#ifdef VGM_USE_G719:
+#ifdef VGM_USE_G719
         case coding_G719:
 #endif
 #ifdef VGM_USE_MAIATRAC3PLUS
@@ -3386,6 +3386,9 @@ int get_vgmstream_average_bitrate(VGMSTREAM * vgmstream)
     int length_samples = vgmstream->num_samples;
     int channels = get_vgmstream_channel_count(vgmstream);
     STREAMFILE * streamFile;
+
+	if (!sample_rate || !channels || !length_samples)
+		return 0;
     
     if (channels >= 1) {
         streamFile = get_vgmstream_streamfile(vgmstream, 0);

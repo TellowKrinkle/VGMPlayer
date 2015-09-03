@@ -13,7 +13,7 @@ enum { PATH_LIMIT = 32768 };
  * removing these defines (and the references to the libraries in the
  * Makefile) */
 #define VGM_USE_VORBIS
-//#define VGM_USE_MPEG
+#define VGM_USE_MPEG
 /* disabled by default, defined for builds that support it */
 //#define VGM_USE_G7221
 //#define VGM_USE_G719
@@ -490,7 +490,7 @@ typedef enum {
 	  meta_NGC_LPS,			      /* Rave Master (Groove Adventure Rave)(GC) */
     meta_NAOMI_ADPCM,		    /* NAOMI/NAOMI2 ARcade games */
 	  meta_SD9,               /* beatmaniaIIDX16 - EMPRESS (Arcade) */
-	meta_2DX, 
+	  meta_2DX,
 	  meta_2DX9,               /* beatmaniaIIDX16 - EMPRESS (Arcade) */
     meta_PS2_VGV,           /* Rune: Viking Warlord */
     meta_NGC_GCUB,          /* Sega Soccer Slam */

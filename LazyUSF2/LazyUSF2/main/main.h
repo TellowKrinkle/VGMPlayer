@@ -24,7 +24,6 @@
 #define __MAIN_H__
 
 #include "api/m64p_types.h"
-#include "usf/usf.h"
 
 #include <stdint.h>
 

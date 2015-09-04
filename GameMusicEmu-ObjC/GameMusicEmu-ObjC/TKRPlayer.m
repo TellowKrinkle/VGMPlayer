@@ -296,7 +296,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		}
 //		AUGraphStart(_player.graph);
 		CheckError(AudioQueueStart(_queue, NULL), "AudioStartQueue failed");
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedPlaying" object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedPlaying" object:self];
 		return true;
 	}
 	return false;
@@ -307,7 +307,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	if (!_player.isStopped) {
 //		AUGraphStop(_player.graph);
 		CheckError(AudioQueuePause(_queue), "AudioQueuePause failed");
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMPaused" object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMPaused" object:self];
 	}
 }
 
@@ -317,7 +317,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 //		AUGraphStop(_player.graph);
 		_player.isStopped = true;
 		CheckError(AudioQueueStop(_queue, TRUE), "AudioQueueStop failed");
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStoppedPlaying" object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStoppedPlaying" object:self];
 	}
 }
 
@@ -379,6 +379,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 				[_emu setPosition:position];
 				_isSeeking = false;
 				dispatch_async(dispatch_get_main_queue(), ^(void) {
+					[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMFinishedSeeking" object:self];
 					[self play];
 				});
 			});
@@ -389,9 +390,12 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 				_isSeeking = true;
 				[_emu setPosition:position];
 				_isSeeking = false;
+				dispatch_async(dispatch_get_main_queue(), ^(void) {
+					[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMFinishedSeeking" object:self];
+				});
 			});
 		}
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedSeeking" object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStartedSeeking" object:self];
 	}
 }
 

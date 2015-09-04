@@ -33,9 +33,11 @@
 		self.leftTimeIndicator.stringValue = @"0:00";
 	}
 	self.rightTimeIndicator.stringValue = @"0:00";
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStartedPlaying) name:@"VGMStartedPlaying" object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmPaused) name:@"VGMPaused" object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStoppedPlaying) name:@"VGMStoppedPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStartedPlaying:) name:@"VGMStartedPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmPaused:) name:@"VGMPaused" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStoppedPlaying:) name:@"VGMStoppedPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStartedSeeking:) name:@"VGMStartedSeeking" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmFinishedSeeking:) name:@"VGMFinishedSeeking" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkPlayheadUpdateTimer) name:@"NSWindowDidChangeOcclusionStateNotification" object:nil];
 	[super windowControllerDidLoadNib:aController];
 }
@@ -115,20 +117,37 @@
 
 # pragma mark Notifications
 
-- (void)vgmStartedPlaying {
-	[_playheadUpdateTimer invalidate];
-	[self.playPauseButton setImage:[NSImage imageNamed:@"pause"]];
-	[self checkPlayheadUpdateTimer];
+- (void)vgmStartedPlaying:(NSNotification *)notification {
+	if (notification.object == _player) {
+		[_playheadUpdateTimer invalidate];
+		[self.playPauseButton setImage:[NSImage imageNamed:@"pause"]];
+		[self checkPlayheadUpdateTimer];
+	}
 }
 
-- (void)vgmPaused {
-	[self.playPauseButton setImage:[NSImage imageNamed:@"play"]];
-	[self checkPlayheadUpdateTimer];
+- (void)vgmPaused:(NSNotification *)notification {
+	if (notification.object == _player) {
+		[self.playPauseButton setImage:[NSImage imageNamed:@"play"]];
+		[self checkPlayheadUpdateTimer];
+	}
 }
 
-- (void)vgmStoppedPlaying {
+- (void)vgmStoppedPlaying:(NSNotification *)notification {
 	// Should act the same as if we paused
-	[self vgmPaused];
+	[self vgmPaused:notification];
+}
+
+- (void)vgmStartedSeeking:(NSNotification *)notification {
+	if (notification.object == _player) {
+		self.playPauseButton.enabled = false;
+	}
+}
+
+- (void)vgmFinishedSeeking:(NSNotification *)notification {
+	if (notification.object == _player) {
+		self.playPauseButton.enabled = true;
+		[self updatePlayhead];
+	}
 }
 
 - (void)checkPlayheadUpdateTimer {

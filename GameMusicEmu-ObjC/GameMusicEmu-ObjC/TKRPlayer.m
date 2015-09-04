@@ -12,6 +12,7 @@
 #import "GameMusicEmu.h"
 #import "LazyUSF2.h"
 #import "Vio2SF.h"
+#import "VioGSF.h"
 #import "VGMStream.h"
 
 #define NUM_PLAYBACK_BUFFERS 3
@@ -235,6 +236,9 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		else if ([Vio2SF canPlay:file]) {
 			_emu = [[Vio2SF alloc] init];
 		}
+		else if ([VioGSF canPlay:file]) {
+			_emu = [[VioGSF alloc] init];
+		}
 		else if ([VGMStream canPlay:file]) {
 			_emu = [[VGMStream alloc] init];
 		}
@@ -374,7 +378,9 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 				_isSeeking = true;
 				[_emu setPosition:position];
 				_isSeeking = false;
-				[self play];
+				dispatch_async(dispatch_get_main_queue(), ^(void) {
+					[self play];
+				});
 			});
 		}
 		else {

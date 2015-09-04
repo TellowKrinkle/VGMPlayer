@@ -92,8 +92,8 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 			render_vgmstream(buffer, bufferSize, _stream);
 		}
 		else {
-			samplesToSeek = 0;
 			render_vgmstream(buffer, (int)samplesToSeek, _stream);
+			samplesToSeek = 0;
 		}
 	}
 	free(buffer);

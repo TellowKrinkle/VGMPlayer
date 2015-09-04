@@ -172,8 +172,8 @@ static int usfInfo(void *context, const char *name, const char *value) {
 			usf_render_resampled(_usfState.emuState, buffer, bufferSize, _sampleRate);
 		}
 		else {
-			seekSamples = 0;
 			usf_render_resampled(_usfState.emuState, buffer, seekSamples, _sampleRate);
+			seekSamples = 0;
 		}
 	}
 	free(buffer);

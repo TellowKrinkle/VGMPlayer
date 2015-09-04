@@ -20,7 +20,11 @@
 				<string>spc</string>
 				<string>vgm</string>
 				<string>miniusf</string>
+				<string>usf</string>
 				<string>mini2sf</string>
+				<string>2sf</string>
+				<string>minigsf</string>
+				<string>gsf</string>
 				<string>brstm</string>
 				<string>bfstm</string>
 				<string>bcstm</string>

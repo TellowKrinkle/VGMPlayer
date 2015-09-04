@@ -16,7 +16,6 @@ struct twosf_loader_state {
 	uint8_t *state;
 	size_t rom_size;
 	size_t state_size;
-	void *tags;
 	
 	int initial_frames;
 	int sync_type;
@@ -26,6 +25,7 @@ struct twosf_loader_state {
 	
 	double length;
 	double fade;
+	void *tags;
 };
 
 static void makeNSError(NSError **error, NSString *domain, int code, NSString *localizedDescription) {
@@ -314,15 +314,12 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	
 	if (self) {
 		_emu = (NDS_state *)calloc(1, sizeof(NDS_state));
+		_state.tags = (void *)CFBridgingRetain([NSMutableDictionary dictionary]);
 		state_init(_emu);
 		_sampleRate = 44100;
 	}
 	
 	return self;
-}
-
-- (int)channels {
-	return 2;
 }
 
 - (void)openFile:(NSURL *)file error:(NSError *__autoreleasing *)e {
@@ -375,8 +372,8 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 			state_render(_emu, buffer, bufferSize);
 		}
 		else {
-			seekSamples = 0;
 			state_render(_emu, buffer, (int)seekSamples);
+			seekSamples = 0;
 		}
 	}
 	free(buffer);
@@ -384,6 +381,10 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 
 - (long)trackLength {
 	return (_state.length + _state.fade) * self.sampleRate;
+}
+
+- (int)channels {
+	return 2;
 }
 
 - (NSDictionary *)tags {
@@ -413,6 +414,7 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	free(_emu);
 	free(_state.rom);
 	free(_state.state);
+	CFBridgingRelease(_state.tags);
 }
 
 @end

@@ -173,6 +173,172 @@
 		20263A751AC4597E00B3316E /* usf.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E9D1AC3701600A61474 /* usf.c */; };
 		20263A761AC4597E00B3316E /* usf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9E1AC3701600A61474 /* usf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20263A771AC4597E00B3316E /* usf_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9F1AC3701600A61474 /* usf_internal.h */; };
+		20B5A8321BA08A3600A8D955 /* rdp_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E2C1AC3701600A61474 /* rdp_core.c */; };
+		20B5A8331BA08A3600A8D955 /* rsp_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E371AC3701600A61474 /* rsp_core.c */; };
+		20B5A8341BA08A3600A8D955 /* tlb.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E031AC3701600A61474 /* tlb.c */; };
+		20B5A8351BA08A3600A8D955 /* rdram_detection_hack.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E321AC3701600A61474 /* rdram_detection_hack.c */; };
+		20B5A8361BA08A3600A8D955 /* savestates.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DC01AC3701600A61474 /* savestates.c */; };
+		20B5A8371BA08A3600A8D955 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DBC1AC3701600A61474 /* main.c */; };
+		20B5A8381BA08A3600A8D955 /* musyx.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E4F1AC3701600A61474 /* musyx.c */; };
+		20B5A8391BA08A3600A8D955 /* exception.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DDC1AC3701600A61474 /* exception.c */; };
+		20B5A83A1BA08A3600A8D955 /* alist_audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E3C1AC3701600A61474 /* alist_audio.c */; };
+		20B5A83B1BA08A3600A8D955 /* instr_counters.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DDF1AC3701600A61474 /* instr_counters.c */; };
+		20B5A83C1BA08A3600A8D955 /* alist_nead.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E3E1AC3701600A61474 /* alist_nead.c */; };
+		20B5A83D1BA08A3600A8D955 /* jpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E481AC3701600A61474 /* jpeg.c */; };
+		20B5A83E1BA08A3600A8D955 /* usf.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E9D1AC3701600A61474 /* usf.c */; };
+		20B5A83F1BA08A3600A8D955 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DC61AC3701600A61474 /* memory.c */; };
+		20B5A8401BA08A3600A8D955 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DC21AC3701600A61474 /* util.c */; };
+		20B5A8411BA08A3600A8D955 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E501AC3701600A61474 /* plugin.c */; };
+		20B5A8421BA08A3600A8D955 /* interupt.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DE81AC3701600A61474 /* interupt.c */; };
+		20B5A8431BA08A3600A8D955 /* barray.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E991AC3701600A61474 /* barray.c */; };
+		20B5A8441BA08A3600A8D955 /* callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DAC1AC3701600A61474 /* callbacks.c */; };
+		20B5A8451BA08A3600A8D955 /* rom.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DBE1AC3701600A61474 /* rom.c */; };
+		20B5A8461BA08A3600A8D955 /* vi_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973EA11AC3701600A61474 /* vi_controller.c */; };
+		20B5A8471BA08A3600A8D955 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E4A1AC3701600A61474 /* memory.c */; };
+		20B5A8481BA08A3600A8D955 /* game_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E8D1AC3701600A61474 /* game_controller.c */; };
+		20B5A8491BA08A3600A8D955 /* ai_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DA81AC3701600A61474 /* ai_controller.c */; };
+		20B5A84A1BA08A3600A8D955 /* mp3.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E4C1AC3701600A61474 /* mp3.c */; };
+		20B5A84B1BA08A3600A8D955 /* rsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E571AC3701600A61474 /* rsp.c */; };
+		20B5A84C1BA08A3600A8D955 /* rdram.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E301AC3701600A61474 /* rdram.c */; };
+		20B5A84D1BA08A3600A8D955 /* cp1.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DD91AC3701600A61474 /* cp1.c */; };
+		20B5A84E1BA08A3600A8D955 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E401AC3701600A61474 /* audio.c */; };
+		20B5A84F1BA08A3600A8D955 /* empty_dynarec.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DDB1AC3701600A61474 /* empty_dynarec.c */; };
+		20B5A8501BA08A3600A8D955 /* pif.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E911AC3701600A61474 /* pif.c */; };
+		20B5A8511BA08A3600A8D955 /* si_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E931AC3701600A61474 /* si_controller.c */; };
+		20B5A8521BA08A3600A8D955 /* n64_cic_nus_6105.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E8F1AC3701600A61474 /* n64_cic_nus_6105.c */; };
+		20B5A8531BA08A3600A8D955 /* cic.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E8B1AC3701600A61474 /* cic.c */; };
+		20B5A8541BA08A3600A8D955 /* dbg_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DB61AC3701600A61474 /* dbg_decoder.c */; };
+		20B5A8551BA08A3600A8D955 /* recomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DFE1AC3701600A61474 /* recomp.c */; };
+		20B5A8561BA08A3600A8D955 /* ri_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E341AC3701600A61474 /* ri_controller.c */; };
+		20B5A8571BA08A3600A8D955 /* pi_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DCD1AC3701600A61474 /* pi_controller.c */; };
+		20B5A8581BA08A3600A8D955 /* alist.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E3A1AC3701600A61474 /* alist.c */; };
+		20B5A8591BA08A3600A8D955 /* cp0.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DD71AC3701600A61474 /* cp0.c */; };
+		20B5A85A1BA08A3600A8D955 /* resampler.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E9B1AC3701600A61474 /* resampler.c */; };
+		20B5A85B1BA08A3600A8D955 /* cicx105.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E421AC3701600A61474 /* cicx105.c */; };
+		20B5A85C1BA08A3600A8D955 /* hle.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E441AC3701600A61474 /* hle.c */; };
+		20B5A85D1BA08A3600A8D955 /* pure_interp.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DF81AC3701600A61474 /* pure_interp.c */; };
+		20B5A85E1BA08A3600A8D955 /* cart_rom.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DCB1AC3701600A61474 /* cart_rom.c */; };
+		20B5A85F1BA08A3600A8D955 /* r4300.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DFA1AC3701600A61474 /* r4300.c */; };
+		20B5A8601BA08A3600A8D955 /* alist_naudio.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E3D1AC3701600A61474 /* alist_naudio.c */; };
+		20B5A8611BA08A3600A8D955 /* r4300_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DFC1AC3701600A61474 /* r4300_core.c */; };
+		20B5A8621BA08A3600A8D955 /* reset.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973E011AC3701600A61474 /* reset.c */; };
+		20B5A8631BA08A3600A8D955 /* cached_interp.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DD51AC3701600A61474 /* cached_interp.c */; };
+		20B5A8641BA08A3600A8D955 /* mi_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973DEB1AC3701600A61474 /* mi_controller.c */; };
+		20B5A8671BA08A3600A8D955 /* vxor.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E891AC3701600A61474 /* vxor.h */; };
+		20B5A8681BA08A3600A8D955 /* vrcph.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E801AC3701600A61474 /* vrcph.h */; };
+		20B5A8691BA08A3600A8D955 /* vnop.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7B1AC3701600A61474 /* vnop.h */; };
+		20B5A86A1BA08A3600A8D955 /* vadd.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E611AC3701600A61474 /* vadd.h */; };
+		20B5A86B1BA08A3600A8D955 /* recomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DFF1AC3701600A61474 /* recomp.h */; };
+		20B5A86C1BA08A3600A8D955 /* shuffle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E5F1AC3701600A61474 /* shuffle.h */; };
+		20B5A86D1BA08A3600A8D955 /* usf_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9F1AC3701600A61474 /* usf_internal.h */; };
+		20B5A86E1BA08A3600A8D955 /* r4300_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DFD1AC3701600A61474 /* r4300_core.h */; };
+		20B5A86F1BA08A3600A8D955 /* fpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DDE1AC3701600A61474 /* fpu.h */; };
+		20B5A8701BA08A3600A8D955 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DBB1AC3701600A61474 /* list.h */; };
+		20B5A8711BA08A3600A8D955 /* usf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9E1AC3701600A61474 /* usf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5A8721BA08A3600A8D955 /* m64p_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB21AC3701600A61474 /* m64p_plugin.h */; };
+		20B5A8731BA08A3600A8D955 /* rsp_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E381AC3701600A61474 /* rsp_core.h */; };
+		20B5A8741BA08A3600A8D955 /* vnxor.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7D1AC3701600A61474 /* vnxor.h */; };
+		20B5A8751BA08A3600A8D955 /* vrcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7F1AC3701600A61474 /* vrcp.h */; };
+		20B5A8761BA08A3600A8D955 /* dbg_decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB71AC3701600A61474 /* dbg_decoder.h */; };
+		20B5A8771BA08A3600A8D955 /* vabs.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E601AC3701600A61474 /* vabs.h */; };
+		20B5A8781BA08A3600A8D955 /* vmadm.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6F1AC3701600A61474 /* vmadm.h */; };
+		20B5A8791BA08A3600A8D955 /* memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E4B1AC3701600A61474 /* memory.h */; };
+		20B5A87A1BA08A3600A8D955 /* vrsq.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E821AC3701600A61474 /* vrsq.h */; };
+		20B5A87B1BA08A3600A8D955 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E431AC3701600A61474 /* common.h */; };
+		20B5A87C1BA08A3600A8D955 /* rdram_detection_hack.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E331AC3701600A61474 /* rdram_detection_hack.h */; };
+		20B5A87D1BA08A3600A8D955 /* veq.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E671AC3701600A61474 /* veq.h */; };
+		20B5A87E1BA08A3600A8D955 /* pi_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DCE1AC3701600A61474 /* pi_controller.h */; };
+		20B5A87F1BA08A3600A8D955 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DC31AC3701600A61474 /* util.h */; };
+		20B5A8801BA08A3600A8D955 /* ai_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DA91AC3701600A61474 /* ai_controller.h */; };
+		20B5A8811BA08A3600A8D955 /* vmadh.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6D1AC3701600A61474 /* vmadh.h */; };
+		20B5A8821BA08A3600A8D955 /* cp0.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DD81AC3701600A61474 /* cp0.h */; };
+		20B5A8831BA08A3600A8D955 /* pif.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E921AC3701600A61474 /* pif.h */; };
+		20B5A8841BA08A3600A8D955 /* vmacq.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6B1AC3701600A61474 /* vmacq.h */; };
+		20B5A8851BA08A3600A8D955 /* si_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E941AC3701600A61474 /* si_controller.h */; };
+		20B5A8861BA08A3600A8D955 /* ri_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E351AC3701600A61474 /* ri_controller.h */; };
+		20B5A8871BA08A3600A8D955 /* vi_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973EA21AC3701600A61474 /* vi_controller.h */; };
+		20B5A8881BA08A3600A8D955 /* vmov.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E711AC3701600A61474 /* vmov.h */; };
+		20B5A8891BA08A3600A8D955 /* ucodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E511AC3701600A61474 /* ucodes.h */; };
+		20B5A88A1BA08A3600A8D955 /* callbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DAD1AC3701600A61474 /* callbacks.h */; };
+		20B5A88B1BA08A3600A8D955 /* interupt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DE91AC3701600A61474 /* interupt.h */; };
+		20B5A88C1BA08A3600A8D955 /* vmrg.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E721AC3701600A61474 /* vmrg.h */; };
+		20B5A88D1BA08A3600A8D955 /* savestates.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DC11AC3701600A61474 /* savestates.h */; };
+		20B5A88E1BA08A3600A8D955 /* vrsql.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E841AC3701600A61474 /* vrsql.h */; };
+		20B5A88F1BA08A3600A8D955 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E561AC3701600A61474 /* matrix.h */; };
+		20B5A8901BA08A3600A8D955 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DEA1AC3701600A61474 /* macros.h */; };
+		20B5A8911BA08A3600A8D955 /* clamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E5D1AC3701600A61474 /* clamp.h */; };
+		20B5A8921BA08A3600A8D955 /* vu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E881AC3701600A61474 /* vu.h */; };
+		20B5A8931BA08A3600A8D955 /* m64p_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DAE1AC3701600A61474 /* m64p_common.h */; };
+		20B5A8941BA08A3600A8D955 /* execute.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E551AC3701600A61474 /* execute.h */; };
+		20B5A8951BA08A3600A8D955 /* ops.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DF71AC3701600A61474 /* ops.h */; };
+		20B5A8961BA08A3600A8D955 /* hle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E451AC3701600A61474 /* hle.h */; };
+		20B5A8971BA08A3600A8D955 /* r4300.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DFB1AC3701600A61474 /* r4300.h */; };
+		20B5A8981BA08A3600A8D955 /* vsub.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E861AC3701600A61474 /* vsub.h */; };
+		20B5A8991BA08A3600A8D955 /* divrom.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E5E1AC3701600A61474 /* divrom.h */; };
+		20B5A89A1BA08A3600A8D955 /* m64p_vidext.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB41AC3701600A61474 /* m64p_vidext.h */; };
+		20B5A89B1BA08A3600A8D955 /* reset.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E021AC3701600A61474 /* reset.h */; };
+		20B5A89C1BA08A3600A8D955 /* cp1.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DDA1AC3701600A61474 /* cp1.h */; };
+		20B5A89D1BA08A3600A8D955 /* exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DDD1AC3701600A61474 /* exception.h */; };
+		20B5A89E1BA08A3600A8D955 /* memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DC71AC3701600A61474 /* memory.h */; };
+		20B5A89F1BA08A3600A8D955 /* dbg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB91AC3701600A61474 /* dbg_types.h */; };
+		20B5A8A01BA08A3600A8D955 /* vsubc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E871AC3701600A61474 /* vsubc.h */; };
+		20B5A8A11BA08A3600A8D955 /* vmudn.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E761AC3701600A61474 /* vmudn.h */; };
+		20B5A8A21BA08A3600A8D955 /* mi_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DEC1AC3701600A61474 /* mi_controller.h */; };
+		20B5A8A31BA08A3600A8D955 /* cached_interp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DD61AC3701600A61474 /* cached_interp.h */; };
+		20B5A8A41BA08A3600A8D955 /* vrcpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E811AC3701600A61474 /* vrcpl.h */; };
+		20B5A8A51BA08A3600A8D955 /* vmudl.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E741AC3701600A61474 /* vmudl.h */; };
+		20B5A8A61BA08A3600A8D955 /* game_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E8E1AC3701600A61474 /* game_controller.h */; };
+		20B5A8A71BA08A3600A8D955 /* pure_interp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DF91AC3701600A61474 /* pure_interp.h */; };
+		20B5A8A81BA08A3600A8D955 /* audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E411AC3701600A61474 /* audio.h */; };
+		20B5A8A91BA08A3600A8D955 /* m64p_frontend.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB11AC3701600A61474 /* m64p_frontend.h */; };
+		20B5A8AA1BA08A3600A8D955 /* vlt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E691AC3701600A61474 /* vlt.h */; };
+		20B5A8AB1BA08A3600A8D955 /* vmacu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6C1AC3701600A61474 /* vmacu.h */; };
+		20B5A8AC1BA08A3600A8D955 /* hle_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E471AC3701600A61474 /* hle_internal.h */; };
+		20B5A8AD1BA08A3600A8D955 /* recomph.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E001AC3701600A61474 /* recomph.h */; };
+		20B5A8AE1BA08A3600A8D955 /* vge.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E681AC3701600A61474 /* vge.h */; };
+		20B5A8AF1BA08A3600A8D955 /* rsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E581AC3701600A61474 /* rsp.h */; };
+		20B5A8B01BA08A3600A8D955 /* vcl.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E651AC3701600A61474 /* vcl.h */; };
+		20B5A8B11BA08A3600A8D955 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DBD1AC3701600A61474 /* main.h */; };
+		20B5A8B21BA08A3600A8D955 /* vand.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E631AC3701600A61474 /* vand.h */; };
+		20B5A8B31BA08A3600A8D955 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E541AC3701600A61474 /* config.h */; };
+		20B5A8B41BA08A3600A8D955 /* hle_external.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E461AC3701600A61474 /* hle_external.h */; };
+		20B5A8B51BA08A3600A8D955 /* m64p_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB31AC3701600A61474 /* m64p_types.h */; };
+		20B5A8B61BA08A3600A8D955 /* vor.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7E1AC3701600A61474 /* vor.h */; };
+		20B5A8B71BA08A3600A8D955 /* rdp_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E2D1AC3701600A61474 /* rdp_core.h */; };
+		20B5A8B81BA08A3600A8D955 /* tlb.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E041AC3701600A61474 /* tlb.h */; };
+		20B5A8B91BA08A3600A8D955 /* vnor.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7C1AC3701600A61474 /* vnor.h */; };
+		20B5A8BA1BA08A3600A8D955 /* vrsqh.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E831AC3701600A61474 /* vrsqh.h */; };
+		20B5A8BB1BA08A3600A8D955 /* vmudh.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E731AC3701600A61474 /* vmudh.h */; };
+		20B5A8BC1BA08A3600A8D955 /* su.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E5A1AC3701600A61474 /* su.h */; };
+		20B5A8BD1BA08A3600A8D955 /* cf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E5C1AC3701600A61474 /* cf.h */; };
+		20B5A8BE1BA08A3600A8D955 /* n64_cic_nus_6105.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E901AC3701600A61474 /* n64_cic_nus_6105.h */; };
+		20B5A8BF1BA08A3600A8D955 /* vnand.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E791AC3701600A61474 /* vnand.h */; };
+		20B5A8C01BA08A3600A8D955 /* cic.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E8C1AC3701600A61474 /* cic.h */; };
+		20B5A8C11BA08A3600A8D955 /* instr_counters.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DE01AC3701600A61474 /* instr_counters.h */; };
+		20B5A8C21BA08A3600A8D955 /* alist.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E3B1AC3701600A61474 /* alist.h */; };
+		20B5A8C31BA08A3600A8D955 /* preproc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DC91AC3701600A61474 /* preproc.h */; };
+		20B5A8C41BA08A3600A8D955 /* cart_rom.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DCC1AC3701600A61474 /* cart_rom.h */; };
+		20B5A8C51BA08A3600A8D955 /* vaddc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E621AC3701600A61474 /* vaddc.h */; };
+		20B5A8C61BA08A3600A8D955 /* vmadn.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E701AC3701600A61474 /* vmadn.h */; };
+		20B5A8C71BA08A3600A8D955 /* rsp_lle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E591AC3701600A61474 /* rsp_lle.h */; };
+		20B5A8C81BA08A3600A8D955 /* vch.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E641AC3701600A61474 /* vch.h */; };
+		20B5A8C91BA08A3600A8D955 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DC41AC3701600A61474 /* version.h */; };
+		20B5A8CA1BA08A3600A8D955 /* vmadl.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6E1AC3701600A61474 /* vmadl.h */; };
+		20B5A8CB1BA08A3600A8D955 /* m64p_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DAF1AC3701600A61474 /* m64p_config.h */; };
+		20B5A8CC1BA08A3600A8D955 /* rom.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DBF1AC3701600A61474 /* rom.h */; };
+		20B5A8CD1BA08A3600A8D955 /* resampler.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9C1AC3701600A61474 /* resampler.h */; };
+		20B5A8CE1BA08A3600A8D955 /* dbg_decoder_local.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB81AC3701600A61474 /* dbg_decoder_local.h */; };
+		20B5A8CF1BA08A3600A8D955 /* vcr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E661AC3701600A61474 /* vcr.h */; };
+		20B5A8D01BA08A3600A8D955 /* vsaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E851AC3701600A61474 /* vsaw.h */; };
+		20B5A8D11BA08A3600A8D955 /* rdram.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E311AC3701600A61474 /* rdram.h */; };
+		20B5A8D21BA08A3600A8D955 /* vmudm.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E751AC3701600A61474 /* vmudm.h */; };
+		20B5A8D31BA08A3600A8D955 /* vne.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E7A1AC3701600A61474 /* vne.h */; };
+		20B5A8D41BA08A3600A8D955 /* arithmetics.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E3F1AC3701600A61474 /* arithmetics.h */; };
+		20B5A8D51BA08A3600A8D955 /* vmulf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E771AC3701600A61474 /* vmulf.h */; };
+		20B5A8D61BA08A3600A8D955 /* vmacf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E6A1AC3701600A61474 /* vmacf.h */; };
+		20B5A8D71BA08A3600A8D955 /* vmulu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E781AC3701600A61474 /* vmulu.h */; };
+		20B5A8D81BA08A3600A8D955 /* m64p_debugger.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973DB01AC3701600A61474 /* m64p_debugger.h */; };
+		20B5A8D91BA08A3600A8D955 /* barray.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973E9A1AC3701600A61474 /* barray.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -405,10 +571,18 @@
 		20973E9F1AC3701600A61474 /* usf_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usf_internal.h; sourceTree = "<group>"; };
 		20973EA11AC3701600A61474 /* vi_controller.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vi_controller.c; sourceTree = "<group>"; };
 		20973EA21AC3701600A61474 /* vi_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vi_controller.h; sourceTree = "<group>"; };
+		20B5A8DD1BA08A3600A8D955 /* libLazyUSF2-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libLazyUSF2-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		202639CB1AC458E100B3316E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B5A8651BA08A3600A8D955 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,6 +604,7 @@
 			isa = PBXGroup;
 			children = (
 				202639CE1AC458E100B3316E /* libLazyUSF2.a */,
+				20B5A8DD1BA08A3600A8D955 /* libLazyUSF2-ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -986,6 +1161,128 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20B5A8661BA08A3600A8D955 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5A8671BA08A3600A8D955 /* vxor.h in Headers */,
+				20B5A8681BA08A3600A8D955 /* vrcph.h in Headers */,
+				20B5A8691BA08A3600A8D955 /* vnop.h in Headers */,
+				20B5A86A1BA08A3600A8D955 /* vadd.h in Headers */,
+				20B5A86B1BA08A3600A8D955 /* recomp.h in Headers */,
+				20B5A86C1BA08A3600A8D955 /* shuffle.h in Headers */,
+				20B5A86D1BA08A3600A8D955 /* usf_internal.h in Headers */,
+				20B5A86E1BA08A3600A8D955 /* r4300_core.h in Headers */,
+				20B5A86F1BA08A3600A8D955 /* fpu.h in Headers */,
+				20B5A8701BA08A3600A8D955 /* list.h in Headers */,
+				20B5A8711BA08A3600A8D955 /* usf.h in Headers */,
+				20B5A8721BA08A3600A8D955 /* m64p_plugin.h in Headers */,
+				20B5A8731BA08A3600A8D955 /* rsp_core.h in Headers */,
+				20B5A8741BA08A3600A8D955 /* vnxor.h in Headers */,
+				20B5A8751BA08A3600A8D955 /* vrcp.h in Headers */,
+				20B5A8761BA08A3600A8D955 /* dbg_decoder.h in Headers */,
+				20B5A8771BA08A3600A8D955 /* vabs.h in Headers */,
+				20B5A8781BA08A3600A8D955 /* vmadm.h in Headers */,
+				20B5A8791BA08A3600A8D955 /* memory.h in Headers */,
+				20B5A87A1BA08A3600A8D955 /* vrsq.h in Headers */,
+				20B5A87B1BA08A3600A8D955 /* common.h in Headers */,
+				20B5A87C1BA08A3600A8D955 /* rdram_detection_hack.h in Headers */,
+				20B5A87D1BA08A3600A8D955 /* veq.h in Headers */,
+				20B5A87E1BA08A3600A8D955 /* pi_controller.h in Headers */,
+				20B5A87F1BA08A3600A8D955 /* util.h in Headers */,
+				20B5A8801BA08A3600A8D955 /* ai_controller.h in Headers */,
+				20B5A8811BA08A3600A8D955 /* vmadh.h in Headers */,
+				20B5A8821BA08A3600A8D955 /* cp0.h in Headers */,
+				20B5A8831BA08A3600A8D955 /* pif.h in Headers */,
+				20B5A8841BA08A3600A8D955 /* vmacq.h in Headers */,
+				20B5A8851BA08A3600A8D955 /* si_controller.h in Headers */,
+				20B5A8861BA08A3600A8D955 /* ri_controller.h in Headers */,
+				20B5A8871BA08A3600A8D955 /* vi_controller.h in Headers */,
+				20B5A8881BA08A3600A8D955 /* vmov.h in Headers */,
+				20B5A8891BA08A3600A8D955 /* ucodes.h in Headers */,
+				20B5A88A1BA08A3600A8D955 /* callbacks.h in Headers */,
+				20B5A88B1BA08A3600A8D955 /* interupt.h in Headers */,
+				20B5A88C1BA08A3600A8D955 /* vmrg.h in Headers */,
+				20B5A88D1BA08A3600A8D955 /* savestates.h in Headers */,
+				20B5A88E1BA08A3600A8D955 /* vrsql.h in Headers */,
+				20B5A88F1BA08A3600A8D955 /* matrix.h in Headers */,
+				20B5A8901BA08A3600A8D955 /* macros.h in Headers */,
+				20B5A8911BA08A3600A8D955 /* clamp.h in Headers */,
+				20B5A8921BA08A3600A8D955 /* vu.h in Headers */,
+				20B5A8931BA08A3600A8D955 /* m64p_common.h in Headers */,
+				20B5A8941BA08A3600A8D955 /* execute.h in Headers */,
+				20B5A8951BA08A3600A8D955 /* ops.h in Headers */,
+				20B5A8961BA08A3600A8D955 /* hle.h in Headers */,
+				20B5A8971BA08A3600A8D955 /* r4300.h in Headers */,
+				20B5A8981BA08A3600A8D955 /* vsub.h in Headers */,
+				20B5A8991BA08A3600A8D955 /* divrom.h in Headers */,
+				20B5A89A1BA08A3600A8D955 /* m64p_vidext.h in Headers */,
+				20B5A89B1BA08A3600A8D955 /* reset.h in Headers */,
+				20B5A89C1BA08A3600A8D955 /* cp1.h in Headers */,
+				20B5A89D1BA08A3600A8D955 /* exception.h in Headers */,
+				20B5A89E1BA08A3600A8D955 /* memory.h in Headers */,
+				20B5A89F1BA08A3600A8D955 /* dbg_types.h in Headers */,
+				20B5A8A01BA08A3600A8D955 /* vsubc.h in Headers */,
+				20B5A8A11BA08A3600A8D955 /* vmudn.h in Headers */,
+				20B5A8A21BA08A3600A8D955 /* mi_controller.h in Headers */,
+				20B5A8A31BA08A3600A8D955 /* cached_interp.h in Headers */,
+				20B5A8A41BA08A3600A8D955 /* vrcpl.h in Headers */,
+				20B5A8A51BA08A3600A8D955 /* vmudl.h in Headers */,
+				20B5A8A61BA08A3600A8D955 /* game_controller.h in Headers */,
+				20B5A8A71BA08A3600A8D955 /* pure_interp.h in Headers */,
+				20B5A8A81BA08A3600A8D955 /* audio.h in Headers */,
+				20B5A8A91BA08A3600A8D955 /* m64p_frontend.h in Headers */,
+				20B5A8AA1BA08A3600A8D955 /* vlt.h in Headers */,
+				20B5A8AB1BA08A3600A8D955 /* vmacu.h in Headers */,
+				20B5A8AC1BA08A3600A8D955 /* hle_internal.h in Headers */,
+				20B5A8AD1BA08A3600A8D955 /* recomph.h in Headers */,
+				20B5A8AE1BA08A3600A8D955 /* vge.h in Headers */,
+				20B5A8AF1BA08A3600A8D955 /* rsp.h in Headers */,
+				20B5A8B01BA08A3600A8D955 /* vcl.h in Headers */,
+				20B5A8B11BA08A3600A8D955 /* main.h in Headers */,
+				20B5A8B21BA08A3600A8D955 /* vand.h in Headers */,
+				20B5A8B31BA08A3600A8D955 /* config.h in Headers */,
+				20B5A8B41BA08A3600A8D955 /* hle_external.h in Headers */,
+				20B5A8B51BA08A3600A8D955 /* m64p_types.h in Headers */,
+				20B5A8B61BA08A3600A8D955 /* vor.h in Headers */,
+				20B5A8B71BA08A3600A8D955 /* rdp_core.h in Headers */,
+				20B5A8B81BA08A3600A8D955 /* tlb.h in Headers */,
+				20B5A8B91BA08A3600A8D955 /* vnor.h in Headers */,
+				20B5A8BA1BA08A3600A8D955 /* vrsqh.h in Headers */,
+				20B5A8BB1BA08A3600A8D955 /* vmudh.h in Headers */,
+				20B5A8BC1BA08A3600A8D955 /* su.h in Headers */,
+				20B5A8BD1BA08A3600A8D955 /* cf.h in Headers */,
+				20B5A8BE1BA08A3600A8D955 /* n64_cic_nus_6105.h in Headers */,
+				20B5A8BF1BA08A3600A8D955 /* vnand.h in Headers */,
+				20B5A8C01BA08A3600A8D955 /* cic.h in Headers */,
+				20B5A8C11BA08A3600A8D955 /* instr_counters.h in Headers */,
+				20B5A8C21BA08A3600A8D955 /* alist.h in Headers */,
+				20B5A8C31BA08A3600A8D955 /* preproc.h in Headers */,
+				20B5A8C41BA08A3600A8D955 /* cart_rom.h in Headers */,
+				20B5A8C51BA08A3600A8D955 /* vaddc.h in Headers */,
+				20B5A8C61BA08A3600A8D955 /* vmadn.h in Headers */,
+				20B5A8C71BA08A3600A8D955 /* rsp_lle.h in Headers */,
+				20B5A8C81BA08A3600A8D955 /* vch.h in Headers */,
+				20B5A8C91BA08A3600A8D955 /* version.h in Headers */,
+				20B5A8CA1BA08A3600A8D955 /* vmadl.h in Headers */,
+				20B5A8CB1BA08A3600A8D955 /* m64p_config.h in Headers */,
+				20B5A8CC1BA08A3600A8D955 /* rom.h in Headers */,
+				20B5A8CD1BA08A3600A8D955 /* resampler.h in Headers */,
+				20B5A8CE1BA08A3600A8D955 /* dbg_decoder_local.h in Headers */,
+				20B5A8CF1BA08A3600A8D955 /* vcr.h in Headers */,
+				20B5A8D01BA08A3600A8D955 /* vsaw.h in Headers */,
+				20B5A8D11BA08A3600A8D955 /* rdram.h in Headers */,
+				20B5A8D21BA08A3600A8D955 /* vmudm.h in Headers */,
+				20B5A8D31BA08A3600A8D955 /* vne.h in Headers */,
+				20B5A8D41BA08A3600A8D955 /* arithmetics.h in Headers */,
+				20B5A8D51BA08A3600A8D955 /* vmulf.h in Headers */,
+				20B5A8D61BA08A3600A8D955 /* vmacf.h in Headers */,
+				20B5A8D71BA08A3600A8D955 /* vmulu.h in Headers */,
+				20B5A8D81BA08A3600A8D955 /* m64p_debugger.h in Headers */,
+				20B5A8D91BA08A3600A8D955 /* barray.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1006,13 +1303,30 @@
 			productReference = 202639CE1AC458E100B3316E /* libLazyUSF2.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		20B5A8301BA08A3600A8D955 /* LazyUSF2-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B5A8DA1BA08A3600A8D955 /* Build configuration list for PBXNativeTarget "LazyUSF2-ios" */;
+			buildPhases = (
+				20B5A8311BA08A3600A8D955 /* Sources */,
+				20B5A8651BA08A3600A8D955 /* Frameworks */,
+				20B5A8661BA08A3600A8D955 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LazyUSF2-ios";
+			productName = LazyUSF2;
+			productReference = 20B5A8DD1BA08A3600A8D955 /* libLazyUSF2-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		20973D971AC3700000A61474 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					202639CD1AC458E100B3316E = {
@@ -1033,6 +1347,7 @@
 			projectRoot = "";
 			targets = (
 				202639CD1AC458E100B3316E /* LazyUSF2 */,
+				20B5A8301BA08A3600A8D955 /* LazyUSF2-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -1096,6 +1411,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20B5A8311BA08A3600A8D955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5A8321BA08A3600A8D955 /* rdp_core.c in Sources */,
+				20B5A8331BA08A3600A8D955 /* rsp_core.c in Sources */,
+				20B5A8341BA08A3600A8D955 /* tlb.c in Sources */,
+				20B5A8351BA08A3600A8D955 /* rdram_detection_hack.c in Sources */,
+				20B5A8361BA08A3600A8D955 /* savestates.c in Sources */,
+				20B5A8371BA08A3600A8D955 /* main.c in Sources */,
+				20B5A8381BA08A3600A8D955 /* musyx.c in Sources */,
+				20B5A8391BA08A3600A8D955 /* exception.c in Sources */,
+				20B5A83A1BA08A3600A8D955 /* alist_audio.c in Sources */,
+				20B5A83B1BA08A3600A8D955 /* instr_counters.c in Sources */,
+				20B5A83C1BA08A3600A8D955 /* alist_nead.c in Sources */,
+				20B5A83D1BA08A3600A8D955 /* jpeg.c in Sources */,
+				20B5A83E1BA08A3600A8D955 /* usf.c in Sources */,
+				20B5A83F1BA08A3600A8D955 /* memory.c in Sources */,
+				20B5A8401BA08A3600A8D955 /* util.c in Sources */,
+				20B5A8411BA08A3600A8D955 /* plugin.c in Sources */,
+				20B5A8421BA08A3600A8D955 /* interupt.c in Sources */,
+				20B5A8431BA08A3600A8D955 /* barray.c in Sources */,
+				20B5A8441BA08A3600A8D955 /* callbacks.c in Sources */,
+				20B5A8451BA08A3600A8D955 /* rom.c in Sources */,
+				20B5A8461BA08A3600A8D955 /* vi_controller.c in Sources */,
+				20B5A8471BA08A3600A8D955 /* memory.c in Sources */,
+				20B5A8481BA08A3600A8D955 /* game_controller.c in Sources */,
+				20B5A8491BA08A3600A8D955 /* ai_controller.c in Sources */,
+				20B5A84A1BA08A3600A8D955 /* mp3.c in Sources */,
+				20B5A84B1BA08A3600A8D955 /* rsp.c in Sources */,
+				20B5A84C1BA08A3600A8D955 /* rdram.c in Sources */,
+				20B5A84D1BA08A3600A8D955 /* cp1.c in Sources */,
+				20B5A84E1BA08A3600A8D955 /* audio.c in Sources */,
+				20B5A84F1BA08A3600A8D955 /* empty_dynarec.c in Sources */,
+				20B5A8501BA08A3600A8D955 /* pif.c in Sources */,
+				20B5A8511BA08A3600A8D955 /* si_controller.c in Sources */,
+				20B5A8521BA08A3600A8D955 /* n64_cic_nus_6105.c in Sources */,
+				20B5A8531BA08A3600A8D955 /* cic.c in Sources */,
+				20B5A8541BA08A3600A8D955 /* dbg_decoder.c in Sources */,
+				20B5A8551BA08A3600A8D955 /* recomp.c in Sources */,
+				20B5A8561BA08A3600A8D955 /* ri_controller.c in Sources */,
+				20B5A8571BA08A3600A8D955 /* pi_controller.c in Sources */,
+				20B5A8581BA08A3600A8D955 /* alist.c in Sources */,
+				20B5A8591BA08A3600A8D955 /* cp0.c in Sources */,
+				20B5A85A1BA08A3600A8D955 /* resampler.c in Sources */,
+				20B5A85B1BA08A3600A8D955 /* cicx105.c in Sources */,
+				20B5A85C1BA08A3600A8D955 /* hle.c in Sources */,
+				20B5A85D1BA08A3600A8D955 /* pure_interp.c in Sources */,
+				20B5A85E1BA08A3600A8D955 /* cart_rom.c in Sources */,
+				20B5A85F1BA08A3600A8D955 /* r4300.c in Sources */,
+				20B5A8601BA08A3600A8D955 /* alist_naudio.c in Sources */,
+				20B5A8611BA08A3600A8D955 /* r4300_core.c in Sources */,
+				20B5A8621BA08A3600A8D955 /* reset.c in Sources */,
+				20B5A8631BA08A3600A8D955 /* cached_interp.c in Sources */,
+				20B5A8641BA08A3600A8D955 /* mi_controller.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -1142,6 +1515,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1197,6 +1571,32 @@
 			};
 			name = Release;
 		};
+		20B5A8DB1BA08A3600A8D955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/LazyUSF2";
+			};
+			name = Debug;
+		};
+		20B5A8DC1BA08A3600A8D955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/LazyUSF2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1214,6 +1614,15 @@
 			buildConfigurations = (
 				20973DA11AC3700000A61474 /* Debug */,
 				20973DA21AC3700000A61474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B5A8DA1BA08A3600A8D955 /* Build configuration list for PBXNativeTarget "LazyUSF2-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B5A8DB1BA08A3600A8D955 /* Debug */,
+				20B5A8DC1BA08A3600A8D955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

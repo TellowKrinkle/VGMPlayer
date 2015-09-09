@@ -49,6 +49,48 @@
 		20263AB31AC45ACE00B3316E /* thumb_instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBA1AC372AA00A61474 /* thumb_instructions.h */; };
 		20263AB41AC45ACE00B3316E /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBC1AC372AA00A61474 /* types.h */; };
 		20263AB71AC45B3500B3316E /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20263A7A1AC45A5700B3316E /* libPSFLib.a */; };
+		20B5A8E01BA08B1600A8D955 /* MMU.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FAD1AC372AA00A61474 /* MMU.c */; };
+		20B5A8E11BA08B1600A8D955 /* cp15.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973F9D1AC372AA00A61474 /* cp15.c */; };
+		20B5A8E21BA08B1600A8D955 /* SPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20973FB41AC372AA00A61474 /* SPU.cpp */; };
+		20B5A8E31BA08B1600A8D955 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FB71AC372AA00A61474 /* state.c */; };
+		20B5A8E41BA08B1600A8D955 /* FIFO.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FA11AC372AA00A61474 /* FIFO.c */; };
+		20B5A8E51BA08B1600A8D955 /* resampler.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FB21AC372AA00A61474 /* resampler.c */; };
+		20B5A8E61BA08B1600A8D955 /* bios.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973F981AC372AA00A61474 /* bios.c */; };
+		20B5A8E71BA08B1600A8D955 /* mc.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FAA1AC372AA00A61474 /* mc.c */; };
+		20B5A8E81BA08B1600A8D955 /* isqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FA61AC372AA00A61474 /* isqrt.c */; };
+		20B5A8E91BA08B1600A8D955 /* thumb_instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FB91AC372AA00A61474 /* thumb_instructions.c */; };
+		20B5A8EA1BA08B1600A8D955 /* GPU.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FA31AC372AA00A61474 /* GPU.c */; };
+		20B5A8EB1BA08B1600A8D955 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FA81AC372AA00A61474 /* matrix.c */; };
+		20B5A8EC1BA08B1600A8D955 /* arm_instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973F921AC372AA00A61474 /* arm_instructions.c */; };
+		20B5A8ED1BA08B1600A8D955 /* armcpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973F941AC372AA00A61474 /* armcpu.c */; };
+		20B5A8EE1BA08B1600A8D955 /* NDSSystem.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973FAF1AC372AA00A61474 /* NDSSystem.c */; };
+		20B5A8EF1BA08B1600A8D955 /* barray.c in Sources */ = {isa = PBXBuildFile; fileRef = 20973F961AC372AA00A61474 /* barray.c */; };
+		20B5A8F31BA08B1600A8D955 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F9F1AC372AA00A61474 /* debug.h */; };
+		20B5A8F41BA08B1600A8D955 /* FIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FA21AC372AA00A61474 /* FIFO.h */; };
+		20B5A8F51BA08B1600A8D955 /* state.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB81AC372AA00A61474 /* state.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5A8F61BA08B1600A8D955 /* bios.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F991AC372AA00A61474 /* bios.h */; };
+		20B5A8F71BA08B1600A8D955 /* registers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB11AC372AA00A61474 /* registers.h */; };
+		20B5A8F81BA08B1600A8D955 /* resampler.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB31AC372AA00A61474 /* resampler.h */; };
+		20B5A8F91BA08B1600A8D955 /* mc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FAB1AC372AA00A61474 /* mc.h */; };
+		20B5A8FA1BA08B1600A8D955 /* GPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FA41AC372AA00A61474 /* GPU.h */; };
+		20B5A8FB1BA08B1600A8D955 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBC1AC372AA00A61474 /* types.h */; };
+		20B5A8FC1BA08B1600A8D955 /* isqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FA71AC372AA00A61474 /* isqrt.h */; };
+		20B5A8FD1BA08B1600A8D955 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FA91AC372AA00A61474 /* matrix.h */; };
+		20B5A8FE1BA08B1600A8D955 /* spu_exports.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB61AC372AA00A61474 /* spu_exports.h */; };
+		20B5A8FF1BA08B1600A8D955 /* NDSSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB01AC372AA00A61474 /* NDSSystem.h */; };
+		20B5A9001BA08B1600A8D955 /* arm_instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F931AC372AA00A61474 /* arm_instructions.h */; };
+		20B5A9011BA08B1600A8D955 /* bits.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F9A1AC372AA00A61474 /* bits.h */; };
+		20B5A9021BA08B1600A8D955 /* thumb_instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FBA1AC372AA00A61474 /* thumb_instructions.h */; };
+		20B5A9031BA08B1600A8D955 /* armcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F951AC372AA00A61474 /* armcpu.h */; };
+		20B5A9041BA08B1600A8D955 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FAC1AC372AA00A61474 /* mem.h */; };
+		20B5A9051BA08B1600A8D955 /* ARM9.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F911AC372AA00A61474 /* ARM9.h */; };
+		20B5A9061BA08B1600A8D955 /* SPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FB51AC372AA00A61474 /* SPU.h */; };
+		20B5A9071BA08B1600A8D955 /* cp15.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F9E1AC372AA00A61474 /* cp15.h */; };
+		20B5A9081BA08B1600A8D955 /* barray.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F971AC372AA00A61474 /* barray.h */; };
+		20B5A9091BA08B1600A8D955 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973F9B1AC372AA00A61474 /* config.h */; };
+		20B5A90A1BA08B1600A8D955 /* dscard.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FA01AC372AA00A61474 /* dscard.h */; };
+		20B5A90B1BA08B1600A8D955 /* MMU.h in Headers */ = {isa = PBXBuildFile; fileRef = 20973FAE1AC372AA00A61474 /* MMU.h */; };
+		20B5A9111BA08B6F00A8D955 /* libPSFLib-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5A9101BA08B6F00A8D955 /* libPSFLib-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +142,8 @@
 		20973FBC1AC372AA00A61474 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		20973FBD1AC372AA00A61474 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		20973FBE1AC372AA00A61474 /* trim2sflib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trim2sflib.c; sourceTree = "<group>"; };
+		20B5A90F1BA08B1600A8D955 /* libVio2SF-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVio2SF-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B5A9101BA08B6F00A8D955 /* libPSFLib-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPSFLib-ios.a"; path = "../PSFLib/build/Debug-iphoneos/libPSFLib-ios.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +155,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20B5A8F01BA08B1600A8D955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5A9111BA08B6F00A8D955 /* libPSFLib-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +171,7 @@
 			children = (
 				20973F8F1AC372AA00A61474 /* Vio2SF */,
 				20263A7A1AC45A5700B3316E /* libPSFLib.a */,
+				20B5A9101BA08B6F00A8D955 /* libPSFLib-ios.a */,
 				20973F891AC3729400A61474 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				20263A881AC45AA700B3316E /* libVio2SF.a */,
+				20B5A90F1BA08B1600A8D955 /* libVio2SF-ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,6 +281,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20B5A8F21BA08B1600A8D955 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5A8F31BA08B1600A8D955 /* debug.h in Headers */,
+				20B5A8F41BA08B1600A8D955 /* FIFO.h in Headers */,
+				20B5A8F51BA08B1600A8D955 /* state.h in Headers */,
+				20B5A8F61BA08B1600A8D955 /* bios.h in Headers */,
+				20B5A8F71BA08B1600A8D955 /* registers.h in Headers */,
+				20B5A8F81BA08B1600A8D955 /* resampler.h in Headers */,
+				20B5A8F91BA08B1600A8D955 /* mc.h in Headers */,
+				20B5A8FA1BA08B1600A8D955 /* GPU.h in Headers */,
+				20B5A8FB1BA08B1600A8D955 /* types.h in Headers */,
+				20B5A8FC1BA08B1600A8D955 /* isqrt.h in Headers */,
+				20B5A8FD1BA08B1600A8D955 /* matrix.h in Headers */,
+				20B5A8FE1BA08B1600A8D955 /* spu_exports.h in Headers */,
+				20B5A8FF1BA08B1600A8D955 /* NDSSystem.h in Headers */,
+				20B5A9001BA08B1600A8D955 /* arm_instructions.h in Headers */,
+				20B5A9011BA08B1600A8D955 /* bits.h in Headers */,
+				20B5A9021BA08B1600A8D955 /* thumb_instructions.h in Headers */,
+				20B5A9031BA08B1600A8D955 /* armcpu.h in Headers */,
+				20B5A9041BA08B1600A8D955 /* mem.h in Headers */,
+				20B5A9051BA08B1600A8D955 /* ARM9.h in Headers */,
+				20B5A9061BA08B1600A8D955 /* SPU.h in Headers */,
+				20B5A9071BA08B1600A8D955 /* cp15.h in Headers */,
+				20B5A9081BA08B1600A8D955 /* barray.h in Headers */,
+				20B5A9091BA08B1600A8D955 /* config.h in Headers */,
+				20B5A90A1BA08B1600A8D955 /* dscard.h in Headers */,
+				20B5A90B1BA08B1600A8D955 /* MMU.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +331,23 @@
 			name = Vio2SF;
 			productName = Vio2SF;
 			productReference = 20263A881AC45AA700B3316E /* libVio2SF.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		20B5A8DE1BA08B1600A8D955 /* Vio2SF-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B5A90C1BA08B1600A8D955 /* Build configuration list for PBXNativeTarget "Vio2SF-ios" */;
+			buildPhases = (
+				20B5A8DF1BA08B1600A8D955 /* Sources */,
+				20B5A8F01BA08B1600A8D955 /* Frameworks */,
+				20B5A8F21BA08B1600A8D955 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vio2SF-ios";
+			productName = Vio2SF;
+			productReference = 20B5A90F1BA08B1600A8D955 /* libVio2SF-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -274,6 +377,7 @@
 			projectRoot = "";
 			targets = (
 				20263A871AC45AA700B3316E /* Vio2SF */,
+				20B5A8DE1BA08B1600A8D955 /* Vio2SF-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +403,29 @@
 				20263A8F1AC45ACE00B3316E /* armcpu.c in Sources */,
 				20263AA81AC45ACE00B3316E /* NDSSystem.c in Sources */,
 				20263A911AC45ACE00B3316E /* barray.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B5A8DF1BA08B1600A8D955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5A8E01BA08B1600A8D955 /* MMU.c in Sources */,
+				20B5A8E11BA08B1600A8D955 /* cp15.c in Sources */,
+				20B5A8E21BA08B1600A8D955 /* SPU.cpp in Sources */,
+				20B5A8E31BA08B1600A8D955 /* state.c in Sources */,
+				20B5A8E41BA08B1600A8D955 /* FIFO.c in Sources */,
+				20B5A8E51BA08B1600A8D955 /* resampler.c in Sources */,
+				20B5A8E61BA08B1600A8D955 /* bios.c in Sources */,
+				20B5A8E71BA08B1600A8D955 /* mc.c in Sources */,
+				20B5A8E81BA08B1600A8D955 /* isqrt.c in Sources */,
+				20B5A8E91BA08B1600A8D955 /* thumb_instructions.c in Sources */,
+				20B5A8EA1BA08B1600A8D955 /* GPU.c in Sources */,
+				20B5A8EB1BA08B1600A8D955 /* matrix.c in Sources */,
+				20B5A8EC1BA08B1600A8D955 /* arm_instructions.c in Sources */,
+				20B5A8ED1BA08B1600A8D955 /* armcpu.c in Sources */,
+				20B5A8EE1BA08B1600A8D955 /* NDSSystem.c in Sources */,
+				20B5A8EF1BA08B1600A8D955 /* barray.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +538,40 @@
 			};
 			name = Release;
 		};
+		20B5A90D1BA08B1600A8D955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
+				);
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20B5A90E1BA08B1600A8D955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
+				);
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +589,15 @@
 			buildConfigurations = (
 				20973F8A1AC3729400A61474 /* Debug */,
 				20973F8B1AC3729400A61474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B5A90C1BA08B1600A8D955 /* Build configuration list for PBXNativeTarget "Vio2SF-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B5A90D1BA08B1600A8D955 /* Debug */,
+				20B5A90E1BA08B1600A8D955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

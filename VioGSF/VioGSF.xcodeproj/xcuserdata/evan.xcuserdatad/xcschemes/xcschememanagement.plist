@@ -4,17 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>VioGSF-ios.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>VioGSF.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>201A72301B97F349003A025A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20B5A9121BA08BAD00A8D955</key>
 		<dict>
 			<key>primary</key>
 			<true/>

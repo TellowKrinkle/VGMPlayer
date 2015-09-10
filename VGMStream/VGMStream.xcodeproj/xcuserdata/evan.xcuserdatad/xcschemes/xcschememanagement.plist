@@ -3,18 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict>
-		<key>VGMStream.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-	</dict>
+	<dict/>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>202955DF1AD2DF0B008AFC3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20D50FD01BA207AB00618FB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20D5111C1BA2214800618FB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20D512611BA222AF00618FB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

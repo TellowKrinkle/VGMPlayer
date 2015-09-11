@@ -18,7 +18,6 @@
 
 - (instancetype)initWithSampleRate:(int)sampleRate NS_DESIGNATED_INITIALIZER;
 - (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError **)e;
-- (long)tell;
 - (bool)trackHasEnded;
 
 @end

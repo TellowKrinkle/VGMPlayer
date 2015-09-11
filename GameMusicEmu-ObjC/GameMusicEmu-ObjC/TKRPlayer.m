@@ -112,7 +112,7 @@ OSStatus VGMRenderProc(void *inUserData, AudioUnitRenderActionFlags *ioActionFla
 	}
 	for (int i = 0; i < ioData->mNumberBuffers; i++) {
 		int numSamples = ioData->mBuffers[i].mDataByteSize / FORMAT_BYTES_PER_CHANNEL;
-		[emu play:numSamples withBuffer:ioData->mBuffers[i].mData];
+		[emu playIntoBuffer:ioData->mBuffers[i].mData size:numSamples];
 	}
 //	printf("Buffers: %d\n", ioData->mNumberBuffers);
 	return noErr;
@@ -129,11 +129,11 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		return;
 	}
 	int numSamples = player->bufferSize / FORMAT_BYTES_PER_CHANNEL;
-	[emu play:numSamples withBuffer:inCompleteAQBuffer->mAudioData];
+	[emu playIntoBuffer:inCompleteAQBuffer->mAudioData size:numSamples];
 	/*
 	if (player->channels == FORMAT_CHANNELS_PER_FRAME) {
 		int numSamples = player->bufferSize / FORMAT_BYTES_PER_CHANNEL;
-		[emu play:numSamples withBuffer:inCompleteAQBuffer->mAudioData];
+		[emu playIntoBuffer:inCompleteAQBuffer->mAudioData size:numSamples];
 	}
 	else {
 		int numChannels = player->channels;
@@ -143,7 +143,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 			player->extraBuffer = malloc(player->extraBufferSize);
 		}
 		int numSamples = player->extraBufferSize / FORMAT_BYTES_PER_CHANNEL;
-		[emu play:numSamples withBuffer:player->extraBuffer];
+		[emu playIntoBuffer:player->extraBuffer size:numSamples];
 		short *outBuffer = (short *)inCompleteAQBuffer->mAudioData;
 		short *extraBuffer = player->extraBuffer;
 		if (numChannels % 2 == 0) {

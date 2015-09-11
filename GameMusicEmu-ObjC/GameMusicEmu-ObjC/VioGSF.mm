@@ -282,7 +282,7 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 	
 }
 
-- (void)play:(int)size withBuffer:(short *)buffer {
+- (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_emu) {
 		_position += size / self.channels;
 		while (_sound->bytesInBuffer < size * 2) {

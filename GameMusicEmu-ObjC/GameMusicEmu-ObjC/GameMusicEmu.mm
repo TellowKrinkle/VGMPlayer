@@ -93,11 +93,7 @@ void handle_error( const char* str )
 	[self openFile:file atTrack:0 error:e];
 }
 
-- (long)tell {
-	return _emu->tell();
-}
-
-- (void)play:(int)size withBuffer:(short *)buffer {
+- (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_emu && !_emu->track_ended()) {
 		handle_error(_emu->play(size, buffer));
 		_position += size / self.channels;

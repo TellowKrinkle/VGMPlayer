@@ -46,7 +46,7 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 	_channels = _stream->channels;
 }
 
-- (void)play:(int)size withBuffer:(short *)buffer {
+- (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_stream) {
 		if (_stream->loop_flag) {
 			render_vgmstream(buffer, size / self.channels, _stream);

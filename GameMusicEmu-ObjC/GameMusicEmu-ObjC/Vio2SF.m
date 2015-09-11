@@ -346,7 +346,7 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	state_loadstate(_emu, _state.state, (uint32)_state.state_size);
 }
 
-- (void)play:(int)size withBuffer:(short *)buffer {
+- (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_emu) {
 		_position += size / self.channels;
 		state_render(_emu, buffer, size/2);

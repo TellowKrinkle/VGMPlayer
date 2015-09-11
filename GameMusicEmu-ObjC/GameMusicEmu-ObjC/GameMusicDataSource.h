@@ -9,22 +9,79 @@
 #import <Foundation/Foundation.h>
 
 @protocol GameMusicDataSource <NSObject>
-@required
-@property (nonatomic, readonly) int sampleRate;
-@property (nonatomic, readonly) int channels;
-@property (nonatomic) long position; // Position in samples
 
-- (void)openFile:(NSURL *)file error:(NSError **)e;
-- (void)play:(int)size withBuffer:(short *)buffer; // Size is in total samples between all channels
+@required
+
+/**
+ * The sample rate of the player
+ */
+@property (nonatomic, readonly) int sampleRate;
+
+/**
+ * The number of audio channels
+ */
+@property (nonatomic, readonly) int channels;
+
+/**
+ * The current playing position in samples
+ */
+@property (nonatomic) long position;
+
+/**
+ * Open an audio file for playing
+ * @param file The file to be opened
+ * @param error NSError in case something goes wrong
+ */
+- (void)openFile:(NSURL *)file error:(NSError **)err;
+
+/**
+ * Play the opened audio file to a buffer
+ * @param buffer the buffer to play into
+ * @param size the number of samples to play (total samples between all channels)
+ */
+- (void)playIntoBuffer:(short *)buffer size:(int)size;
+
+/**
+ * Check whether the player can play a given file
+ * @param file The file to check
+ * @return whether or not the player can play the file
+ */
 + (bool)canPlay:(NSURL *)file;
 
 @optional
-@property (nonatomic, readonly) long trackLength; // Track length in samples
+
+/**
+ * The length of the audio file in samples
+ */
+@property (nonatomic, readonly) long trackLength;
+
+/**
+ * The current track number, available only if the file type supports multiple tracks in one file
+ */
 @property (nonatomic) int trackNo;
+
+/**
+ * The metadata tags of the file
+ */
 @property (nonatomic, readonly) NSDictionary *tags;
+
+/**
+ * Initializer that also sets the sample rate, available only if the player supports multiple sample rates.
+ */
 - (instancetype)initWithSampleRate:(int)sampleRate;
-- (long)tell;
+
+/**
+ * Open a file and advance to a certain track, available only if the file type supports multiple tracks in one file
+ * @param file The file to be opened
+ * @param trackNo The track to advance to
+ * @param error NSError in case something goes wrong
+ */
 - (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError **)e;
+
+/**
+ * Check whether or not a track has ended.  If the track loops, this will always be false.
+ * @return whether or not the track has ended
+ */
 - (bool)trackHasEnded;
 
 @end

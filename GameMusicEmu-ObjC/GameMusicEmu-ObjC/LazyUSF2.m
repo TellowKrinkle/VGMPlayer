@@ -147,7 +147,7 @@ static int usfInfo(void *context, const char *name, const char *value) {
 	usf_set_fifo_full(_usfState.emuState, _usfState.enableFifoFull);
 }
 
-- (void)play:(int)size withBuffer:(short *)buffer {
+- (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_usfState.emuState) {
 		usf_render_resampled(_usfState.emuState, buffer, size/2, _sampleRate);
 		_position += size / self.channels;

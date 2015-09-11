@@ -224,7 +224,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	return [self initWithSampleRate:44100];
 }
 
-- (void)openFile:(NSURL *)file withTrackNo:(int)trackNo error:(NSError **)err {
+- (void)openFile:(NSURL *)file trackNo:(int)trackNo error:(NSError **)err {
 	[self stop];
 	if (!_emu || ![[_emu class] canPlay:file]) {
 		if ([GameMusicEmu canPlay:file]) {
@@ -348,17 +348,12 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 }
 
 - (void)setSampleRate:(int)sampleRate {
-	_sampleRate = sampleRate;
 	[self close];
+	_sampleRate = sampleRate;
 }
 
 - (int)channels {
 	return _player.channels;
-}
-
-- (void)setChannels:(int)channels {
-	_player.channels = channels;
-	[self close];
 }
 
 - (void)setVolume:(float)volume {

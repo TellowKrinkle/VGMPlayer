@@ -76,7 +76,7 @@
  * @param trackNo The track to advance to
  * @param error NSError in case something goes wrong
  */
-- (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError **)e;
+- (void)openFile:(NSURL *)file track:(int)trackNo error:(NSError **)e;
 
 /**
  * Check whether or not a track has ended.  If the track loops, this will always be false.

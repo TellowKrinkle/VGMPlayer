@@ -64,7 +64,7 @@ void handle_error( const char* str )
 	return 2;
 }
 
-- (void)openFile:(NSURL *)file atTrack:(int)trackNo error:(NSError *__autoreleasing *)e{
+- (void)openFile:(NSURL *)file track:(int)trackNo error:(NSError *__autoreleasing *)e{
 	_trackNo = trackNo;
 	gme_type_t fileType;
 	handle_error(gme_identify_file(file.fileSystemRepresentation, &fileType));

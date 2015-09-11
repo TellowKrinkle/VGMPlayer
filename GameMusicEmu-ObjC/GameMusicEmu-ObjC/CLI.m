@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
 			[player play];
 		}
 		else {
-			[player openFile:[NSURL fileURLWithFileSystemRepresentation:argv[1] isDirectory:false relativeToURL:nil] withTrackNo:atoi(argv[2]) error:nil];
+			[player openFile:[NSURL fileURLWithFileSystemRepresentation:argv[1] isDirectory:false relativeToURL:nil] trackNo:atoi(argv[2]) error:nil];
 			[player play];
 		}
 		

@@ -130,63 +130,6 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	}
 	int numSamples = player->bufferSize / FORMAT_BYTES_PER_CHANNEL;
 	[emu playIntoBuffer:inCompleteAQBuffer->mAudioData size:numSamples];
-	/*
-	if (player->channels == FORMAT_CHANNELS_PER_FRAME) {
-		int numSamples = player->bufferSize / FORMAT_BYTES_PER_CHANNEL;
-		[emu playIntoBuffer:inCompleteAQBuffer->mAudioData size:numSamples];
-	}
-	else {
-		int numChannels = player->channels;
-		if (player->extraBufferSize != player->bufferSize / FORMAT_CHANNELS_PER_FRAME * numChannels) {
-			player->extraBufferSize = player->bufferSize / FORMAT_CHANNELS_PER_FRAME * numChannels;
-			free(player->extraBuffer);
-			player->extraBuffer = malloc(player->extraBufferSize);
-		}
-		int numSamples = player->extraBufferSize / FORMAT_BYTES_PER_CHANNEL;
-		[emu playIntoBuffer:player->extraBuffer size:numSamples];
-		short *outBuffer = (short *)inCompleteAQBuffer->mAudioData;
-		short *extraBuffer = player->extraBuffer;
-		if (numChannels % 2 == 0) {
-			int i = 0;
-			int obufslot = 0;
-			int divisor = numChannels / 2;
-			int nextI, leftsum, rightsum;
-			while (i < numSamples) {
-				nextI = i + numChannels;
-				leftsum = 0;
-				rightsum = 0;
-				for (int j = i; j < nextI; j++) {
-					leftsum += extraBuffer[j];
-					j++;
-					rightsum += extraBuffer[j];
-				}
-				outBuffer[obufslot] = leftsum / divisor;
-				obufslot++;
-				outBuffer[obufslot] = rightsum / divisor;
-				obufslot++;
-				i = nextI;
-			}
-		}
-		else {
-			int i = 0;
-			int obufslot = 0;
-			int nextI, sum, average;
-			while (i < numSamples) {
-				nextI = i + numChannels;
-				sum = 0;
-				for (int j = i; j < nextI; j++) {
-					sum += extraBuffer[j];
-				}
-				average = sum / numChannels;
-				outBuffer[obufslot] = average;
-				obufslot++;
-				outBuffer[obufslot] = average;
-				obufslot++;
-				i = nextI;
-			}
-		}
-	}
-	*/
 	inCompleteAQBuffer->mAudioDataByteSize = player->bufferSize;
 	AudioQueueEnqueueBuffer(inAQ, inCompleteAQBuffer, 0, NULL);
 }
@@ -247,8 +190,8 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 			return;
 		}
 	}
-	if ([_emu respondsToSelector:@selector(openFile:atTrack:error:)]) {
-		[_emu openFile:file atTrack:trackNo error:err];
+	if ([_emu respondsToSelector:@selector(openFile:track:error:)]) {
+		[_emu openFile:file track:trackNo error:err];
 	}
 	else {
 		[_emu openFile:file error:err];
@@ -268,7 +211,7 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 }
 
 - (void)openFile:(NSURL *)file error:(NSError **)err {
-	[self openFile:file withTrackNo:0 error:err];
+	[self openFile:file trackNo:0 error:err];
 }
 
 - (void)fillBuffers {

@@ -18,11 +18,17 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 	}
 }
 
-void handle_error( const char* str )
+void handle_error( const char* str , NSError **error, int code)
 {
 	if ( str )
 	{
-		[NSException raise:[NSString stringWithCString:str encoding:NSUTF8StringEncoding] format:@"%s", str];
+		makeNSError(error, @"GameMusicEmu", code, [NSString stringWithCString:str encoding:NSUTF8StringEncoding]);
+	}
+}
+
+void handle_error_print(const char *str) {
+	if (str) {
+		NSLog(@"Error: %s", str);
 	}
 }
 
@@ -37,7 +43,7 @@ void handle_error( const char* str )
 
 + (bool)canPlay:(NSURL *)file {
 	gme_type_t file_type;
-	handle_error(gme_identify_file(file.fileSystemRepresentation, &file_type));
+	gme_identify_file(file.fileSystemRepresentation, &file_type);
 	if (!file_type) {
 		return false;
 	}
@@ -64,38 +70,38 @@ void handle_error( const char* str )
 	return 2;
 }
 
-- (void)openFile:(NSURL *)file track:(int)trackNo error:(NSError *__autoreleasing *)e{
+- (void)openFile:(NSURL *)file track:(int)trackNo error:(NSError *__autoreleasing *)err{
 	_trackNo = trackNo;
 	gme_type_t fileType;
-	handle_error(gme_identify_file(file.fileSystemRepresentation, &fileType));
+	handle_error(gme_identify_file(file.fileSystemRepresentation, &fileType), err, 205);
 	if (!fileType) {
-		makeNSError(e, @"GameMusicEmu", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
+		makeNSError(err, @"GameMusicEmu", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
 		return;
 	}
 	if (_emu) {
 		if (strcmp(_emu->type()->system, fileType->system) != 0 || _emu->type()->track_count != fileType->track_count) {
 			delete _emu;
 			_emu = fileType->new_emu();
-			handle_error(_emu->set_sample_rate(self.sampleRate));
+			handle_error(_emu->set_sample_rate(self.sampleRate), err, 210);
 		}
 	}
 	else {
 		_emu = fileType->new_emu();
-		handle_error(_emu->set_sample_rate(self.sampleRate));
+		handle_error(_emu->set_sample_rate(self.sampleRate), err, 210);
 	}
-	if (!_emu) { handle_error("Out of memory"); }
-	handle_error(_emu->load_file(file.fileSystemRepresentation));
-	handle_error(_emu->track_info(_info, trackNo));
-	handle_error(_emu->start_track(trackNo));
+	if (!_emu) { makeNSError(err, @"GameMusicEmu", 200, @"Out of memory"); }
+	handle_error(_emu->load_file(file.fileSystemRepresentation), err, 215);
+	handle_error(_emu->track_info(_info, trackNo), err, 220);
+	handle_error(_emu->start_track(trackNo), err, 225);
 }
 
 - (void)openFile:(NSURL *)file error:(NSError *__autoreleasing *)e{
-	[self openFile:file atTrack:0 error:e];
+	[self openFile:file track:0 error:e];
 }
 
 - (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_emu && !_emu->track_ended()) {
-		handle_error(_emu->play(size, buffer));
+		handle_error_print(_emu->play(size, buffer));
 		_position += size / self.channels;
 	}
 }
@@ -106,8 +112,8 @@ void handle_error( const char* str )
 }
 
 - (void)setTrackNo:(int)trackNo {
-	handle_error(_emu->start_track(trackNo));
-	handle_error(_emu->track_info(_info, trackNo));
+	handle_error_print(_emu->start_track(trackNo));
+	handle_error_print(_emu->track_info(_info, trackNo));
 }
 
 - (long)trackLength {

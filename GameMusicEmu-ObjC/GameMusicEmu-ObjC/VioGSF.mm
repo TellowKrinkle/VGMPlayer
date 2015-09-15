@@ -33,6 +33,7 @@ struct gsf_sound_out : public GBASoundOut {
 	
 	gsf_sound_out() {
 		buffer = (uint8_t *)malloc(sizeof(uint8_t) * BUFFER_SIZE);
+		bytesInBuffer = 0;
 		writeOffset = 0;
 		readOffset = 0;
 	}

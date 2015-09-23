@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define DEFAULT_SAMPLE_RATE 44100
+
 @protocol GameMusicDataSource <NSObject>
 
 @required

@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20CEBA471BAC7C9F00D65B88 /* Channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA241BAC7C9F00D65B88 /* Channel.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA481BAC7C9F00D65B88 /* Channel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA251BAC7C9F00D65B88 /* Channel.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA491BAC7C9F00D65B88 /* codecvt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA261BAC7C9F00D65B88 /* codecvt.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4A1BAC7C9F00D65B88 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA271BAC7C9F00D65B88 /* common.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4B1BAC7C9F00D65B88 /* consts.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA281BAC7C9F00D65B88 /* consts.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4C1BAC7C9F00D65B88 /* convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA291BAC7C9F00D65B88 /* convert.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4D1BAC7C9F00D65B88 /* FATSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2A1BAC7C9F00D65B88 /* FATSection.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4E1BAC7C9F00D65B88 /* FATSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2B1BAC7C9F00D65B88 /* FATSection.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA4F1BAC7C9F00D65B88 /* INFOEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2C1BAC7C9F00D65B88 /* INFOEntry.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA501BAC7C9F00D65B88 /* INFOEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2D1BAC7C9F00D65B88 /* INFOEntry.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA511BAC7C9F00D65B88 /* INFOSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2E1BAC7C9F00D65B88 /* INFOSection.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA521BAC7C9F00D65B88 /* INFOSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2F1BAC7C9F00D65B88 /* INFOSection.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA541BAC7C9F00D65B88 /* NDSStdHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA321BAC7C9F00D65B88 /* NDSStdHeader.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA551BAC7C9F00D65B88 /* NDSStdHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA331BAC7C9F00D65B88 /* NDSStdHeader.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA561BAC7C9F00D65B88 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA341BAC7C9F00D65B88 /* Player.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA571BAC7C9F00D65B88 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA351BAC7C9F00D65B88 /* Player.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA581BAC7C9F00D65B88 /* SBNK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA361BAC7C9F00D65B88 /* SBNK.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA591BAC7C9F00D65B88 /* SBNK.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA371BAC7C9F00D65B88 /* SBNK.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5A1BAC7C9F00D65B88 /* SDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA381BAC7C9F00D65B88 /* SDAT.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5B1BAC7C9F00D65B88 /* SDAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA391BAC7C9F00D65B88 /* SDAT.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5C1BAC7C9F00D65B88 /* SSEQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3A1BAC7C9F00D65B88 /* SSEQ.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5D1BAC7C9F00D65B88 /* SSEQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3B1BAC7C9F00D65B88 /* SSEQ.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5E1BAC7C9F00D65B88 /* SWAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3E1BAC7C9F00D65B88 /* SWAR.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA5F1BAC7C9F00D65B88 /* SWAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3F1BAC7C9F00D65B88 /* SWAR.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA601BAC7C9F00D65B88 /* SWAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA401BAC7C9F00D65B88 /* SWAV.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA611BAC7C9F00D65B88 /* SWAV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA411BAC7C9F00D65B88 /* SWAV.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA621BAC7C9F00D65B88 /* SYMBSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA421BAC7C9F00D65B88 /* SYMBSection.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA631BAC7C9F00D65B88 /* SYMBSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA431BAC7C9F00D65B88 /* SYMBSection.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA641BAC7C9F00D65B88 /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA441BAC7C9F00D65B88 /* Track.cpp */; settings = {ASSET_TAGS = (); }; };
+		20CEBA651BAC7C9F00D65B88 /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA451BAC7C9F00D65B88 /* Track.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA661BAC7C9F00D65B88 /* wstring_convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA461BAC7C9F00D65B88 /* wstring_convert.h */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20CEBA1B1BAC7C7D00D65B88 /* libSSEQPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSEQPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CEBA241BAC7C9F00D65B88 /* Channel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Channel.cpp; sourceTree = "<group>"; };
+		20CEBA251BAC7C9F00D65B88 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		20CEBA261BAC7C9F00D65B88 /* codecvt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codecvt.h; sourceTree = "<group>"; };
+		20CEBA271BAC7C9F00D65B88 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		20CEBA281BAC7C9F00D65B88 /* consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consts.h; sourceTree = "<group>"; };
+		20CEBA291BAC7C9F00D65B88 /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		20CEBA2A1BAC7C9F00D65B88 /* FATSection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FATSection.cpp; sourceTree = "<group>"; };
+		20CEBA2B1BAC7C9F00D65B88 /* FATSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATSection.h; sourceTree = "<group>"; };
+		20CEBA2C1BAC7C9F00D65B88 /* INFOEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INFOEntry.cpp; sourceTree = "<group>"; };
+		20CEBA2D1BAC7C9F00D65B88 /* INFOEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFOEntry.h; sourceTree = "<group>"; };
+		20CEBA2E1BAC7C9F00D65B88 /* INFOSection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INFOSection.cpp; sourceTree = "<group>"; };
+		20CEBA2F1BAC7C9F00D65B88 /* INFOSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFOSection.h; sourceTree = "<group>"; };
+		20CEBA301BAC7C9F00D65B88 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		20CEBA311BAC7C9F00D65B88 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		20CEBA321BAC7C9F00D65B88 /* NDSStdHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDSStdHeader.cpp; sourceTree = "<group>"; };
+		20CEBA331BAC7C9F00D65B88 /* NDSStdHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSStdHeader.h; sourceTree = "<group>"; };
+		20CEBA341BAC7C9F00D65B88 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		20CEBA351BAC7C9F00D65B88 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		20CEBA361BAC7C9F00D65B88 /* SBNK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SBNK.cpp; sourceTree = "<group>"; };
+		20CEBA371BAC7C9F00D65B88 /* SBNK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNK.h; sourceTree = "<group>"; };
+		20CEBA381BAC7C9F00D65B88 /* SDAT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDAT.cpp; sourceTree = "<group>"; };
+		20CEBA391BAC7C9F00D65B88 /* SDAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAT.h; sourceTree = "<group>"; };
+		20CEBA3A1BAC7C9F00D65B88 /* SSEQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSEQ.cpp; sourceTree = "<group>"; };
+		20CEBA3B1BAC7C9F00D65B88 /* SSEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEQ.h; sourceTree = "<group>"; };
+		20CEBA3C1BAC7C9F00D65B88 /* SSEQPlayer.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SSEQPlayer.vcxproj; sourceTree = "<group>"; };
+		20CEBA3D1BAC7C9F00D65B88 /* SSEQPlayer.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SSEQPlayer.vcxproj.filters; sourceTree = "<group>"; };
+		20CEBA3E1BAC7C9F00D65B88 /* SWAR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SWAR.cpp; sourceTree = "<group>"; };
+		20CEBA3F1BAC7C9F00D65B88 /* SWAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAR.h; sourceTree = "<group>"; };
+		20CEBA401BAC7C9F00D65B88 /* SWAV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SWAV.cpp; sourceTree = "<group>"; };
+		20CEBA411BAC7C9F00D65B88 /* SWAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAV.h; sourceTree = "<group>"; };
+		20CEBA421BAC7C9F00D65B88 /* SYMBSection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SYMBSection.cpp; sourceTree = "<group>"; };
+		20CEBA431BAC7C9F00D65B88 /* SYMBSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMBSection.h; sourceTree = "<group>"; };
+		20CEBA441BAC7C9F00D65B88 /* Track.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Track.cpp; sourceTree = "<group>"; };
+		20CEBA451BAC7C9F00D65B88 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		20CEBA461BAC7C9F00D65B88 /* wstring_convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wstring_convert.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20CEBA181BAC7C7D00D65B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20CEBA121BAC7C7D00D65B88 = {
+			isa = PBXGroup;
+			children = (
+				20CEBA221BAC7C9F00D65B88 /* SSEQPlayer */,
+				20CEBA1C1BAC7C7D00D65B88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20CEBA1C1BAC7C7D00D65B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20CEBA1B1BAC7C7D00D65B88 /* libSSEQPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20CEBA221BAC7C9F00D65B88 /* SSEQPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20CEBA241BAC7C9F00D65B88 /* Channel.cpp */,
+				20CEBA251BAC7C9F00D65B88 /* Channel.h */,
+				20CEBA261BAC7C9F00D65B88 /* codecvt.h */,
+				20CEBA271BAC7C9F00D65B88 /* common.h */,
+				20CEBA281BAC7C9F00D65B88 /* consts.h */,
+				20CEBA291BAC7C9F00D65B88 /* convert.h */,
+				20CEBA2A1BAC7C9F00D65B88 /* FATSection.cpp */,
+				20CEBA2B1BAC7C9F00D65B88 /* FATSection.h */,
+				20CEBA2C1BAC7C9F00D65B88 /* INFOEntry.cpp */,
+				20CEBA2D1BAC7C9F00D65B88 /* INFOEntry.h */,
+				20CEBA2E1BAC7C9F00D65B88 /* INFOSection.cpp */,
+				20CEBA2F1BAC7C9F00D65B88 /* INFOSection.h */,
+				20CEBA301BAC7C9F00D65B88 /* LICENSE.TXT */,
+				20CEBA311BAC7C9F00D65B88 /* Makefile */,
+				20CEBA321BAC7C9F00D65B88 /* NDSStdHeader.cpp */,
+				20CEBA331BAC7C9F00D65B88 /* NDSStdHeader.h */,
+				20CEBA341BAC7C9F00D65B88 /* Player.cpp */,
+				20CEBA351BAC7C9F00D65B88 /* Player.h */,
+				20CEBA361BAC7C9F00D65B88 /* SBNK.cpp */,
+				20CEBA371BAC7C9F00D65B88 /* SBNK.h */,
+				20CEBA381BAC7C9F00D65B88 /* SDAT.cpp */,
+				20CEBA391BAC7C9F00D65B88 /* SDAT.h */,
+				20CEBA3A1BAC7C9F00D65B88 /* SSEQ.cpp */,
+				20CEBA3B1BAC7C9F00D65B88 /* SSEQ.h */,
+				20CEBA3C1BAC7C9F00D65B88 /* SSEQPlayer.vcxproj */,
+				20CEBA3D1BAC7C9F00D65B88 /* SSEQPlayer.vcxproj.filters */,
+				20CEBA3E1BAC7C9F00D65B88 /* SWAR.cpp */,
+				20CEBA3F1BAC7C9F00D65B88 /* SWAR.h */,
+				20CEBA401BAC7C9F00D65B88 /* SWAV.cpp */,
+				20CEBA411BAC7C9F00D65B88 /* SWAV.h */,
+				20CEBA421BAC7C9F00D65B88 /* SYMBSection.cpp */,
+				20CEBA431BAC7C9F00D65B88 /* SYMBSection.h */,
+				20CEBA441BAC7C9F00D65B88 /* Track.cpp */,
+				20CEBA451BAC7C9F00D65B88 /* Track.h */,
+				20CEBA461BAC7C9F00D65B88 /* wstring_convert.h */,
+			);
+			path = SSEQPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20CEBA191BAC7C7D00D65B88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CEBA5D1BAC7C9F00D65B88 /* SSEQ.h in Headers */,
+				20CEBA4B1BAC7C9F00D65B88 /* consts.h in Headers */,
+				20CEBA591BAC7C9F00D65B88 /* SBNK.h in Headers */,
+				20CEBA631BAC7C9F00D65B88 /* SYMBSection.h in Headers */,
+				20CEBA651BAC7C9F00D65B88 /* Track.h in Headers */,
+				20CEBA481BAC7C9F00D65B88 /* Channel.h in Headers */,
+				20CEBA4E1BAC7C9F00D65B88 /* FATSection.h in Headers */,
+				20CEBA661BAC7C9F00D65B88 /* wstring_convert.h in Headers */,
+				20CEBA5F1BAC7C9F00D65B88 /* SWAR.h in Headers */,
+				20CEBA5B1BAC7C9F00D65B88 /* SDAT.h in Headers */,
+				20CEBA4C1BAC7C9F00D65B88 /* convert.h in Headers */,
+				20CEBA521BAC7C9F00D65B88 /* INFOSection.h in Headers */,
+				20CEBA551BAC7C9F00D65B88 /* NDSStdHeader.h in Headers */,
+				20CEBA611BAC7C9F00D65B88 /* SWAV.h in Headers */,
+				20CEBA4A1BAC7C9F00D65B88 /* common.h in Headers */,
+				20CEBA501BAC7C9F00D65B88 /* INFOEntry.h in Headers */,
+				20CEBA491BAC7C9F00D65B88 /* codecvt.h in Headers */,
+				20CEBA571BAC7C9F00D65B88 /* Player.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20CEBA1A1BAC7C7D00D65B88 /* SSEQPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CEBA1F1BAC7C7D00D65B88 /* Build configuration list for PBXNativeTarget "SSEQPlayer" */;
+			buildPhases = (
+				20CEBA171BAC7C7D00D65B88 /* Sources */,
+				20CEBA181BAC7C7D00D65B88 /* Frameworks */,
+				20CEBA191BAC7C7D00D65B88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSEQPlayer;
+			productName = SSEQPlayer;
+			productReference = 20CEBA1B1BAC7C7D00D65B88 /* libSSEQPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20CEBA131BAC7C7D00D65B88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					20CEBA1A1BAC7C7D00D65B88 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 20CEBA161BAC7C7D00D65B88 /* Build configuration list for PBXProject "SSEQPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20CEBA121BAC7C7D00D65B88;
+			productRefGroup = 20CEBA1C1BAC7C7D00D65B88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20CEBA1A1BAC7C7D00D65B88 /* SSEQPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20CEBA171BAC7C7D00D65B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CEBA5A1BAC7C9F00D65B88 /* SDAT.cpp in Sources */,
+				20CEBA561BAC7C9F00D65B88 /* Player.cpp in Sources */,
+				20CEBA471BAC7C9F00D65B88 /* Channel.cpp in Sources */,
+				20CEBA511BAC7C9F00D65B88 /* INFOSection.cpp in Sources */,
+				20CEBA5E1BAC7C9F00D65B88 /* SWAR.cpp in Sources */,
+				20CEBA601BAC7C9F00D65B88 /* SWAV.cpp in Sources */,
+				20CEBA641BAC7C9F00D65B88 /* Track.cpp in Sources */,
+				20CEBA4D1BAC7C9F00D65B88 /* FATSection.cpp in Sources */,
+				20CEBA541BAC7C9F00D65B88 /* NDSStdHeader.cpp in Sources */,
+				20CEBA4F1BAC7C9F00D65B88 /* INFOEntry.cpp in Sources */,
+				20CEBA621BAC7C9F00D65B88 /* SYMBSection.cpp in Sources */,
+				20CEBA581BAC7C9F00D65B88 /* SBNK.cpp in Sources */,
+				20CEBA5C1BAC7C9F00D65B88 /* SSEQ.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20CEBA1D1BAC7C7D00D65B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		20CEBA1E1BAC7C7D00D65B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		20CEBA201BAC7C7D00D65B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20CEBA211BAC7C7D00D65B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20CEBA161BAC7C7D00D65B88 /* Build configuration list for PBXProject "SSEQPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20CEBA1D1BAC7C7D00D65B88 /* Debug */,
+				20CEBA1E1BAC7C7D00D65B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20CEBA1F1BAC7C7D00D65B88 /* Build configuration list for PBXNativeTarget "SSEQPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20CEBA201BAC7C7D00D65B88 /* Debug */,
+				20CEBA211BAC7C7D00D65B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20CEBA131BAC7C7D00D65B88 /* Project object */;
+}

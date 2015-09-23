@@ -12,6 +12,7 @@
 #import "GameMusicEmu.h"
 #import "LazyUSF2.h"
 #import "Vio2SF.h"
+#import "SSEQPlayer.h"
 #import "VioGSF.h"
 #import "VGMStream.h"
 
@@ -178,6 +179,9 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 		}
 		else if ([Vio2SF canPlay:file]) {
 			_emu = [[Vio2SF alloc] init];
+		}
+		else if ([SSEQPlayer canPlay:file]) {
+			_emu = [[SSEQPlayer alloc] init];
 		}
 		else if ([VioGSF canPlay:file]) {
 			_emu = [[VioGSF alloc] init];

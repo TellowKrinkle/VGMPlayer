@@ -37,10 +37,12 @@ struct gsf_sound_out : public GBASoundOut {
 		writeOffset = 0;
 		readOffset = 0;
 	}
-	~gsf_sound_out() {}
+	~gsf_sound_out() {
+		free(buffer);
+	}
 	virtual void write(const void *samples, unsigned long bytes) {
 		if (bytes + bytesInBuffer > BUFFER_SIZE) {
-			printf("GSF Sound Out buffer overflowed by %lu bytes!", BUFFER_SIZE - (bytes + bytesInBuffer));
+			printf("GSF Sound Out buffer overflowed by %lu bytes!\n", BUFFER_SIZE - (bytes + bytesInBuffer));
 			bytes = BUFFER_SIZE - bytesInBuffer;
 		}
 		// Are we about to write off the end of the buffer?
@@ -59,7 +61,7 @@ struct gsf_sound_out : public GBASoundOut {
 	
 	virtual void read(uint8_t *samples, unsigned long numBytes) {
 		if (numBytes > bytesInBuffer) {
-			printf("GSF Sound Out buffer underflowed by %lu bytes!", bytesInBuffer - numBytes);
+			printf("GSF Sound Out buffer underflowed by %lu bytes!\n", bytesInBuffer - numBytes);
 			numBytes = bytesInBuffer;
 		}
 		// Are we about to read off the end of the buffer?
@@ -287,7 +289,7 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 	if (_emu) {
 		_position += size / self.channels;
 		while (_sound->bytesInBuffer < size * 2) {
-			CPULoop(_emu, 250000);
+			CPULoop(_emu, 1000000);
 		}
 		_sound->read((uint8_t *)buffer, size * 2);
 	}
@@ -307,14 +309,14 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 	while (seekSamples > BUFFER_SIZE/4) {
 		// Fill the buffer a quarter of the way, then dump it.
 		while (_sound->bytesInBuffer < BUFFER_SIZE/4) {
-			CPULoop(_emu, 250000);
+			CPULoop(_emu, 1000000);
 		}
 		_sound->clear(BUFFER_SIZE/4);
 		seekSamples -= BUFFER_SIZE/4;
 	}
 	unsigned long bytesLeft = _sound->bytesInBuffer + seekSamples;
 	while (_sound->bytesInBuffer < bytesLeft) {
-		CPULoop(_emu, 250000);
+		CPULoop(_emu, 1000000);
 	}
 	_sound->clear(bytesLeft);
 }
@@ -352,6 +354,8 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 - (void)dealloc {
 	free(_state.data);
 	CFBridgingRelease(_state.tags);
+	CPUCleanUp(_emu);
+	soundShutdown(_emu);
 	delete _emu;
 	delete _sound;
 }

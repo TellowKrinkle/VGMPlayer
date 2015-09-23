@@ -23,8 +23,23 @@
 				<string>usf</string>
 				<string>mini2sf</string>
 				<string>2sf</string>
+				<string>minincsf</string>
+				<string>ncsf</string>
 				<string>minigsf</string>
 				<string>gsf</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>VGM</string>
+			<key>CFBundleTypeName</key>
+			<string>Video Game Music</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>NSDocumentClass</key>
+			<string>Document</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
 				<string>brstm</string>
 				<string>bfstm</string>
 				<string>bcstm</string>
@@ -38,7 +53,7 @@
 			<key>CFBundleTypeIconFile</key>
 			<string>VGM</string>
 			<key>CFBundleTypeName</key>
-			<string>Video Game Music</string>
+			<string>Streamed Video Game Music</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>NSDocumentClass</key>

@@ -322,9 +322,9 @@ static int twosfInfo(void *context, const char *name, const char *value) {
 	return self;
 }
 
-- (void)openFile:(NSURL *)file error:(NSError *__autoreleasing *)e {
+- (void)openFile:(NSURL *)file error:(NSError *__autoreleasing *)err {
 	if (psf_load(file.fileSystemRepresentation, &psfFileSystem, 0x24, twosfLoader, &_state, twosfInfo, &_state, 1) < 0) {
-		makeNSError(e, @"Vio2SF", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
+		makeNSError(err, @"Vio2SF", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
 	}
 	if (!_state.arm7_clockdown_level) {
 		_state.arm7_clockdown_level = _state.clockdown;

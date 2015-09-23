@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201A727A1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; settings = {ASSET_TAGS = (); }; };
-		201A727B1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; settings = {ASSET_TAGS = (); }; };
-		201A727C1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; settings = {ASSET_TAGS = (); }; };
+		201A727A1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; };
+		201A727B1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; };
+		201A727C1B98913D003A025A /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201A72791B98913D003A025A /* VioGSF.mm */; };
 		20263AEC1AC4756300B3316E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AEB1AC4756300B3316E /* AppDelegate.m */; };
 		20263AEE1AC4756300B3316E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AED1AC4756300B3316E /* main.m */; };
 		20263AF11AC4756300B3316E /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 20263AF01AC4756300B3316E /* Document.m */; };
@@ -22,6 +22,8 @@
 		202958741AD2F7B0008AFC3A /* VGMStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 202958701AD2ED21008AFC3A /* VGMStream.m */; };
 		203130911B12B8E700495464 /* VGMPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 203130901B12B8E700495464 /* VGMPlayerWindow.m */; };
 		203130941B12BF4F00495464 /* VGMPlayerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 203130931B12BF4F00495464 /* VGMPlayerApplication.m */; };
+		2061F45A1BB3049000593CE5 /* libSSEQPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CEBA671BAC7D4F00D65B88 /* libSSEQPlayer.a */; };
+		2061F45B1BB3049000593CE5 /* libSSEQPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CEBA671BAC7D4F00D65B88 /* libSSEQPlayer.a */; };
 		209734EE1AC3672D00A61474 /* GameMusicEmu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 209734E81AC3672D00A61474 /* GameMusicEmu.mm */; };
 		209734EF1AC3672D00A61474 /* LazyUSF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 209734EA1AC3672D00A61474 /* LazyUSF2.m */; };
 		209734F01AC3672D00A61474 /* CLI.m in Sources */ = {isa = PBXBuildFile; fileRef = 209734EB1AC3672D00A61474 /* CLI.m */; };
@@ -35,24 +37,28 @@
 		20CB6E071AC4A47700E296AC /* GameMusicEmu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 209734E81AC3672D00A61474 /* GameMusicEmu.mm */; };
 		20CB6E081AC4A47700E296AC /* LazyUSF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 209734EA1AC3672D00A61474 /* LazyUSF2.m */; };
 		20CB6E091AC4A47700E296AC /* Vio2SF.m in Sources */ = {isa = PBXBuildFile; fileRef = 20973FF31AC373BE00A61474 /* Vio2SF.m */; };
-		20D513DC1BA2252B00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; settings = {ASSET_TAGS = (); }; };
-		20D513DD1BA2252B00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; settings = {ASSET_TAGS = (); }; };
-		20D513DE1BA2252B00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; settings = {ASSET_TAGS = (); }; };
-		20D513DF1BA2252B00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513E01BA2252B00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513E11BA2252B00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; settings = {ASSET_TAGS = (); }; };
-		20D513E81BA2252D00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; settings = {ASSET_TAGS = (); }; };
-		20D513E91BA2252D00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; settings = {ASSET_TAGS = (); }; };
-		20D513EA1BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; settings = {ASSET_TAGS = (); }; };
-		20D513EB1BA2252D00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513EC1BA2252D00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513ED1BA2252D00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; settings = {ASSET_TAGS = (); }; };
-		20D513EE1BA2252D00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; settings = {ASSET_TAGS = (); }; };
-		20D513EF1BA2252D00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; settings = {ASSET_TAGS = (); }; };
-		20D513F01BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; settings = {ASSET_TAGS = (); }; };
-		20D513F11BA2252D00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513F21BA2252D00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; settings = {ASSET_TAGS = (); }; };
-		20D513F31BA2252D00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; settings = {ASSET_TAGS = (); }; };
+		20CEBA681BAC7D4F00D65B88 /* libSSEQPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CEBA671BAC7D4F00D65B88 /* libSSEQPlayer.a */; };
+		20CEBA6B1BAC7D7B00D65B88 /* SSEQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA6A1BAC7D7B00D65B88 /* SSEQPlayer.mm */; };
+		20CEBA6C1BAC7D7E00D65B88 /* SSEQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA6A1BAC7D7B00D65B88 /* SSEQPlayer.mm */; };
+		20CEBA6D1BAC7D7E00D65B88 /* SSEQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA6A1BAC7D7B00D65B88 /* SSEQPlayer.mm */; };
+		20D513DC1BA2252B00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; };
+		20D513DD1BA2252B00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
+		20D513DE1BA2252B00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
+		20D513DF1BA2252B00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
+		20D513E01BA2252B00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; };
+		20D513E11BA2252B00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
+		20D513E81BA2252D00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; };
+		20D513E91BA2252D00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
+		20D513EA1BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
+		20D513EB1BA2252D00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
+		20D513EC1BA2252D00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; };
+		20D513ED1BA2252D00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
+		20D513EE1BA2252D00618FB0 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E121AC4A53C00E296AC /* libGME.a */; };
+		20D513EF1BA2252D00618FB0 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E141AC4A53C00E296AC /* libPSFLib.a */; };
+		20D513F01BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */; };
+		20D513F11BA2252D00618FB0 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB6E151AC4A53C00E296AC /* libVio2SF.a */; };
+		20D513F21BA2252D00618FB0 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A727D1B98CDA5003A025A /* libVioGSF.a */; };
+		20D513F31BA2252D00618FB0 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2029586C1AD2EB37008AFC3A /* libVGMStream.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +122,9 @@
 		20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLazyUSF2.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libLazyUSF2.a"; sourceTree = "<group>"; };
 		20CB6E141AC4A53C00E296AC /* libPSFLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPSFLib.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libPSFLib.a"; sourceTree = "<group>"; };
 		20CB6E151AC4A53C00E296AC /* libVio2SF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVio2SF.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libVio2SF.a"; sourceTree = "<group>"; };
+		20CEBA671BAC7D4F00D65B88 /* libSSEQPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSEQPlayer.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Release/libSSEQPlayer.a"; sourceTree = "<group>"; };
+		20CEBA691BAC7D7B00D65B88 /* SSEQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEQPlayer.h; sourceTree = "<group>"; };
+		20CEBA6A1BAC7D7B00D65B88 /* SSEQPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SSEQPlayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +136,7 @@
 				20D513F01BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */,
 				20D513EE1BA2252D00618FB0 /* libGME.a in Frameworks */,
 				20D513F11BA2252D00618FB0 /* libVio2SF.a in Frameworks */,
+				20CEBA681BAC7D4F00D65B88 /* libSSEQPlayer.a in Frameworks */,
 				20D513F21BA2252D00618FB0 /* libVioGSF.a in Frameworks */,
 				20D513EF1BA2252D00618FB0 /* libPSFLib.a in Frameworks */,
 			);
@@ -136,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2061F45A1BB3049000593CE5 /* libSSEQPlayer.a in Frameworks */,
 				20D513ED1BA2252D00618FB0 /* libVGMStream.a in Frameworks */,
 				20D513EA1BA2252D00618FB0 /* libLazyUSF2.a in Frameworks */,
 				20D513E81BA2252D00618FB0 /* libGME.a in Frameworks */,
@@ -149,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2061F45B1BB3049000593CE5 /* libSSEQPlayer.a in Frameworks */,
 				20D513E11BA2252B00618FB0 /* libVGMStream.a in Frameworks */,
 				20D513DE1BA2252B00618FB0 /* libLazyUSF2.a in Frameworks */,
 				20D513DC1BA2252B00618FB0 /* libGME.a in Frameworks */,
@@ -173,6 +185,8 @@
 				209734EA1AC3672D00A61474 /* LazyUSF2.m */,
 				20973FF21AC373BE00A61474 /* Vio2SF.h */,
 				20973FF31AC373BE00A61474 /* Vio2SF.m */,
+				20CEBA691BAC7D7B00D65B88 /* SSEQPlayer.h */,
+				20CEBA6A1BAC7D7B00D65B88 /* SSEQPlayer.mm */,
 				201A72781B98913D003A025A /* VioGSF.h */,
 				201A72791B98913D003A025A /* VioGSF.mm */,
 				2029586F1AD2ED21008AFC3A /* VGMStream.h */,
@@ -261,6 +275,7 @@
 				20CB6E141AC4A53C00E296AC /* libPSFLib.a */,
 				20CB6E131AC4A53C00E296AC /* libLazyUSF2.a */,
 				20CB6E151AC4A53C00E296AC /* libVio2SF.a */,
+				20CEBA671BAC7D4F00D65B88 /* libSSEQPlayer.a */,
 				201A727D1B98CDA5003A025A /* libVioGSF.a */,
 				2029586C1AD2EB37008AFC3A /* libVGMStream.a */,
 			);
@@ -407,6 +422,7 @@
 				20263AEE1AC4756300B3316E /* main.m in Sources */,
 				20CB6E031AC4A47400E296AC /* GameMusicEmu.mm in Sources */,
 				20263AEC1AC4756300B3316E /* AppDelegate.m in Sources */,
+				20CEBA6C1BAC7D7E00D65B88 /* SSEQPlayer.mm in Sources */,
 				20CB6E041AC4A47400E296AC /* LazyUSF2.m in Sources */,
 				203130941B12BF4F00495464 /* VGMPlayerApplication.m in Sources */,
 				203130911B12B8E700495464 /* VGMPlayerWindow.m in Sources */,
@@ -417,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CEBA6D1BAC7D7E00D65B88 /* SSEQPlayer.mm in Sources */,
 				201A727C1B98913D003A025A /* VioGSF.mm in Sources */,
 				20CB6E061AC4A47700E296AC /* TKRPlayer.m in Sources */,
 				20CB6E081AC4A47700E296AC /* LazyUSF2.m in Sources */,
@@ -431,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CEBA6B1BAC7D7B00D65B88 /* SSEQPlayer.mm in Sources */,
 				201A727A1B98913D003A025A /* VioGSF.mm in Sources */,
 				209734EE1AC3672D00A61474 /* GameMusicEmu.mm in Sources */,
 				209734F11AC3672D00A61474 /* TKRPlayer.m in Sources */,

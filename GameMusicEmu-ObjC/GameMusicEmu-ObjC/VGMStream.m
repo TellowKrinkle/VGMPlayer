@@ -109,9 +109,13 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 		return false;
 	}
 	else {
-		free(stream);
+		close_vgmstream(stream);
 		return true;
 	}
+}
+
+- (void)dealloc {
+	close_vgmstream(_stream);
 }
 
 @end

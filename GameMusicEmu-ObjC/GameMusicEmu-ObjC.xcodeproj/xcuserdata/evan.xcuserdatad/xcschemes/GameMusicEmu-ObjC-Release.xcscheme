@@ -160,6 +160,14 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "&quot;/Users/evan/Music/VGM/DS/Pokemon Black &amp; White/225 - Route 10.mini2sf&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;/Users/evan/Music/VGM/GBA/Mother 3/MOTHER 3 - 002 - Fun Naming.minigsf&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;/Users/evan/Music/VGM/NDS/Pokemon Black &amp; White NCSF/101 - The Day I Became King.minincsf&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

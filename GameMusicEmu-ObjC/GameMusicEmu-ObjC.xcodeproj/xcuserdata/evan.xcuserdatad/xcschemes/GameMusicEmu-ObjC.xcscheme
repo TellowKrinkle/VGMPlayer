@@ -148,7 +148,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "&quot;/Users/evan/Music/VGM/SNES/EarthBound [Mother 2 - Gyiyg no Gyakushuu]/021 Home Sweet Home.spc&quot;"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "&quot;/Users/evan/Music/VGM/GB:GBC/Pokemon Crystal [Pocket Monsters Crystal].gbs&quot; 1"
@@ -157,6 +157,14 @@
          <CommandLineArgument
             argument = "&quot;/Users/evan/Music/VGM/N64/Legend of Zelda, The - Majora&apos;s Mask [Zelda no Densetsu - Majora no Kamen]/145 Deku Palace.miniusf&quot;"
             isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;/Users/evan/Music/VGM/GBA/Mother 3/MOTHER 3 - 002 - Fun Naming.minigsf&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;/Users/evan/Music/VGM/NDS/Pokemon Black &amp; White NCSF/101 - The Day I Became King.minincsf&quot;"
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>

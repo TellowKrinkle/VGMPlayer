@@ -282,7 +282,6 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 	soundReset(_emu);
 	CPUInit(_emu);
 	CPUReset(_emu);
-	
 }
 
 - (void)playIntoBuffer:(short *)buffer size:(int)size {

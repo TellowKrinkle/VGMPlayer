@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2076903F1BB5DA5000FE55BE /* ao.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076902A1BB5DA5000FE55BE /* ao.h */; };
+		207690401BB5DA5000FE55BE /* cpuintrf.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076902D1BB5DA5000FE55BE /* cpuintrf.h */; };
+		207690411BB5DA5000FE55BE /* eng_psf.c in Sources */ = {isa = PBXBuildFile; fileRef = 2076902E1BB5DA5000FE55BE /* eng_psf.c */; };
+		207690421BB5DA5000FE55BE /* eng_psf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2076902F1BB5DA5000FE55BE /* eng_psf2.c */; };
+		207690431BB5DA5000FE55BE /* osd_cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 207690301BB5DA5000FE55BE /* osd_cpu.h */; };
+		207690441BB5DA5000FE55BE /* psx.c in Sources */ = {isa = PBXBuildFile; fileRef = 207690311BB5DA5000FE55BE /* psx.c */; };
+		207690451BB5DA5000FE55BE /* psx.h in Headers */ = {isa = PBXBuildFile; fileRef = 207690321BB5DA5000FE55BE /* psx.h */; };
+		207690461BB5DA5000FE55BE /* psx_external.h in Headers */ = {isa = PBXBuildFile; fileRef = 207690331BB5DA5000FE55BE /* psx_external.h */; };
+		207690471BB5DA5000FE55BE /* psx_hw.c in Sources */ = {isa = PBXBuildFile; fileRef = 207690341BB5DA5000FE55BE /* psx_hw.c */; };
+		207690481BB5DA5000FE55BE /* psx_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 207690351BB5DA5000FE55BE /* psx_internal.h */; };
+		207690491BB5DA5000FE55BE /* r3000dis.c in Sources */ = {isa = PBXBuildFile; fileRef = 207690361BB5DA5000FE55BE /* r3000dis.c */; };
+		2076904A1BB5DA5000FE55BE /* r3000dis.h in Headers */ = {isa = PBXBuildFile; fileRef = 207690371BB5DA5000FE55BE /* r3000dis.h */; };
+		2076904B1BB5DA5000FE55BE /* emuconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076903A1BB5DA5000FE55BE /* emuconfig.h */; };
+		2076904C1BB5DA5000FE55BE /* spu.c in Sources */ = {isa = PBXBuildFile; fileRef = 2076903B1BB5DA5000FE55BE /* spu.c */; };
+		2076904D1BB5DA5000FE55BE /* spu.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076903C1BB5DA5000FE55BE /* spu.h */; };
+		2076904E1BB5DA5000FE55BE /* spucore.c in Sources */ = {isa = PBXBuildFile; fileRef = 2076903D1BB5DA5000FE55BE /* spucore.c */; };
+		2076904F1BB5DA5000FE55BE /* spucore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076903E1BB5DA5000FE55BE /* spucore.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		207690211BB5DA3400FE55BE /* libAOPSF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOPSF.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2076902A1BB5DA5000FE55BE /* ao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ao.h; sourceTree = "<group>"; };
+		2076902D1BB5DA5000FE55BE /* cpuintrf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpuintrf.h; sourceTree = "<group>"; };
+		2076902E1BB5DA5000FE55BE /* eng_psf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eng_psf.c; sourceTree = "<group>"; };
+		2076902F1BB5DA5000FE55BE /* eng_psf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eng_psf2.c; sourceTree = "<group>"; };
+		207690301BB5DA5000FE55BE /* osd_cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osd_cpu.h; sourceTree = "<group>"; };
+		207690311BB5DA5000FE55BE /* psx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psx.c; sourceTree = "<group>"; };
+		207690321BB5DA5000FE55BE /* psx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psx.h; sourceTree = "<group>"; };
+		207690331BB5DA5000FE55BE /* psx_external.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psx_external.h; sourceTree = "<group>"; };
+		207690341BB5DA5000FE55BE /* psx_hw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psx_hw.c; sourceTree = "<group>"; };
+		207690351BB5DA5000FE55BE /* psx_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psx_internal.h; sourceTree = "<group>"; };
+		207690361BB5DA5000FE55BE /* r3000dis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = r3000dis.c; sourceTree = "<group>"; };
+		207690371BB5DA5000FE55BE /* r3000dis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3000dis.h; sourceTree = "<group>"; };
+		2076903A1BB5DA5000FE55BE /* emuconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emuconfig.h; sourceTree = "<group>"; };
+		2076903B1BB5DA5000FE55BE /* spu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spu.c; sourceTree = "<group>"; };
+		2076903C1BB5DA5000FE55BE /* spu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spu.h; sourceTree = "<group>"; };
+		2076903D1BB5DA5000FE55BE /* spucore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spucore.c; sourceTree = "<group>"; };
+		2076903E1BB5DA5000FE55BE /* spucore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spucore.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2076901E1BB5DA3400FE55BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		207690181BB5DA3400FE55BE = {
+			isa = PBXGroup;
+			children = (
+				207690281BB5DA5000FE55BE /* AOPSF */,
+				207690221BB5DA3400FE55BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		207690221BB5DA3400FE55BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				207690211BB5DA3400FE55BE /* libAOPSF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		207690281BB5DA5000FE55BE /* AOPSF */ = {
+			isa = PBXGroup;
+			children = (
+				2076902A1BB5DA5000FE55BE /* ao.h */,
+				2076902D1BB5DA5000FE55BE /* cpuintrf.h */,
+				2076902E1BB5DA5000FE55BE /* eng_psf.c */,
+				2076902F1BB5DA5000FE55BE /* eng_psf2.c */,
+				207690301BB5DA5000FE55BE /* osd_cpu.h */,
+				207690311BB5DA5000FE55BE /* psx.c */,
+				207690321BB5DA5000FE55BE /* psx.h */,
+				207690331BB5DA5000FE55BE /* psx_external.h */,
+				207690341BB5DA5000FE55BE /* psx_hw.c */,
+				207690351BB5DA5000FE55BE /* psx_internal.h */,
+				207690361BB5DA5000FE55BE /* r3000dis.c */,
+				207690371BB5DA5000FE55BE /* r3000dis.h */,
+				207690391BB5DA5000FE55BE /* spu */,
+			);
+			path = AOPSF;
+			sourceTree = "<group>";
+		};
+		207690391BB5DA5000FE55BE /* spu */ = {
+			isa = PBXGroup;
+			children = (
+				2076903A1BB5DA5000FE55BE /* emuconfig.h */,
+				2076903B1BB5DA5000FE55BE /* spu.c */,
+				2076903C1BB5DA5000FE55BE /* spu.h */,
+				2076903D1BB5DA5000FE55BE /* spucore.c */,
+				2076903E1BB5DA5000FE55BE /* spucore.h */,
+			);
+			path = spu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2076901F1BB5DA3400FE55BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2076903F1BB5DA5000FE55BE /* ao.h in Headers */,
+				2076904A1BB5DA5000FE55BE /* r3000dis.h in Headers */,
+				207690461BB5DA5000FE55BE /* psx_external.h in Headers */,
+				207690431BB5DA5000FE55BE /* osd_cpu.h in Headers */,
+				207690481BB5DA5000FE55BE /* psx_internal.h in Headers */,
+				207690451BB5DA5000FE55BE /* psx.h in Headers */,
+				2076904F1BB5DA5000FE55BE /* spucore.h in Headers */,
+				2076904D1BB5DA5000FE55BE /* spu.h in Headers */,
+				2076904B1BB5DA5000FE55BE /* emuconfig.h in Headers */,
+				207690401BB5DA5000FE55BE /* cpuintrf.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		207690201BB5DA3400FE55BE /* AOPSF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 207690251BB5DA3400FE55BE /* Build configuration list for PBXNativeTarget "AOPSF" */;
+			buildPhases = (
+				2076901D1BB5DA3400FE55BE /* Sources */,
+				2076901E1BB5DA3400FE55BE /* Frameworks */,
+				2076901F1BB5DA3400FE55BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOPSF;
+			productName = AOPSF;
+			productReference = 207690211BB5DA3400FE55BE /* libAOPSF.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		207690191BB5DA3400FE55BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					207690201BB5DA3400FE55BE = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 2076901C1BB5DA3400FE55BE /* Build configuration list for PBXProject "AOPSF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 207690181BB5DA3400FE55BE;
+			productRefGroup = 207690221BB5DA3400FE55BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				207690201BB5DA3400FE55BE /* AOPSF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2076901D1BB5DA3400FE55BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2076904C1BB5DA5000FE55BE /* spu.c in Sources */,
+				207690441BB5DA5000FE55BE /* psx.c in Sources */,
+				2076904E1BB5DA5000FE55BE /* spucore.c in Sources */,
+				207690491BB5DA5000FE55BE /* r3000dis.c in Sources */,
+				207690411BB5DA5000FE55BE /* eng_psf.c in Sources */,
+				207690471BB5DA5000FE55BE /* psx_hw.c in Sources */,
+				207690421BB5DA5000FE55BE /* eng_psf2.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		207690231BB5DA3400FE55BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		207690241BB5DA3400FE55BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		207690261BB5DA3400FE55BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"EMU_COMPILE=1",
+					"EMU_LITTLE_ENDIAN=1",
+					"DEBUG=1",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		207690271BB5DA3400FE55BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"EMU_COMPILE=1",
+					"EMU_LITTLE_ENDIAN=1",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2076901C1BB5DA3400FE55BE /* Build configuration list for PBXProject "AOPSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				207690231BB5DA3400FE55BE /* Debug */,
+				207690241BB5DA3400FE55BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		207690251BB5DA3400FE55BE /* Build configuration list for PBXNativeTarget "AOPSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				207690261BB5DA3400FE55BE /* Debug */,
+				207690271BB5DA3400FE55BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 207690191BB5DA3400FE55BE /* Project object */;
+}

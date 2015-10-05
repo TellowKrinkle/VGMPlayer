@@ -25,4 +25,7 @@
    <FileRef
       location = "group:VGMStream/VGMStream.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AOPSF/AOPSF.xcodeproj">
+   </FileRef>
 </Workspace>

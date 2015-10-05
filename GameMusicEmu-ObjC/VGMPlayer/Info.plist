@@ -27,6 +27,10 @@
 				<string>ncsf</string>
 				<string>minigsf</string>
 				<string>gsf</string>
+				<string>minipsf</string>
+				<string>psf</string>
+				<string>minipsf2</string>
+				<string>psf2</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string>VGM</string>

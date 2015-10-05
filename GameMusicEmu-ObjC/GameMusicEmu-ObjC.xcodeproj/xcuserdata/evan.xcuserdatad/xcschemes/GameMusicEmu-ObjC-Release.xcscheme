@@ -70,10 +70,38 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "20CEBA1A1BAC7C7D00D65B88"
+               BuildableName = "libSSEQPlayer.a"
+               BlueprintName = "SSEQPlayer"
+               ReferencedContainer = "container:../SSEQPlayer/SSEQPlayer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "201A72301B97F349003A025A"
                BuildableName = "libVioGSF.a"
                BlueprintName = "VioGSF"
                ReferencedContainer = "container:../VioGSF/VioGSF.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "207690201BB5DA3400FE55BE"
+               BuildableName = "libAOPSF.a"
+               BlueprintName = "AOPSF"
+               ReferencedContainer = "container:../AOPSF/AOPSF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

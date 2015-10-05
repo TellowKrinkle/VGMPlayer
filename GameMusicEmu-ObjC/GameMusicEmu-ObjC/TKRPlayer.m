@@ -14,6 +14,7 @@
 #import "Vio2SF.h"
 #import "SSEQPlayer.h"
 #import "VioGSF.h"
+#import "AOPSF.h"
 #import "VGMStream.h"
 
 #define NUM_PLAYBACK_BUFFERS 3
@@ -181,10 +182,13 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 			_emu = [[Vio2SF alloc] init];
 		}
 		else if ([SSEQPlayer canPlay:file]) {
-			_emu = [[SSEQPlayer alloc] init];
+			_emu = [[SSEQPlayer alloc] initWithSampleRate:self.sampleRate];
 		}
 		else if ([VioGSF canPlay:file]) {
 			_emu = [[VioGSF alloc] init];
+		}
+		else if ([AOPSF canPlay:file]) {
+			_emu = [[AOPSF alloc] init];
 		}
 		else if ([VGMStream canPlay:file]) {
 			_emu = [[VGMStream alloc] init];

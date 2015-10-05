@@ -98,6 +98,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "207690201BB5DA3400FE55BE"
+               BuildableName = "libAOPSF.a"
+               BlueprintName = "AOPSF"
+               ReferencedContainer = "container:../AOPSF/AOPSF.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "202955DF1AD2DF0B008AFC3A"
                BuildableName = "libVGMStream.a"
                BlueprintName = "VGMStream"
@@ -140,16 +154,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20263AFD1AC4756300B3316E"
-               BuildableName = "VGMPlayerTests.xctest"
-               BlueprintName = "VGMPlayerTests"
-               ReferencedContainer = "container:GameMusicEmu-ObjC.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -113,7 +113,7 @@
 		203130901B12B8E700495464 /* VGMPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerWindow.m; sourceTree = "<group>"; };
 		203130921B12BF4F00495464 /* VGMPlayerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMPlayerApplication.h; sourceTree = "<group>"; };
 		203130931B12BF4F00495464 /* VGMPlayerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerApplication.m; sourceTree = "<group>"; };
-		207690501BB5DA9800FE55BE /* libAOPSF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAOPSF.a; path = ../AOPSF/build/Debug/libAOPSF.a; sourceTree = "<group>"; };
+		207690501BB5DA9800FE55BE /* libAOPSF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAOPSF.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libAOPSF.a"; sourceTree = "<group>"; };
 		207690541BB5DAC800FE55BE /* AOPSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AOPSF.h; path = ../AOPSF.h; sourceTree = "<group>"; };
 		207690551BB5DAC800FE55BE /* AOPSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AOPSF.m; path = ../AOPSF.m; sourceTree = "<group>"; };
 		209347111AC3616600A12995 /* GameMusicEmu-ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GameMusicEmu-ObjC"; sourceTree = BUILT_PRODUCTS_DIR; };

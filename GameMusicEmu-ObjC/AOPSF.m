@@ -207,14 +207,6 @@ static int psf1Loader(void *context, const uint8_t *exe, size_t exe_size, const 
 	}
 }
 
-- (void)stop {
-	if (_started) {
-		_autoPSFStop(_state.emu);
-		free(_state.emu);
-		_started = false;
-	}
-}
-
 - (void)setPosition:(long)position {
 	long seekSamples;
 	if (position > _position) {
@@ -263,6 +255,14 @@ static int psf1Loader(void *context, const uint8_t *exe, size_t exe_size, const 
 
 - (NSDictionary *)tags {
 	return [(__bridge NSMutableDictionary *)_state.tags copy];
+}
+
+- (void)stop {
+	if (_started) {
+		_autoPSFStop(_state.emu);
+		free(_state.emu);
+		_started = false;
+	}
 }
 
 + (bool)canPlay:(NSURL *)file {

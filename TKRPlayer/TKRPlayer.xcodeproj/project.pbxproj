@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AE88DB1BC5B47800597866 /* GameMusicDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88CC1BC5B47800597866 /* GameMusicDataSource.h */; };
+		20AE88DC1BC5B47800597866 /* GameMusicEmu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88CD1BC5B47800597866 /* GameMusicEmu.h */; };
+		20AE88DD1BC5B47800597866 /* GameMusicEmu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88CE1BC5B47800597866 /* GameMusicEmu.mm */; };
+		20AE88DE1BC5B47800597866 /* LazyUSF2.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88CF1BC5B47800597866 /* LazyUSF2.h */; };
+		20AE88DF1BC5B47800597866 /* LazyUSF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88D01BC5B47800597866 /* LazyUSF2.m */; };
+		20AE88E01BC5B47800597866 /* SSEQPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88D11BC5B47800597866 /* SSEQPlayer.h */; };
+		20AE88E11BC5B47800597866 /* SSEQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88D21BC5B47800597866 /* SSEQPlayer.mm */; };
+		20AE88E21BC5B47800597866 /* TKRPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88D31BC5B47800597866 /* TKRPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AE88E31BC5B47800597866 /* TKRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88D41BC5B47800597866 /* TKRPlayer.m */; };
+		20AE88E41BC5B47800597866 /* VGMStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88D51BC5B47800597866 /* VGMStream.h */; };
+		20AE88E51BC5B47800597866 /* VGMStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88D61BC5B47800597866 /* VGMStream.m */; };
+		20AE88E61BC5B47800597866 /* Vio2SF.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88D71BC5B47800597866 /* Vio2SF.h */; };
+		20AE88E71BC5B47800597866 /* Vio2SF.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88D81BC5B47800597866 /* Vio2SF.m */; };
+		20AE88E81BC5B47800597866 /* VioGSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88D91BC5B47800597866 /* VioGSF.h */; };
+		20AE88E91BC5B47800597866 /* VioGSF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88DA1BC5B47800597866 /* VioGSF.mm */; };
+		20AE88EC1BC5B49E00597866 /* AOPSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88EA1BC5B49E00597866 /* AOPSF.h */; };
+		20AE88ED1BC5B49E00597866 /* AOPSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88EB1BC5B49E00597866 /* AOPSF.m */; };
+		20AE89951BC5DF5100597866 /* libAOPSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE897E1BC5DEAB00597866 /* libAOPSF.a */; };
+		20AE89961BC5DF5100597866 /* libGME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE897F1BC5DEAB00597866 /* libGME.a */; };
+		20AE89971BC5DF5100597866 /* libLazyUSF2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89801BC5DEAB00597866 /* libLazyUSF2.a */; };
+		20AE89981BC5DF5100597866 /* libPSFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89811BC5DEAB00597866 /* libPSFLib.a */; };
+		20AE89991BC5DF5100597866 /* libSSEQPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89821BC5DEAB00597866 /* libSSEQPlayer.a */; };
+		20AE899A1BC5DF5100597866 /* libVGMStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89831BC5DEAB00597866 /* libVGMStream.a */; };
+		20AE899B1BC5DF5100597866 /* libVio2SF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89841BC5DEAB00597866 /* libVio2SF.a */; };
+		20AE899C1BC5DF5100597866 /* libVioGSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89851BC5DEAB00597866 /* libVioGSF.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20AE88BF1BC5B43600597866 /* libTKRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTKRPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE88CC1BC5B47800597866 /* GameMusicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicDataSource.h; sourceTree = "<group>"; };
+		20AE88CD1BC5B47800597866 /* GameMusicEmu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicEmu.h; sourceTree = "<group>"; };
+		20AE88CE1BC5B47800597866 /* GameMusicEmu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMusicEmu.mm; sourceTree = "<group>"; };
+		20AE88CF1BC5B47800597866 /* LazyUSF2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyUSF2.h; sourceTree = "<group>"; };
+		20AE88D01BC5B47800597866 /* LazyUSF2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyUSF2.m; sourceTree = "<group>"; };
+		20AE88D11BC5B47800597866 /* SSEQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEQPlayer.h; sourceTree = "<group>"; };
+		20AE88D21BC5B47800597866 /* SSEQPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SSEQPlayer.mm; sourceTree = "<group>"; };
+		20AE88D31BC5B47800597866 /* TKRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRPlayer.h; sourceTree = "<group>"; };
+		20AE88D41BC5B47800597866 /* TKRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRPlayer.m; sourceTree = "<group>"; };
+		20AE88D51BC5B47800597866 /* VGMStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMStream.h; sourceTree = "<group>"; };
+		20AE88D61BC5B47800597866 /* VGMStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMStream.m; sourceTree = "<group>"; };
+		20AE88D71BC5B47800597866 /* Vio2SF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vio2SF.h; sourceTree = "<group>"; };
+		20AE88D81BC5B47800597866 /* Vio2SF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vio2SF.m; sourceTree = "<group>"; };
+		20AE88D91BC5B47800597866 /* VioGSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VioGSF.h; sourceTree = "<group>"; };
+		20AE88DA1BC5B47800597866 /* VioGSF.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VioGSF.mm; sourceTree = "<group>"; };
+		20AE88EA1BC5B49E00597866 /* AOPSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPSF.h; sourceTree = "<group>"; };
+		20AE88EB1BC5B49E00597866 /* AOPSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPSF.m; sourceTree = "<group>"; };
+		20AE897E1BC5DEAB00597866 /* libAOPSF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAOPSF.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libAOPSF.a"; sourceTree = "<group>"; };
+		20AE897F1BC5DEAB00597866 /* libGME.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGME.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libGME.a"; sourceTree = "<group>"; };
+		20AE89801BC5DEAB00597866 /* libLazyUSF2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLazyUSF2.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libLazyUSF2.a"; sourceTree = "<group>"; };
+		20AE89811BC5DEAB00597866 /* libPSFLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPSFLib.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libPSFLib.a"; sourceTree = "<group>"; };
+		20AE89821BC5DEAB00597866 /* libSSEQPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSEQPlayer.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libSSEQPlayer.a"; sourceTree = "<group>"; };
+		20AE89831BC5DEAB00597866 /* libVGMStream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVGMStream.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libVGMStream.a"; sourceTree = "<group>"; };
+		20AE89841BC5DEAB00597866 /* libVio2SF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVio2SF.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libVio2SF.a"; sourceTree = "<group>"; };
+		20AE89851BC5DEAB00597866 /* libVioGSF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVioGSF.a; path = "../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libVioGSF.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20AE88BC1BC5B43600597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE899A1BC5DF5100597866 /* libVGMStream.a in Frameworks */,
+				20AE89971BC5DF5100597866 /* libLazyUSF2.a in Frameworks */,
+				20AE89981BC5DF5100597866 /* libPSFLib.a in Frameworks */,
+				20AE89951BC5DF5100597866 /* libAOPSF.a in Frameworks */,
+				20AE89961BC5DF5100597866 /* libGME.a in Frameworks */,
+				20AE89991BC5DF5100597866 /* libSSEQPlayer.a in Frameworks */,
+				20AE899B1BC5DF5100597866 /* libVio2SF.a in Frameworks */,
+				20AE899C1BC5DF5100597866 /* libVioGSF.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AE88B61BC5B43600597866 = {
+			isa = PBXGroup;
+			children = (
+				20AE88CB1BC5B47800597866 /* TKRPlayer */,
+				20AE88FC1BC5B50000597866 /* Libraries and Frameworks */,
+				20AE88C01BC5B43600597866 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20AE88C01BC5B43600597866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88BF1BC5B43600597866 /* libTKRPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20AE88CB1BC5B47800597866 /* TKRPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88D31BC5B47800597866 /* TKRPlayer.h */,
+				20AE88D41BC5B47800597866 /* TKRPlayer.m */,
+				20AE88CC1BC5B47800597866 /* GameMusicDataSource.h */,
+				20AE88CD1BC5B47800597866 /* GameMusicEmu.h */,
+				20AE88CE1BC5B47800597866 /* GameMusicEmu.mm */,
+				20AE88CF1BC5B47800597866 /* LazyUSF2.h */,
+				20AE88D01BC5B47800597866 /* LazyUSF2.m */,
+				20AE88D71BC5B47800597866 /* Vio2SF.h */,
+				20AE88D81BC5B47800597866 /* Vio2SF.m */,
+				20AE88D11BC5B47800597866 /* SSEQPlayer.h */,
+				20AE88D21BC5B47800597866 /* SSEQPlayer.mm */,
+				20AE88D91BC5B47800597866 /* VioGSF.h */,
+				20AE88DA1BC5B47800597866 /* VioGSF.mm */,
+				20AE88EA1BC5B49E00597866 /* AOPSF.h */,
+				20AE88EB1BC5B49E00597866 /* AOPSF.m */,
+				20AE88D51BC5B47800597866 /* VGMStream.h */,
+				20AE88D61BC5B47800597866 /* VGMStream.m */,
+			);
+			path = TKRPlayer;
+			sourceTree = "<group>";
+		};
+		20AE88FC1BC5B50000597866 /* Libraries and Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20AE897E1BC5DEAB00597866 /* libAOPSF.a */,
+				20AE897F1BC5DEAB00597866 /* libGME.a */,
+				20AE89801BC5DEAB00597866 /* libLazyUSF2.a */,
+				20AE89811BC5DEAB00597866 /* libPSFLib.a */,
+				20AE89821BC5DEAB00597866 /* libSSEQPlayer.a */,
+				20AE89831BC5DEAB00597866 /* libVGMStream.a */,
+				20AE89841BC5DEAB00597866 /* libVio2SF.a */,
+				20AE89851BC5DEAB00597866 /* libVioGSF.a */,
+			);
+			name = "Libraries and Frameworks";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20AE88BD1BC5B43600597866 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE88DE1BC5B47800597866 /* LazyUSF2.h in Headers */,
+				20AE88EC1BC5B49E00597866 /* AOPSF.h in Headers */,
+				20AE88E41BC5B47800597866 /* VGMStream.h in Headers */,
+				20AE88DB1BC5B47800597866 /* GameMusicDataSource.h in Headers */,
+				20AE88DC1BC5B47800597866 /* GameMusicEmu.h in Headers */,
+				20AE88E01BC5B47800597866 /* SSEQPlayer.h in Headers */,
+				20AE88E21BC5B47800597866 /* TKRPlayer.h in Headers */,
+				20AE88E61BC5B47800597866 /* Vio2SF.h in Headers */,
+				20AE88E81BC5B47800597866 /* VioGSF.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20AE88BE1BC5B43600597866 /* TKRPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE88C81BC5B43600597866 /* Build configuration list for PBXNativeTarget "TKRPlayer" */;
+			buildPhases = (
+				20AE88BB1BC5B43600597866 /* Sources */,
+				20AE88BC1BC5B43600597866 /* Frameworks */,
+				20AE88BD1BC5B43600597866 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKRPlayer;
+			productName = TKRPlayer;
+			productReference = 20AE88BF1BC5B43600597866 /* libTKRPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20AE88B71BC5B43600597866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					20AE88BE1BC5B43600597866 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 20AE88BA1BC5B43600597866 /* Build configuration list for PBXProject "TKRPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20AE88B61BC5B43600597866;
+			productRefGroup = 20AE88C01BC5B43600597866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20AE88BE1BC5B43600597866 /* TKRPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20AE88BB1BC5B43600597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE88E71BC5B47800597866 /* Vio2SF.m in Sources */,
+				20AE88E31BC5B47800597866 /* TKRPlayer.m in Sources */,
+				20AE88E51BC5B47800597866 /* VGMStream.m in Sources */,
+				20AE88DD1BC5B47800597866 /* GameMusicEmu.mm in Sources */,
+				20AE88E11BC5B47800597866 /* SSEQPlayer.mm in Sources */,
+				20AE88ED1BC5B49E00597866 /* AOPSF.m in Sources */,
+				20AE88DF1BC5B47800597866 /* LazyUSF2.m in Sources */,
+				20AE88E91BC5B47800597866 /* VioGSF.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20AE88C61BC5B43600597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		20AE88C71BC5B43600597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		20AE88C91BC5B43600597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
+			};
+			name = Debug;
+		};
+		20AE88CA1BC5B43600597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/..";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20AE88BA1BC5B43600597866 /* Build configuration list for PBXProject "TKRPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE88C61BC5B43600597866 /* Debug */,
+				20AE88C71BC5B43600597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20AE88C81BC5B43600597866 /* Build configuration list for PBXNativeTarget "TKRPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE88C91BC5B43600597866 /* Debug */,
+				20AE88CA1BC5B43600597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20AE88B71BC5B43600597866 /* Project object */;
+}

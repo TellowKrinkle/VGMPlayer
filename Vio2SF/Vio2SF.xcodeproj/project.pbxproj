@@ -356,7 +356,7 @@
 		20973F801AC3729400A61474 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					20263A871AC45AA700B3316E = {
@@ -441,6 +441,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
@@ -455,6 +456,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-esewlucivpmgonfgzkpkjnfmiozi/Build/Products/Release",
@@ -483,6 +485,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

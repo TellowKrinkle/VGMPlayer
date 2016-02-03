@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20CEBA471BAC7C9F00D65B88 /* Channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA241BAC7C9F00D65B88 /* Channel.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA481BAC7C9F00D65B88 /* Channel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA251BAC7C9F00D65B88 /* Channel.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA491BAC7C9F00D65B88 /* codecvt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA261BAC7C9F00D65B88 /* codecvt.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4A1BAC7C9F00D65B88 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA271BAC7C9F00D65B88 /* common.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4B1BAC7C9F00D65B88 /* consts.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA281BAC7C9F00D65B88 /* consts.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4C1BAC7C9F00D65B88 /* convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA291BAC7C9F00D65B88 /* convert.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4D1BAC7C9F00D65B88 /* FATSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2A1BAC7C9F00D65B88 /* FATSection.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4E1BAC7C9F00D65B88 /* FATSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2B1BAC7C9F00D65B88 /* FATSection.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA4F1BAC7C9F00D65B88 /* INFOEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2C1BAC7C9F00D65B88 /* INFOEntry.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA501BAC7C9F00D65B88 /* INFOEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2D1BAC7C9F00D65B88 /* INFOEntry.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA511BAC7C9F00D65B88 /* INFOSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2E1BAC7C9F00D65B88 /* INFOSection.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA521BAC7C9F00D65B88 /* INFOSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2F1BAC7C9F00D65B88 /* INFOSection.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA541BAC7C9F00D65B88 /* NDSStdHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA321BAC7C9F00D65B88 /* NDSStdHeader.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA551BAC7C9F00D65B88 /* NDSStdHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA331BAC7C9F00D65B88 /* NDSStdHeader.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA561BAC7C9F00D65B88 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA341BAC7C9F00D65B88 /* Player.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA571BAC7C9F00D65B88 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA351BAC7C9F00D65B88 /* Player.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA581BAC7C9F00D65B88 /* SBNK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA361BAC7C9F00D65B88 /* SBNK.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA591BAC7C9F00D65B88 /* SBNK.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA371BAC7C9F00D65B88 /* SBNK.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5A1BAC7C9F00D65B88 /* SDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA381BAC7C9F00D65B88 /* SDAT.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5B1BAC7C9F00D65B88 /* SDAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA391BAC7C9F00D65B88 /* SDAT.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5C1BAC7C9F00D65B88 /* SSEQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3A1BAC7C9F00D65B88 /* SSEQ.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5D1BAC7C9F00D65B88 /* SSEQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3B1BAC7C9F00D65B88 /* SSEQ.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5E1BAC7C9F00D65B88 /* SWAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3E1BAC7C9F00D65B88 /* SWAR.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA5F1BAC7C9F00D65B88 /* SWAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3F1BAC7C9F00D65B88 /* SWAR.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA601BAC7C9F00D65B88 /* SWAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA401BAC7C9F00D65B88 /* SWAV.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA611BAC7C9F00D65B88 /* SWAV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA411BAC7C9F00D65B88 /* SWAV.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA621BAC7C9F00D65B88 /* SYMBSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA421BAC7C9F00D65B88 /* SYMBSection.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA631BAC7C9F00D65B88 /* SYMBSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA431BAC7C9F00D65B88 /* SYMBSection.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA641BAC7C9F00D65B88 /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA441BAC7C9F00D65B88 /* Track.cpp */; settings = {ASSET_TAGS = (); }; };
-		20CEBA651BAC7C9F00D65B88 /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA451BAC7C9F00D65B88 /* Track.h */; settings = {ASSET_TAGS = (); }; };
-		20CEBA661BAC7C9F00D65B88 /* wstring_convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA461BAC7C9F00D65B88 /* wstring_convert.h */; settings = {ASSET_TAGS = (); }; };
+		20CEBA471BAC7C9F00D65B88 /* Channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA241BAC7C9F00D65B88 /* Channel.cpp */; };
+		20CEBA481BAC7C9F00D65B88 /* Channel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA251BAC7C9F00D65B88 /* Channel.h */; };
+		20CEBA491BAC7C9F00D65B88 /* codecvt.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA261BAC7C9F00D65B88 /* codecvt.h */; };
+		20CEBA4A1BAC7C9F00D65B88 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA271BAC7C9F00D65B88 /* common.h */; };
+		20CEBA4B1BAC7C9F00D65B88 /* consts.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA281BAC7C9F00D65B88 /* consts.h */; };
+		20CEBA4C1BAC7C9F00D65B88 /* convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA291BAC7C9F00D65B88 /* convert.h */; };
+		20CEBA4D1BAC7C9F00D65B88 /* FATSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2A1BAC7C9F00D65B88 /* FATSection.cpp */; };
+		20CEBA4E1BAC7C9F00D65B88 /* FATSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2B1BAC7C9F00D65B88 /* FATSection.h */; };
+		20CEBA4F1BAC7C9F00D65B88 /* INFOEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2C1BAC7C9F00D65B88 /* INFOEntry.cpp */; };
+		20CEBA501BAC7C9F00D65B88 /* INFOEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2D1BAC7C9F00D65B88 /* INFOEntry.h */; };
+		20CEBA511BAC7C9F00D65B88 /* INFOSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA2E1BAC7C9F00D65B88 /* INFOSection.cpp */; };
+		20CEBA521BAC7C9F00D65B88 /* INFOSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA2F1BAC7C9F00D65B88 /* INFOSection.h */; };
+		20CEBA541BAC7C9F00D65B88 /* NDSStdHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA321BAC7C9F00D65B88 /* NDSStdHeader.cpp */; };
+		20CEBA551BAC7C9F00D65B88 /* NDSStdHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA331BAC7C9F00D65B88 /* NDSStdHeader.h */; };
+		20CEBA561BAC7C9F00D65B88 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA341BAC7C9F00D65B88 /* Player.cpp */; };
+		20CEBA571BAC7C9F00D65B88 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA351BAC7C9F00D65B88 /* Player.h */; };
+		20CEBA581BAC7C9F00D65B88 /* SBNK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA361BAC7C9F00D65B88 /* SBNK.cpp */; };
+		20CEBA591BAC7C9F00D65B88 /* SBNK.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA371BAC7C9F00D65B88 /* SBNK.h */; };
+		20CEBA5A1BAC7C9F00D65B88 /* SDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA381BAC7C9F00D65B88 /* SDAT.cpp */; };
+		20CEBA5B1BAC7C9F00D65B88 /* SDAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA391BAC7C9F00D65B88 /* SDAT.h */; };
+		20CEBA5C1BAC7C9F00D65B88 /* SSEQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3A1BAC7C9F00D65B88 /* SSEQ.cpp */; };
+		20CEBA5D1BAC7C9F00D65B88 /* SSEQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3B1BAC7C9F00D65B88 /* SSEQ.h */; };
+		20CEBA5E1BAC7C9F00D65B88 /* SWAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA3E1BAC7C9F00D65B88 /* SWAR.cpp */; };
+		20CEBA5F1BAC7C9F00D65B88 /* SWAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA3F1BAC7C9F00D65B88 /* SWAR.h */; };
+		20CEBA601BAC7C9F00D65B88 /* SWAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA401BAC7C9F00D65B88 /* SWAV.cpp */; };
+		20CEBA611BAC7C9F00D65B88 /* SWAV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA411BAC7C9F00D65B88 /* SWAV.h */; };
+		20CEBA621BAC7C9F00D65B88 /* SYMBSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA421BAC7C9F00D65B88 /* SYMBSection.cpp */; };
+		20CEBA631BAC7C9F00D65B88 /* SYMBSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA431BAC7C9F00D65B88 /* SYMBSection.h */; };
+		20CEBA641BAC7C9F00D65B88 /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CEBA441BAC7C9F00D65B88 /* Track.cpp */; };
+		20CEBA651BAC7C9F00D65B88 /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA451BAC7C9F00D65B88 /* Track.h */; };
+		20CEBA661BAC7C9F00D65B88 /* wstring_convert.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEBA461BAC7C9F00D65B88 /* wstring_convert.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,7 +202,7 @@
 		20CEBA131BAC7C7D00D65B88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					20CEBA1A1BAC7C7D00D65B88 = {
@@ -331,7 +331,9 @@
 		20CEBA201BAC7C7D00D65B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,7 +341,9 @@
 		20CEBA211BAC7C7D00D65B88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -363,6 +367,7 @@
 				20CEBA211BAC7C7D00D65B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

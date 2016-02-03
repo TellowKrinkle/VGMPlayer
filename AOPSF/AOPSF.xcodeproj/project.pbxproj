@@ -152,7 +152,7 @@
 		207690191BB5DA3400FE55BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					207690201BB5DA3400FE55BE = {
@@ -277,12 +277,14 @@
 		207690261BB5DA3400FE55BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"EMU_COMPILE=1",
 					"EMU_LITTLE_ENDIAN=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -291,11 +293,13 @@
 		207690271BB5DA3400FE55BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"EMU_COMPILE=1",
 					"EMU_LITTLE_ENDIAN=1",
 				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,58 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201A725E1B97F3E1003A025A /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72401B97F3E1003A025A /* blargg_common.h */; settings = {ASSET_TAGS = (); }; };
-		201A725F1B97F3E1003A025A /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72411B97F3E1003A025A /* blargg_config.h */; settings = {ASSET_TAGS = (); }; };
-		201A72601B97F3E1003A025A /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72421B97F3E1003A025A /* blargg_source.h */; settings = {ASSET_TAGS = (); }; };
-		201A72611B97F3E1003A025A /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72431B97F3E1003A025A /* Blip_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72621B97F3E1003A025A /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72441B97F3E1003A025A /* Blip_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		201A72631B97F3E1003A025A /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72451B97F3E1003A025A /* Effects_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72641B97F3E1003A025A /* Effects_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72461B97F3E1003A025A /* Effects_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		201A72651B97F3E1003A025A /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72471B97F3E1003A025A /* Gb_Apu.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72661B97F3E1003A025A /* Gb_Apu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72481B97F3E1003A025A /* Gb_Apu.h */; settings = {ASSET_TAGS = (); }; };
-		201A72671B97F3E1003A025A /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72491B97F3E1003A025A /* Gb_Oscs.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72681B97F3E1003A025A /* Gb_Oscs.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724A1B97F3E1003A025A /* Gb_Oscs.h */; settings = {ASSET_TAGS = (); }; };
-		201A72691B97F3E1003A025A /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A724B1B97F3E1003A025A /* Multi_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A726A1B97F3E1003A025A /* Multi_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724C1B97F3E1003A025A /* Multi_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		201A726B1B97F3E1003A025A /* Port.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724E1B97F3E1003A025A /* Port.h */; settings = {ASSET_TAGS = (); }; };
-		201A726C1B97F3E1003A025A /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724F1B97F3E1003A025A /* Types.h */; settings = {ASSET_TAGS = (); }; };
-		201A726D1B97F3E1003A025A /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72511B97F3E1003A025A /* bios.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A726E1B97F3E1003A025A /* bios.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72521B97F3E1003A025A /* bios.h */; settings = {ASSET_TAGS = (); }; };
-		201A726F1B97F3E1003A025A /* GBA-arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72531B97F3E1003A025A /* GBA-arm.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72701B97F3E1003A025A /* GBA-thumb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72541B97F3E1003A025A /* GBA-thumb.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72711B97F3E1003A025A /* GBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72551B97F3E1003A025A /* GBA.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72721B97F3E1003A025A /* GBA.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72561B97F3E1003A025A /* GBA.h */; settings = {ASSET_TAGS = (); }; };
-		201A72731B97F3E1003A025A /* GBAcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72571B97F3E1003A025A /* GBAcpu.h */; settings = {ASSET_TAGS = (); }; };
-		201A72741B97F3E1003A025A /* GBAinline.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72581B97F3E1003A025A /* GBAinline.h */; settings = {ASSET_TAGS = (); }; };
-		201A72751B97F3E1003A025A /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72591B97F3E1003A025A /* Globals.h */; settings = {ASSET_TAGS = (); }; };
-		201A72761B97F3E1003A025A /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A725A1B97F3E1003A025A /* Sound.cpp */; settings = {ASSET_TAGS = (); }; };
-		201A72771B97F3E1003A025A /* Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A725B1B97F3E1003A025A /* Sound.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9141BA08BAD00A8D955 /* GBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72551B97F3E1003A025A /* GBA.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9151BA08BAD00A8D955 /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72491B97F3E1003A025A /* Gb_Oscs.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9161BA08BAD00A8D955 /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72471B97F3E1003A025A /* Gb_Apu.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9171BA08BAD00A8D955 /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72511B97F3E1003A025A /* bios.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9181BA08BAD00A8D955 /* GBA-arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72531B97F3E1003A025A /* GBA-arm.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9191BA08BAD00A8D955 /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A724B1B97F3E1003A025A /* Multi_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A91A1BA08BAD00A8D955 /* GBA-thumb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72541B97F3E1003A025A /* GBA-thumb.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A91B1BA08BAD00A8D955 /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72451B97F3E1003A025A /* Effects_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A91C1BA08BAD00A8D955 /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72431B97F3E1003A025A /* Blip_Buffer.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A91D1BA08BAD00A8D955 /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A725A1B97F3E1003A025A /* Sound.cpp */; settings = {ASSET_TAGS = (); }; };
-		20B5A9201BA08BAD00A8D955 /* Multi_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724C1B97F3E1003A025A /* Multi_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9211BA08BAD00A8D955 /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72401B97F3E1003A025A /* blargg_common.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9221BA08BAD00A8D955 /* Gb_Oscs.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724A1B97F3E1003A025A /* Gb_Oscs.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9231BA08BAD00A8D955 /* GBAcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72571B97F3E1003A025A /* GBAcpu.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9241BA08BAD00A8D955 /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72411B97F3E1003A025A /* blargg_config.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9251BA08BAD00A8D955 /* Gb_Apu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72481B97F3E1003A025A /* Gb_Apu.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9261BA08BAD00A8D955 /* Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A725B1B97F3E1003A025A /* Sound.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9271BA08BAD00A8D955 /* Port.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724E1B97F3E1003A025A /* Port.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9281BA08BAD00A8D955 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724F1B97F3E1003A025A /* Types.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A9291BA08BAD00A8D955 /* GBAinline.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72581B97F3E1003A025A /* GBAinline.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92A1BA08BAD00A8D955 /* Effects_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72461B97F3E1003A025A /* Effects_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92B1BA08BAD00A8D955 /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72421B97F3E1003A025A /* blargg_source.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92C1BA08BAD00A8D955 /* GBA.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72561B97F3E1003A025A /* GBA.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92D1BA08BAD00A8D955 /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72441B97F3E1003A025A /* Blip_Buffer.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92E1BA08BAD00A8D955 /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72591B97F3E1003A025A /* Globals.h */; settings = {ASSET_TAGS = (); }; };
-		20B5A92F1BA08BAD00A8D955 /* bios.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72521B97F3E1003A025A /* bios.h */; settings = {ASSET_TAGS = (); }; };
+		201A725E1B97F3E1003A025A /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72401B97F3E1003A025A /* blargg_common.h */; };
+		201A725F1B97F3E1003A025A /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72411B97F3E1003A025A /* blargg_config.h */; };
+		201A72601B97F3E1003A025A /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72421B97F3E1003A025A /* blargg_source.h */; };
+		201A72611B97F3E1003A025A /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72431B97F3E1003A025A /* Blip_Buffer.cpp */; };
+		201A72621B97F3E1003A025A /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72441B97F3E1003A025A /* Blip_Buffer.h */; };
+		201A72631B97F3E1003A025A /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72451B97F3E1003A025A /* Effects_Buffer.cpp */; };
+		201A72641B97F3E1003A025A /* Effects_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72461B97F3E1003A025A /* Effects_Buffer.h */; };
+		201A72651B97F3E1003A025A /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72471B97F3E1003A025A /* Gb_Apu.cpp */; };
+		201A72661B97F3E1003A025A /* Gb_Apu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72481B97F3E1003A025A /* Gb_Apu.h */; };
+		201A72671B97F3E1003A025A /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72491B97F3E1003A025A /* Gb_Oscs.cpp */; };
+		201A72681B97F3E1003A025A /* Gb_Oscs.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724A1B97F3E1003A025A /* Gb_Oscs.h */; };
+		201A72691B97F3E1003A025A /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A724B1B97F3E1003A025A /* Multi_Buffer.cpp */; };
+		201A726A1B97F3E1003A025A /* Multi_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724C1B97F3E1003A025A /* Multi_Buffer.h */; };
+		201A726B1B97F3E1003A025A /* Port.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724E1B97F3E1003A025A /* Port.h */; };
+		201A726C1B97F3E1003A025A /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724F1B97F3E1003A025A /* Types.h */; };
+		201A726D1B97F3E1003A025A /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72511B97F3E1003A025A /* bios.cpp */; };
+		201A726E1B97F3E1003A025A /* bios.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72521B97F3E1003A025A /* bios.h */; };
+		201A726F1B97F3E1003A025A /* GBA-arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72531B97F3E1003A025A /* GBA-arm.cpp */; };
+		201A72701B97F3E1003A025A /* GBA-thumb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72541B97F3E1003A025A /* GBA-thumb.cpp */; };
+		201A72711B97F3E1003A025A /* GBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72551B97F3E1003A025A /* GBA.cpp */; };
+		201A72721B97F3E1003A025A /* GBA.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72561B97F3E1003A025A /* GBA.h */; };
+		201A72731B97F3E1003A025A /* GBAcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72571B97F3E1003A025A /* GBAcpu.h */; };
+		201A72741B97F3E1003A025A /* GBAinline.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72581B97F3E1003A025A /* GBAinline.h */; };
+		201A72751B97F3E1003A025A /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72591B97F3E1003A025A /* Globals.h */; };
+		201A72761B97F3E1003A025A /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A725A1B97F3E1003A025A /* Sound.cpp */; };
+		201A72771B97F3E1003A025A /* Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A725B1B97F3E1003A025A /* Sound.h */; };
+		20B5A9141BA08BAD00A8D955 /* GBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72551B97F3E1003A025A /* GBA.cpp */; };
+		20B5A9151BA08BAD00A8D955 /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72491B97F3E1003A025A /* Gb_Oscs.cpp */; };
+		20B5A9161BA08BAD00A8D955 /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72471B97F3E1003A025A /* Gb_Apu.cpp */; };
+		20B5A9171BA08BAD00A8D955 /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72511B97F3E1003A025A /* bios.cpp */; };
+		20B5A9181BA08BAD00A8D955 /* GBA-arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72531B97F3E1003A025A /* GBA-arm.cpp */; };
+		20B5A9191BA08BAD00A8D955 /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A724B1B97F3E1003A025A /* Multi_Buffer.cpp */; };
+		20B5A91A1BA08BAD00A8D955 /* GBA-thumb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72541B97F3E1003A025A /* GBA-thumb.cpp */; };
+		20B5A91B1BA08BAD00A8D955 /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72451B97F3E1003A025A /* Effects_Buffer.cpp */; };
+		20B5A91C1BA08BAD00A8D955 /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A72431B97F3E1003A025A /* Blip_Buffer.cpp */; };
+		20B5A91D1BA08BAD00A8D955 /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201A725A1B97F3E1003A025A /* Sound.cpp */; };
+		20B5A9201BA08BAD00A8D955 /* Multi_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724C1B97F3E1003A025A /* Multi_Buffer.h */; };
+		20B5A9211BA08BAD00A8D955 /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72401B97F3E1003A025A /* blargg_common.h */; };
+		20B5A9221BA08BAD00A8D955 /* Gb_Oscs.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724A1B97F3E1003A025A /* Gb_Oscs.h */; };
+		20B5A9231BA08BAD00A8D955 /* GBAcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72571B97F3E1003A025A /* GBAcpu.h */; };
+		20B5A9241BA08BAD00A8D955 /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72411B97F3E1003A025A /* blargg_config.h */; };
+		20B5A9251BA08BAD00A8D955 /* Gb_Apu.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72481B97F3E1003A025A /* Gb_Apu.h */; };
+		20B5A9261BA08BAD00A8D955 /* Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A725B1B97F3E1003A025A /* Sound.h */; };
+		20B5A9271BA08BAD00A8D955 /* Port.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724E1B97F3E1003A025A /* Port.h */; };
+		20B5A9281BA08BAD00A8D955 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A724F1B97F3E1003A025A /* Types.h */; };
+		20B5A9291BA08BAD00A8D955 /* GBAinline.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72581B97F3E1003A025A /* GBAinline.h */; };
+		20B5A92A1BA08BAD00A8D955 /* Effects_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72461B97F3E1003A025A /* Effects_Buffer.h */; };
+		20B5A92B1BA08BAD00A8D955 /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72421B97F3E1003A025A /* blargg_source.h */; };
+		20B5A92C1BA08BAD00A8D955 /* GBA.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72561B97F3E1003A025A /* GBA.h */; };
+		20B5A92D1BA08BAD00A8D955 /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72441B97F3E1003A025A /* Blip_Buffer.h */; };
+		20B5A92E1BA08BAD00A8D955 /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72591B97F3E1003A025A /* Globals.h */; };
+		20B5A92F1BA08BAD00A8D955 /* bios.h in Headers */ = {isa = PBXBuildFile; fileRef = 201A72521B97F3E1003A025A /* bios.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,7 +280,7 @@
 		201A72291B97F349003A025A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					201A72301B97F349003A025A = {
@@ -424,7 +424,9 @@
 		201A72361B97F349003A025A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,7 +434,9 @@
 		201A72371B97F349003A025A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -441,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -450,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};

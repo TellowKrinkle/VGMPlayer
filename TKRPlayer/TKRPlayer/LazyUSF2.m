@@ -179,6 +179,10 @@ static int usfInfo(void *context, const char *name, const char *value) {
 	free(buffer);
 }
 
+- (int)numTracks {
+	return 1;
+}
+
 - (long)trackLength {
 	return (_usfState.length + _usfState.fade) * self.sampleRate;
 }

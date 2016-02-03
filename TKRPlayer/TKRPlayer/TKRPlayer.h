@@ -32,6 +32,12 @@
 /// The length of the track in samples.  Will be 150 seconds if the audio file doesn't support track length.
 @property (nonatomic, readonly) long trackLength;
 
+/// Number of tracks in file.  If trackNo is not supported, this should be 1.
+@property (nonatomic, readonly) int numTracks;
+
+/// Current playing track.  If trackNo is not supported, this should be 0.
+@property (nonatomic) int currentTrack;
+
 /**
  * Initialize with the default sample rate of 44.1 khz
  */

@@ -72,7 +72,7 @@ void setupAUGraph(MyPlayer *player) {
 	AudioComponentDescription outputcd = {0};
 	outputcd.componentType = kAudioUnitType_Output;
 	outputcd.componentSubType = kAudioUnitSubType_DefaultOutput;
-	outputcd.componentManufacturer = kAudioUnitManufacturer_Apple;
+	outputcd.componentManufacturer = kAudioUniop00-df`tManufacturer_Apple;
 	// Add a node with the above description to the graph
 	AUNode outputNode;
 	CheckError(AUGraphAddNode(player->graph, &outputcd, &outputNode), "AUGraphAddNode[kAudioUnitSubType_DefaultOutput] failed");
@@ -149,7 +149,15 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 
 @end
 
+static NSArray *availablePlayers = nil;
+
 @implementation TKRPlayer
+
++ (void)initialize {
+	if (!availablePlayers) {
+		availablePlayers = [NSArray arrayWithObjects:[GameMusicEmu class], [LazyUSF2 class], [Vio2SF class], [SSEQPlayer class], [VioGSF class], [AOPSF class], [VGMStream class], nil];
+	}
+}
 
 - (instancetype)initWithSampleRate:(int)sampleRate {
 	self = [super init];
@@ -172,37 +180,33 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 - (void)openFile:(NSURL *)file trackNo:(int)trackNo error:(NSError **)err {
 	[self stop];
 	if (!_emu || ![[_emu class] canPlay:file]) {
-		if ([GameMusicEmu canPlay:file]) {
-			_emu = [[GameMusicEmu alloc] initWithSampleRate:self.sampleRate];
+		bool found = false;
+		for (Class playerClass in availablePlayers) {
+			if ([playerClass canPlay:file]) {
+				found = true;
+				if ([playerClass instancesRespondToSelector:@selector(initWithSampleRate:)]) {
+					_emu = [[playerClass alloc] initWithSampleRate:self.sampleRate];
+				}
+				else {
+					_emu = [[playerClass alloc] init];
+				}
+			}
 		}
-		else if ([LazyUSF2 canPlay:file]) {
-			_emu = [[LazyUSF2 alloc] initWithSampleRate:self.sampleRate];
-		}
-		else if ([Vio2SF canPlay:file]) {
-			_emu = [[Vio2SF alloc] init];
-		}
-		else if ([SSEQPlayer canPlay:file]) {
-			_emu = [[SSEQPlayer alloc] initWithSampleRate:self.sampleRate];
-		}
-		else if ([VioGSF canPlay:file]) {
-			_emu = [[VioGSF alloc] init];
-		}
-		else if ([AOPSF canPlay:file]) {
-			_emu = [[AOPSF alloc] init];
-		}
-		else if ([VGMStream canPlay:file]) {
-			_emu = [[VGMStream alloc] init];
-		}
-		else {
+		if (!found) {
 			makeNSError(err, @"GameMusicEmu", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
 			return;
 		}
 	}
+	else {
+		[_emu setPosition:0];
+	}
 	if ([_emu respondsToSelector:@selector(openFile:track:error:)]) {
 		[_emu openFile:file track:trackNo error:err];
+		_currentTrack = trackNo;
 	}
 	else {
 		[_emu openFile:file error:err];
+		_currentTrack = 0;
 	}
 	if (![_emu respondsToSelector:@selector(initWithSampleRate:)]) {
 		if (self.sampleRate != _emu.sampleRate) {
@@ -215,7 +219,9 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	_player.emu = (void *)&_emu;
 	_player.format = [self GetAudioStreamBasicDescription];
 	//setupAUGraph(&_player);
-	CheckError(AudioQueueNewOutput(&_player.format, AQCallbackFunction, &_player, NULL, NULL, 0, &_queue), "AudioQueueNewOutput failed");
+	if (!_queue) {
+		CheckError(AudioQueueNewOutput(&_player.format, AQCallbackFunction, &_player, NULL, NULL, 0, &_queue), "AudioQueueNewOutput failed");
+	}
 }
 
 - (void)openFile:(NSURL *)file error:(NSError **)err {
@@ -282,7 +288,12 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 }
 
 + (bool)canPlay:(NSURL *)file {
-	return [GameMusicEmu canPlay:file] || [LazyUSF2 canPlay:file] || [Vio2SF canPlay:file];
+	for (Class player in availablePlayers) {
+		if ([player canPlay:file]) {
+			return true;
+		}
+	}
+	return false;
 }
 
 - (void)dealloc {
@@ -351,6 +362,17 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	}
 	else {
 		return 150 * self.sampleRate;
+	}
+}
+
+- (int)numTracks {
+	return [_emu numTracks];
+}
+
+- (void)setCurrentTrack:(int)currentTrack {
+	if ([_emu respondsToSelector:@selector(setTrackNo:)]) {
+		[_emu setTrackNo:currentTrack];
+		_currentTrack = currentTrack;
 	}
 }
 

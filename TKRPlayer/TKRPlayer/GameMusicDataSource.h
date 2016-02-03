@@ -30,6 +30,11 @@
 @property (nonatomic) long position;
 
 /**
+ * Number of tracks in file.  If trackNo is not supported, this should return 1.
+ */
+@property (nonatomic, readonly) int numTracks;
+
+/**
  * Open an audio file for playing
  * @param file The file to be opened
  * @param error NSError in case something goes wrong

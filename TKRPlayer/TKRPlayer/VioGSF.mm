@@ -265,6 +265,7 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 		_emu = new GBASystem();
 		_sound = new gsf_sound_out();
 		_sampleRate = 44100;
+		_state.tags = (void *)CFBridgingRetain([NSMutableDictionary dictionary]);
 	}
 	
 	return self;
@@ -322,6 +323,10 @@ static int gsfInfo(void *context, const char *name, const char *value) {
 
 - (long)trackLength {
 	return (_state.length + _state.fade) * self.sampleRate;
+}
+
+- (int)numTracks {
+	return 1;
 }
 
 - (int)channels {

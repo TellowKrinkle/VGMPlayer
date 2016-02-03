@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document">
             <connections>
                 <outlet property="leftTimeIndicator" destination="BcL-Qn-jf7" id="Jbe-Qn-MTp"/>
+                <outlet property="nextButton" destination="uwt-k2-jUR" id="0iB-h3-PBu"/>
                 <outlet property="playPauseButton" destination="quf-ho-eWY" id="fLQ-Nt-VLR"/>
                 <outlet property="playerWindow" destination="xOd-HO-29H" id="bFP-ur-wAk"/>
                 <outlet property="playhead" destination="eD2-RT-oX0" id="Dzr-Wi-u4T"/>
+                <outlet property="prevButton" destination="vCP-Ip-rhF" id="C6g-S3-iYX"/>
                 <outlet property="rightTimeIndicator" destination="gwJ-OF-f7c" id="b7U-1Y-dLS"/>
                 <outlet property="window" destination="xOd-HO-29H" id="heO-94-Umc"/>
             </connections>
@@ -33,7 +35,6 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="0uT-9o-zLz"/>
                         </constraints>
-                        <animations/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="kDv-Np-MHQ"/>
                         <connections>
                             <action selector="changeVolume:" target="-2" id="oXf-ZN-cfl"/>
@@ -44,12 +45,10 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="UKs-pD-ylW"/>
                         </constraints>
-                        <animations/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="volumeUp" id="mtV-GK-IhW"/>
                     </imageView>
                     <slider verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-RT-oX0">
                         <rect key="frame" x="61" y="81" width="178" height="21"/>
-                        <animations/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="1" tickMarkPosition="below" sliderType="linear" id="iFJ-3B-TeC"/>
                         <connections>
                             <action selector="movedPlayhead:" target="-2" id="UuL-75-2E7"/>
@@ -57,7 +56,6 @@
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcL-Qn-jf7">
                         <rect key="frame" x="18" y="83" width="39" height="17"/>
-                        <animations/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="pcH-e9-Lo3">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -66,7 +64,6 @@
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-OF-f7c">
                         <rect key="frame" x="243" y="83" width="39" height="17"/>
-                        <animations/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="tsE-cb-IbS">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -78,7 +75,6 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="XJJ-xc-9oS"/>
                         </constraints>
-                        <animations/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="volumeDown" id="RBy-Sx-HAF"/>
                     </imageView>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="quf-ho-eWY">
@@ -87,28 +83,65 @@
                             <constraint firstAttribute="height" constant="24" id="1Fd-gE-Qti"/>
                             <constraint firstAttribute="width" constant="24" id="7F7-Vz-qme"/>
                         </constraints>
-                        <animations/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="play" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="bPD-Mk-nud">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
                         </buttonCell>
                         <connections>
                             <action selector="playPause:" target="-2" id="3DM-qz-k8s"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="uwt-k2-jUR" userLabel="Next Button">
+                        <rect key="frame" x="183" y="48" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="SF9-h6-QUt"/>
+                            <constraint firstAttribute="height" constant="24" id="Y97-fn-lf1"/>
+                        </constraints>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fastforward" imagePosition="only" alignment="left" inset="2" id="GLa-6X-8sh">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent"></string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="goNext:" target="-2" id="KZZ-zx-OB6"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="vCP-Ip-rhF" userLabel="Previous Button">
+                        <rect key="frame" x="90" y="48" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="TD9-KX-C0e"/>
+                            <constraint firstAttribute="width" constant="24" id="umd-fF-fwU"/>
+                        </constraints>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="rewind" imagePosition="only" alignment="left" inset="2" id="MJu-B0-KgQ">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent"></string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="goPrevious:" target="-2" id="0bQ-At-LmY"/>
                         </connections>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="gwJ-OF-f7c" firstAttribute="leading" secondItem="eD2-RT-oX0" secondAttribute="trailing" constant="8" symbolic="YES" id="1QT-OQ-tCn"/>
                     <constraint firstItem="BcL-Qn-jf7" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" symbolic="YES" id="2cp-Ii-AFO"/>
+                    <constraint firstItem="uwt-k2-jUR" firstAttribute="centerY" secondItem="quf-ho-eWY" secondAttribute="centerY" id="2zV-r2-iRC"/>
                     <constraint firstItem="9w8-6R-PUt" firstAttribute="leading" secondItem="XCX-As-QMH" secondAttribute="trailing" constant="8" symbolic="YES" id="3xb-By-pyj"/>
                     <constraint firstAttribute="trailing" secondItem="gwJ-OF-f7c" secondAttribute="trailing" constant="20" symbolic="YES" id="5nd-OB-aTJ"/>
                     <constraint firstItem="BcL-Qn-jf7" firstAttribute="baseline" secondItem="gwJ-OF-f7c" secondAttribute="baseline" id="7NI-Bu-Bjh"/>
+                    <constraint firstItem="quf-ho-eWY" firstAttribute="leading" secondItem="vCP-Ip-rhF" secondAttribute="trailing" constant="24" id="7gn-48-oKm"/>
                     <constraint firstAttribute="trailing" secondItem="9w8-6R-PUt" secondAttribute="trailing" constant="20" symbolic="YES" id="88g-Kd-71b"/>
                     <constraint firstItem="quf-ho-eWY" firstAttribute="centerY" secondItem="gIp-Ho-8D9" secondAttribute="centerY" id="AEa-jw-Mbo"/>
                     <constraint firstItem="XCX-As-QMH" firstAttribute="leading" secondItem="LW8-SQ-2W7" secondAttribute="trailing" constant="3" id="DXU-7w-Msm"/>
                     <constraint firstItem="LW8-SQ-2W7" firstAttribute="top" secondItem="XCX-As-QMH" secondAttribute="top" id="JsH-3V-oWr"/>
                     <constraint firstItem="eD2-RT-oX0" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" constant="20" symbolic="YES" id="QX2-1a-xwq"/>
                     <constraint firstAttribute="bottom" secondItem="XCX-As-QMH" secondAttribute="bottom" constant="20" symbolic="YES" id="S6e-t5-9n7"/>
+                    <constraint firstItem="uwt-k2-jUR" firstAttribute="leading" secondItem="quf-ho-eWY" secondAttribute="trailing" constant="21" id="Y14-Kl-YFe"/>
                     <constraint firstItem="LW8-SQ-2W7" firstAttribute="bottom" secondItem="XCX-As-QMH" secondAttribute="bottom" id="cAx-zI-Bsh"/>
                     <constraint firstItem="9w8-6R-PUt" firstAttribute="top" secondItem="XCX-As-QMH" secondAttribute="top" id="coL-s0-VFN"/>
                     <constraint firstItem="9w8-6R-PUt" firstAttribute="bottom" secondItem="XCX-As-QMH" secondAttribute="bottom" id="cvv-XX-3q4"/>
@@ -116,17 +149,19 @@
                     <constraint firstItem="BcL-Qn-jf7" firstAttribute="baseline" secondItem="eD2-RT-oX0" secondAttribute="baseline" id="k3i-gN-mAJ"/>
                     <constraint firstItem="eD2-RT-oX0" firstAttribute="leading" secondItem="BcL-Qn-jf7" secondAttribute="trailing" constant="8" symbolic="YES" id="kRd-FH-C1J"/>
                     <constraint firstItem="quf-ho-eWY" firstAttribute="centerX" secondItem="gIp-Ho-8D9" secondAttribute="centerX" id="mcW-Uf-Z94"/>
+                    <constraint firstItem="quf-ho-eWY" firstAttribute="centerY" secondItem="vCP-Ip-rhF" secondAttribute="centerY" id="ovM-6K-Fqp"/>
                 </constraints>
-                <animations/>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="4hL-F5-mDy"/>
             </connections>
-            <point key="canvasLocation" x="406" y="140"/>
+            <point key="canvasLocation" x="267" y="117"/>
         </window>
     </objects>
     <resources>
+        <image name="fastforward" width="24" height="24"/>
         <image name="play" width="24" height="24"/>
+        <image name="rewind" width="24" height="24"/>
         <image name="volumeDown" width="15" height="17"/>
         <image name="volumeUp" width="21" height="17"/>
     </resources>

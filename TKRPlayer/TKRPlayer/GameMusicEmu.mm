@@ -115,6 +115,10 @@ void handle_error_print(const char *str) {
 	handle_error_print(_emu->track_info(_info, trackNo));
 }
 
+- (int)numTracks {
+	return _emu->track_count();
+}
+
 - (long)trackLength {
 	return (long)_info->play_length * self.sampleRate / 1000;
 }

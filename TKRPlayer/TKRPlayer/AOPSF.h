@@ -14,6 +14,7 @@
 @property (nonatomic, readonly) int sampleRate;
 @property (nonatomic, readonly) int channels;
 @property (nonatomic) long position;
+@property (nonatomic, readonly) int numTracks;
 @property (nonatomic, readonly) long trackLength;
 @property (nonatomic, readonly) NSDictionary *tags;
 

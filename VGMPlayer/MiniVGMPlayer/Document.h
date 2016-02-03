@@ -11,8 +11,11 @@
 
 @interface Document : NSDocument
 
-@property (nonatomic, copy) NSURL *file;
+@property (nonatomic, readonly) NSURL *prevFile;
+@property (nonatomic, readonly) NSURL *nextFile;
 @property (weak) IBOutlet NSButton *playPauseButton;
+@property (weak) IBOutlet NSButton *prevButton;
+@property (weak) IBOutlet NSButton *nextButton;
 @property (weak) IBOutlet NSSlider *playhead;
 @property (weak) IBOutlet NSTextField *leftTimeIndicator;
 @property (weak) IBOutlet NSTextField *rightTimeIndicator;

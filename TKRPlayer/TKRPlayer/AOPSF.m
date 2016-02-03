@@ -249,6 +249,10 @@ static int psf1Loader(void *context, const uint8_t *exe, size_t exe_size, const 
 	free(buffer);
 }
 
+- (int)numTracks {
+	return 1;
+}
+
 - (long)trackLength {
 	return (_state.length + _state.fade) * self.sampleRate;
 }

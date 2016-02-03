@@ -222,6 +222,10 @@ static int ncsfInfo(void *context, const char *name, const char *value) {
 	return _emu.sampleRate;
 }
 
+- (int)numTracks {
+	return 1;
+}
+
 - (long)trackLength {
 	return (_state.length + _state.fade) * self.sampleRate;
 }

@@ -37,6 +37,9 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 }
 
 - (void)openFile:(NSURL *)file error:(NSError *__autoreleasing *)e {
+	if (_stream) {
+		close_vgmstream(_stream);
+	}
 	_stream = init_vgmstream(file.fileSystemRepresentation);
 	if (_stream == NULL) {
 		makeNSError(e, @"VGMStream", 100, [NSString stringWithFormat:@"File %@ is of an unsupported type.", file]);
@@ -97,6 +100,10 @@ static void makeNSError(NSError **error, NSString *domain, int code, NSString *l
 		}
 	}
 	free(buffer);
+}
+
+- (int)numTracks {
+	return 1;
 }
 
 - (long)trackLength {

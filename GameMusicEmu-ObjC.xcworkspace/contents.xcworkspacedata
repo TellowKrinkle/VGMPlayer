@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GameMusicEmu-ObjC/GameMusicEmu-ObjC.xcodeproj">
+      location = "group:VGMPlayer/VGMPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TKRPlayer/TKRPlayer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:GME/GME.xcodeproj">

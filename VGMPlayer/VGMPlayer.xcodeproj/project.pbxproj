@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AE87EF1BC5B0BE00597866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE87EE1BC5B0BE00597866 /* AppDelegate.swift */; };
+		20AE87F21BC5B0BE00597866 /* VGMPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20AE87F01BC5B0BE00597866 /* VGMPlayer.xcdatamodeld */; };
+		20AE87F41BC5B0BE00597866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AE87F31BC5B0BE00597866 /* Assets.xcassets */; };
+		20AE87F71BC5B0BE00597866 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE87F51BC5B0BE00597866 /* MainMenu.xib */; };
+		20AE88021BC5B0BE00597866 /* VGMPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88011BC5B0BE00597866 /* VGMPlayerUITests.swift */; };
+		20AE881F1BC5B0FC00597866 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE881E1BC5B0FC00597866 /* AppDelegate.m */; };
+		20AE88221BC5B0FC00597866 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88211BC5B0FC00597866 /* main.m */; };
+		20AE88251BC5B0FC00597866 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88241BC5B0FC00597866 /* Document.m */; };
+		20AE88281BC5B0FC00597866 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE88261BC5B0FC00597866 /* Document.xib */; };
+		20AE882A1BC5B0FC00597866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AE88291BC5B0FC00597866 /* Assets.xcassets */; };
+		20AE882D1BC5B0FC00597866 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE882B1BC5B0FC00597866 /* MainMenu.xib */; };
+		20AE88381BC5B0FC00597866 /* MiniVGMPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88371BC5B0FC00597866 /* MiniVGMPlayerUITests.m */; };
+		20AE887B1BC5B13200597866 /* CLI.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE887A1BC5B13200597866 /* CLI.m */; };
+		20AE88FE1BC5B71E00597866 /* libTKRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */; };
+		20AE88FF1BC5B72400597866 /* libTKRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */; };
+		20AE89001BC5B72500597866 /* libTKRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */; };
+		20AE89011BC5B72500597866 /* libTKRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */; };
+		20AE89021BC5B72500597866 /* libTKRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */; };
+		20AE89A71BC5E00E00597866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A61BC5E00E00597866 /* libz.tbd */; };
+		20AE89A91BC5E01400597866 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A81BC5E01400597866 /* libstdc++.tbd */; };
+		20AE89AB1BC5E01B00597866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */; };
+		20AE89AC1BC5E02800597866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A61BC5E00E00597866 /* libz.tbd */; };
+		20AE89AD1BC5E02800597866 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A81BC5E01400597866 /* libstdc++.tbd */; };
+		20AE89AE1BC5E02900597866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A61BC5E00E00597866 /* libz.tbd */; };
+		20AE89AF1BC5E02900597866 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A81BC5E01400597866 /* libstdc++.tbd */; };
+		20AE89B01BC5E02900597866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A61BC5E00E00597866 /* libz.tbd */; };
+		20AE89B11BC5E02900597866 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A81BC5E01400597866 /* libstdc++.tbd */; };
+		20AE89B21BC5E02A00597866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A61BC5E00E00597866 /* libz.tbd */; };
+		20AE89B31BC5E02A00597866 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89A81BC5E01400597866 /* libstdc++.tbd */; };
+		20AE89B41BC5E03600597866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */; };
+		20AE89B51BC5E03600597866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */; };
+		20AE89B61BC5E03600597866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */; };
+		20AE89B71BC5E03700597866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */; };
+		20AE89BC1BC5E18400597866 /* VGMPlayerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE89B91BC5E18400597866 /* VGMPlayerApplication.m */; };
+		20AE89BD1BC5E18400597866 /* VGMPlayerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE89B91BC5E18400597866 /* VGMPlayerApplication.m */; };
+		20AE89BE1BC5E18400597866 /* VGMPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE89BB1BC5E18400597866 /* VGMPlayerWindow.m */; };
+		20AE89BF1BC5E18400597866 /* VGMPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE89BB1BC5E18400597866 /* VGMPlayerWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20AE87FE1BC5B0BE00597866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20AE87E31BC5B0BE00597866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20AE87EA1BC5B0BE00597866;
+			remoteInfo = VGMPlayer;
+		};
+		20AE88341BC5B0FC00597866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20AE87E31BC5B0BE00597866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20AE881A1BC5B0FC00597866;
+			remoteInfo = MiniVGMPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20AE880E1BC5B0D500597866 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20AE87EB1BC5B0BE00597866 /* VGMPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGMPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE87EE1BC5B0BE00597866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20AE87F11BC5B0BE00597866 /* VGMPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VGMPlayer.xcdatamodel; sourceTree = "<group>"; };
+		20AE87F31BC5B0BE00597866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20AE87F61BC5B0BE00597866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		20AE87F81BC5B0BE00597866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AE87FD1BC5B0BE00597866 /* VGMPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGMPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE88011BC5B0BE00597866 /* VGMPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGMPlayerUITests.swift; sourceTree = "<group>"; };
+		20AE88031BC5B0BE00597866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AE88101BC5B0D500597866 /* GameMusicEmu-ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GameMusicEmu-ObjC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE881B1BC5B0FC00597866 /* MiniVGMPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniVGMPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE881D1BC5B0FC00597866 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20AE881E1BC5B0FC00597866 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20AE88211BC5B0FC00597866 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20AE88231BC5B0FC00597866 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		20AE88241BC5B0FC00597866 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		20AE88271BC5B0FC00597866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		20AE88291BC5B0FC00597866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20AE882C1BC5B0FC00597866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		20AE882E1BC5B0FC00597866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AE88331BC5B0FC00597866 /* MiniVGMPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniVGMPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AE88371BC5B0FC00597866 /* MiniVGMPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniVGMPlayerUITests.m; sourceTree = "<group>"; };
+		20AE88391BC5B0FC00597866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AE887A1BC5B13200597866 /* CLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLI.m; sourceTree = "<group>"; };
+		20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTKRPlayer.a; path = "../../../Library/Developer/Xcode/DerivedData/GameMusicEmu-ObjC-cpaqitcqbqtdunaeeqglpytwgljy/Build/Products/Debug/libTKRPlayer.a"; sourceTree = "<group>"; };
+		20AE89A61BC5E00E00597866 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		20AE89A81BC5E01400597866 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		20AE89B81BC5E18400597866 /* VGMPlayerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMPlayerApplication.h; sourceTree = "<group>"; };
+		20AE89B91BC5E18400597866 /* VGMPlayerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerApplication.m; sourceTree = "<group>"; };
+		20AE89BA1BC5E18400597866 /* VGMPlayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMPlayerWindow.h; sourceTree = "<group>"; };
+		20AE89BB1BC5E18400597866 /* VGMPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMPlayerWindow.m; sourceTree = "<group>"; };
+		20AE89C11BC5E3E400597866 /* VGMPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VGMPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20AE87E81BC5B0BE00597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89011BC5B72500597866 /* libTKRPlayer.a in Frameworks */,
+				20AE89AE1BC5E02900597866 /* libz.tbd in Frameworks */,
+				20AE89AF1BC5E02900597866 /* libstdc++.tbd in Frameworks */,
+				20AE89B61BC5E03600597866 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE87FA1BC5B0BE00597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89021BC5B72500597866 /* libTKRPlayer.a in Frameworks */,
+				20AE89B21BC5E02A00597866 /* libz.tbd in Frameworks */,
+				20AE89B31BC5E02A00597866 /* libstdc++.tbd in Frameworks */,
+				20AE89B71BC5E03700597866 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE880D1BC5B0D500597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89AB1BC5E01B00597866 /* AudioToolbox.framework in Frameworks */,
+				20AE89A91BC5E01400597866 /* libstdc++.tbd in Frameworks */,
+				20AE89A71BC5E00E00597866 /* libz.tbd in Frameworks */,
+				20AE88FF1BC5B72400597866 /* libTKRPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE88181BC5B0FC00597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE88FE1BC5B71E00597866 /* libTKRPlayer.a in Frameworks */,
+				20AE89AC1BC5E02800597866 /* libz.tbd in Frameworks */,
+				20AE89AD1BC5E02800597866 /* libstdc++.tbd in Frameworks */,
+				20AE89B41BC5E03600597866 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE88301BC5B0FC00597866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89001BC5B72500597866 /* libTKRPlayer.a in Frameworks */,
+				20AE89B01BC5E02900597866 /* libz.tbd in Frameworks */,
+				20AE89B11BC5E02900597866 /* libstdc++.tbd in Frameworks */,
+				20AE89B51BC5E03600597866 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AE87E21BC5B0BE00597866 = {
+			isa = PBXGroup;
+			children = (
+				20AE87ED1BC5B0BE00597866 /* VGMPlayer */,
+				20AE88001BC5B0BE00597866 /* VGMPlayerUITests */,
+				20AE88111BC5B0D500597866 /* GameMusicEmu-ObjC */,
+				20AE881C1BC5B0FC00597866 /* MiniVGMPlayer */,
+				20AE88361BC5B0FC00597866 /* MiniVGMPlayerUITests */,
+				20AE87EC1BC5B0BE00597866 /* Products */,
+				20AE890B1BC5B7E700597866 /* Libraries and Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20AE87EC1BC5B0BE00597866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20AE87EB1BC5B0BE00597866 /* VGMPlayer.app */,
+				20AE87FD1BC5B0BE00597866 /* VGMPlayerUITests.xctest */,
+				20AE88101BC5B0D500597866 /* GameMusicEmu-ObjC */,
+				20AE881B1BC5B0FC00597866 /* MiniVGMPlayer.app */,
+				20AE88331BC5B0FC00597866 /* MiniVGMPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20AE87ED1BC5B0BE00597866 /* VGMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20AE87EE1BC5B0BE00597866 /* AppDelegate.swift */,
+				20AE87F31BC5B0BE00597866 /* Assets.xcassets */,
+				20AE87F51BC5B0BE00597866 /* MainMenu.xib */,
+				20AE87F81BC5B0BE00597866 /* Info.plist */,
+				20AE87F01BC5B0BE00597866 /* VGMPlayer.xcdatamodeld */,
+				20AE89C11BC5E3E400597866 /* VGMPlayer-Bridging-Header.h */,
+			);
+			path = VGMPlayer;
+			sourceTree = "<group>";
+		};
+		20AE88001BC5B0BE00597866 /* VGMPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88011BC5B0BE00597866 /* VGMPlayerUITests.swift */,
+				20AE88031BC5B0BE00597866 /* Info.plist */,
+			);
+			path = VGMPlayerUITests;
+			sourceTree = "<group>";
+		};
+		20AE88111BC5B0D500597866 /* GameMusicEmu-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				20AE887A1BC5B13200597866 /* CLI.m */,
+			);
+			path = "GameMusicEmu-ObjC";
+			sourceTree = "<group>";
+		};
+		20AE881C1BC5B0FC00597866 /* MiniVGMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20AE881D1BC5B0FC00597866 /* AppDelegate.h */,
+				20AE881E1BC5B0FC00597866 /* AppDelegate.m */,
+				20AE88231BC5B0FC00597866 /* Document.h */,
+				20AE88241BC5B0FC00597866 /* Document.m */,
+				20AE88261BC5B0FC00597866 /* Document.xib */,
+				20AE88291BC5B0FC00597866 /* Assets.xcassets */,
+				20AE882B1BC5B0FC00597866 /* MainMenu.xib */,
+				20AE882E1BC5B0FC00597866 /* Info.plist */,
+				20AE89C01BC5E18900597866 /* Interface */,
+				20AE88201BC5B0FC00597866 /* Supporting Files */,
+			);
+			path = MiniVGMPlayer;
+			sourceTree = "<group>";
+		};
+		20AE88201BC5B0FC00597866 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88211BC5B0FC00597866 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20AE88361BC5B0FC00597866 /* MiniVGMPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88371BC5B0FC00597866 /* MiniVGMPlayerUITests.m */,
+				20AE88391BC5B0FC00597866 /* Info.plist */,
+			);
+			path = MiniVGMPlayerUITests;
+			sourceTree = "<group>";
+		};
+		20AE890B1BC5B7E700597866 /* Libraries and Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20AE88FD1BC5B71E00597866 /* libTKRPlayer.a */,
+				20AE89A61BC5E00E00597866 /* libz.tbd */,
+				20AE89A81BC5E01400597866 /* libstdc++.tbd */,
+				20AE89AA1BC5E01B00597866 /* AudioToolbox.framework */,
+			);
+			name = "Libraries and Frameworks";
+			sourceTree = "<group>";
+		};
+		20AE89C01BC5E18900597866 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				20AE89B81BC5E18400597866 /* VGMPlayerApplication.h */,
+				20AE89B91BC5E18400597866 /* VGMPlayerApplication.m */,
+				20AE89BA1BC5E18400597866 /* VGMPlayerWindow.h */,
+				20AE89BB1BC5E18400597866 /* VGMPlayerWindow.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20AE87EA1BC5B0BE00597866 /* VGMPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE88061BC5B0BE00597866 /* Build configuration list for PBXNativeTarget "VGMPlayer" */;
+			buildPhases = (
+				20AE87E71BC5B0BE00597866 /* Sources */,
+				20AE87E81BC5B0BE00597866 /* Frameworks */,
+				20AE87E91BC5B0BE00597866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGMPlayer;
+			productName = VGMPlayer;
+			productReference = 20AE87EB1BC5B0BE00597866 /* VGMPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20AE87FC1BC5B0BE00597866 /* VGMPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE88091BC5B0BE00597866 /* Build configuration list for PBXNativeTarget "VGMPlayerUITests" */;
+			buildPhases = (
+				20AE87F91BC5B0BE00597866 /* Sources */,
+				20AE87FA1BC5B0BE00597866 /* Frameworks */,
+				20AE87FB1BC5B0BE00597866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20AE87FF1BC5B0BE00597866 /* PBXTargetDependency */,
+			);
+			name = VGMPlayerUITests;
+			productName = VGMPlayerUITests;
+			productReference = 20AE87FD1BC5B0BE00597866 /* VGMPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		20AE880F1BC5B0D500597866 /* GameMusicEmu-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE88141BC5B0D500597866 /* Build configuration list for PBXNativeTarget "GameMusicEmu-ObjC" */;
+			buildPhases = (
+				20AE880C1BC5B0D500597866 /* Sources */,
+				20AE880D1BC5B0D500597866 /* Frameworks */,
+				20AE880E1BC5B0D500597866 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GameMusicEmu-ObjC";
+			productName = "GameMusicEmu-ObjC";
+			productReference = 20AE88101BC5B0D500597866 /* GameMusicEmu-ObjC */;
+			productType = "com.apple.product-type.tool";
+		};
+		20AE881A1BC5B0FC00597866 /* MiniVGMPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE883A1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayer" */;
+			buildPhases = (
+				20AE88171BC5B0FC00597866 /* Sources */,
+				20AE88181BC5B0FC00597866 /* Frameworks */,
+				20AE88191BC5B0FC00597866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniVGMPlayer;
+			productName = MiniVGMPlayer;
+			productReference = 20AE881B1BC5B0FC00597866 /* MiniVGMPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20AE88321BC5B0FC00597866 /* MiniVGMPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AE883D1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayerUITests" */;
+			buildPhases = (
+				20AE882F1BC5B0FC00597866 /* Sources */,
+				20AE88301BC5B0FC00597866 /* Frameworks */,
+				20AE88311BC5B0FC00597866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20AE88351BC5B0FC00597866 /* PBXTargetDependency */,
+			);
+			name = MiniVGMPlayerUITests;
+			productName = MiniVGMPlayerUITests;
+			productReference = 20AE88331BC5B0FC00597866 /* MiniVGMPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20AE87E31BC5B0BE00597866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					20AE87EA1BC5B0BE00597866 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					20AE87FC1BC5B0BE00597866 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 20AE87EA1BC5B0BE00597866;
+					};
+					20AE880F1BC5B0D500597866 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					20AE881A1BC5B0FC00597866 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					20AE88321BC5B0FC00597866 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 20AE881A1BC5B0FC00597866;
+					};
+				};
+			};
+			buildConfigurationList = 20AE87E61BC5B0BE00597866 /* Build configuration list for PBXProject "VGMPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20AE87E21BC5B0BE00597866;
+			productRefGroup = 20AE87EC1BC5B0BE00597866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20AE880F1BC5B0D500597866 /* GameMusicEmu-ObjC */,
+				20AE881A1BC5B0FC00597866 /* MiniVGMPlayer */,
+				20AE88321BC5B0FC00597866 /* MiniVGMPlayerUITests */,
+				20AE87EA1BC5B0BE00597866 /* VGMPlayer */,
+				20AE87FC1BC5B0BE00597866 /* VGMPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20AE87E91BC5B0BE00597866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE87F41BC5B0BE00597866 /* Assets.xcassets in Resources */,
+				20AE87F71BC5B0BE00597866 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE87FB1BC5B0BE00597866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE88191BC5B0FC00597866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE882A1BC5B0FC00597866 /* Assets.xcassets in Resources */,
+				20AE88281BC5B0FC00597866 /* Document.xib in Resources */,
+				20AE882D1BC5B0FC00597866 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE88311BC5B0FC00597866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20AE87E71BC5B0BE00597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE87EF1BC5B0BE00597866 /* AppDelegate.swift in Sources */,
+				20AE87F21BC5B0BE00597866 /* VGMPlayer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE87F91BC5B0BE00597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE88021BC5B0BE00597866 /* VGMPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE880C1BC5B0D500597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE887B1BC5B13200597866 /* CLI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE88171BC5B0FC00597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89BC1BC5E18400597866 /* VGMPlayerApplication.m in Sources */,
+				20AE88251BC5B0FC00597866 /* Document.m in Sources */,
+				20AE88221BC5B0FC00597866 /* main.m in Sources */,
+				20AE881F1BC5B0FC00597866 /* AppDelegate.m in Sources */,
+				20AE89BE1BC5E18400597866 /* VGMPlayerWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AE882F1BC5B0FC00597866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AE89BD1BC5E18400597866 /* VGMPlayerApplication.m in Sources */,
+				20AE88381BC5B0FC00597866 /* MiniVGMPlayerUITests.m in Sources */,
+				20AE89BF1BC5E18400597866 /* VGMPlayerWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20AE87FF1BC5B0BE00597866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20AE87EA1BC5B0BE00597866 /* VGMPlayer */;
+			targetProxy = 20AE87FE1BC5B0BE00597866 /* PBXContainerItemProxy */;
+		};
+		20AE88351BC5B0FC00597866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20AE881A1BC5B0FC00597866 /* MiniVGMPlayer */;
+			targetProxy = 20AE88341BC5B0FC00597866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20AE87F51BC5B0BE00597866 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AE87F61BC5B0BE00597866 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		20AE88261BC5B0FC00597866 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AE88271BC5B0FC00597866 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		20AE882B1BC5B0FC00597866 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AE882C1BC5B0FC00597866 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20AE88041BC5B0BE00597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20AE88051BC5B0BE00597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		20AE88071BC5B0BE00597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VGMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.VGMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VGMPlayer/VGMPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20AE88081BC5B0BE00597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VGMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.VGMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VGMPlayer/VGMPlayer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		20AE880A1BC5B0BE00597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VGMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.VGMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VGMPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		20AE880B1BC5B0BE00597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VGMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.VGMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VGMPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		20AE88151BC5B0D500597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20AE88161BC5B0D500597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20AE883B1BC5B0FC00597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MiniVGMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.MiniVGMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20AE883C1BC5B0FC00597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MiniVGMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.MiniVGMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20AE883E1BC5B0FC00597866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MiniVGMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.MiniVGMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MiniVGMPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		20AE883F1BC5B0FC00597866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MiniVGMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tellowkrinkle.MiniVGMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MiniVGMPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20AE87E61BC5B0BE00597866 /* Build configuration list for PBXProject "VGMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE88041BC5B0BE00597866 /* Debug */,
+				20AE88051BC5B0BE00597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20AE88061BC5B0BE00597866 /* Build configuration list for PBXNativeTarget "VGMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE88071BC5B0BE00597866 /* Debug */,
+				20AE88081BC5B0BE00597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20AE88091BC5B0BE00597866 /* Build configuration list for PBXNativeTarget "VGMPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE880A1BC5B0BE00597866 /* Debug */,
+				20AE880B1BC5B0BE00597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20AE88141BC5B0D500597866 /* Build configuration list for PBXNativeTarget "GameMusicEmu-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE88151BC5B0D500597866 /* Debug */,
+				20AE88161BC5B0D500597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20AE883A1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE883B1BC5B0FC00597866 /* Debug */,
+				20AE883C1BC5B0FC00597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20AE883D1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AE883E1BC5B0FC00597866 /* Debug */,
+				20AE883F1BC5B0FC00597866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20AE87F01BC5B0BE00597866 /* VGMPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20AE87F11BC5B0BE00597866 /* VGMPlayer.xcdatamodel */,
+			);
+			currentVersion = 20AE87F11BC5B0BE00597866 /* VGMPlayer.xcdatamodel */;
+			path = VGMPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20AE87E31BC5B0BE00597866 /* Project object */;
+}

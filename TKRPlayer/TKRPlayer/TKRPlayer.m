@@ -31,6 +31,7 @@ typedef struct MyPlayer {
 	short *		extraBuffer;
 	int			extraBufferSize;
 	void		**emu;
+	void		*player;
 	Boolean		isStopped;
 	UInt32		bufferSize;
 	int			channels;
@@ -128,6 +129,8 @@ void AQCallbackFunction(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 	if ([emu respondsToSelector:@selector(trackHasEnded)] && [emu trackHasEnded]) {
 		player->isStopped = true;
 		CheckError(AudioQueueStop(inAQ, false), "AudioQueueStop failed");
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMTrackEnded" object:(__bridge TKRPlayer *)player->player];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMStoppedPlaying" object:(__bridge TKRPlayer *)player->player];
 		return;
 	}
 	int numSamples = player->bufferSize / FORMAT_BYTES_PER_CHANNEL;
@@ -166,6 +169,7 @@ static NSArray *availablePlayers = nil;
 		_sampleRate = sampleRate;
 		_player.channels = 2;
 		_player.isStopped = true;
+		_player.player = (__bridge void *)self;
 		_isPlaying = false;
 		_isSeeking = false;
 		_seekQueue = dispatch_queue_create("com.tellowkrinkle.vgmplayer.seekqueue", NULL);
@@ -246,6 +250,9 @@ static NSArray *availablePlayers = nil;
 
 - (bool)play {
 	if (_emu != nil && !_isSeeking) {
+		if ([_emu respondsToSelector:@selector(trackHasEnded)] && [_emu trackHasEnded]) {
+			[_emu setPosition:0];
+		}
 		_isPlaying = true;
 		if (_player.isStopped) {
 			_player.isStopped = false;
@@ -337,7 +344,9 @@ static NSArray *availablePlayers = nil;
 				_isSeeking = false;
 				dispatch_async(dispatch_get_main_queue(), ^(void) {
 					[[NSNotificationCenter defaultCenter] postNotificationName:@"VGMFinishedSeeking" object:self];
-					[self play];
+					if (!([_emu respondsToSelector:@selector(trackHasEnded)] && [_emu trackHasEnded])) {
+						[self play];
+					}
 				});
 			});
 		}

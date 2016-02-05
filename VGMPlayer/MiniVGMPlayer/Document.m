@@ -47,12 +47,12 @@ static inline NSURL * getNextFile(NSURL *file) {
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
 	if (_player) {
-		self.leftTimeIndicator.stringValue = [self formatTime:_player.trackLength];
+		self.rightTimeIndicator.stringValue = [self formatTime:_player.trackLength];
 	}
 	else {
-		self.leftTimeIndicator.stringValue = @"0:00";
+		self.rightTimeIndicator.stringValue = @"0:00";
 	}
-	self.rightTimeIndicator.stringValue = @"0:00";
+	self.leftTimeIndicator.stringValue = @"0:00";
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStartedPlaying:) name:@"VGMStartedPlaying" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmPaused:) name:@"VGMPaused" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vgmStoppedPlaying:) name:@"VGMStoppedPlaying" object:nil];
@@ -95,8 +95,8 @@ static inline NSURL * getNextFile(NSURL *file) {
 	}
 	[_player openFile:url error:outError];
 	if (!outError || !*outError) {
-		if (self.leftTimeIndicator) {
-			self.leftTimeIndicator.stringValue = [self formatTime:_player.trackLength];
+		if (self.rightTimeIndicator) {
+			self.rightTimeIndicator.stringValue = [self formatTime:_player.trackLength];
 		}
 		self.fileURL = url;
 		
@@ -189,6 +189,7 @@ static inline NSURL * getNextFile(NSURL *file) {
 - (void)vgmPaused:(NSNotification *)notification {
 	if (notification.object == _player) {
 		[self.playPauseButton setImage:[NSImage imageNamed:@"play"]];
+		[self updatePlayhead];
 		[self checkPlayheadUpdateTimer];
 	}
 }
@@ -234,8 +235,8 @@ static inline NSURL * getNextFile(NSURL *file) {
 - (IBAction)goPrevious:(id)sender {
 	if (_player.numTracks > 1 && _player.currentTrack > 0) {
 		_player.currentTrack--;
-		if (self.leftTimeIndicator) {
-			self.leftTimeIndicator.stringValue = [self formatTime:_player.trackLength];
+		if (self.rightTimeIndicator) {
+			self.rightTimeIndicator.stringValue = [self formatTime:_player.trackLength];
 		}
 		[self updatePrevNext];
 	}
@@ -247,8 +248,8 @@ static inline NSURL * getNextFile(NSURL *file) {
 - (IBAction)goNext:(id)sender {
 	if (_player.numTracks > 1 && _player.currentTrack < _player.numTracks - 1) {
 		_player.currentTrack++;
-		if (self.leftTimeIndicator) {
-			self.leftTimeIndicator.stringValue = [self formatTime:_player.trackLength];
+		if (self.rightTimeIndicator) {
+			self.rightTimeIndicator.stringValue = [self formatTime:_player.trackLength];
 		}
 		[self updatePrevNext];
 	}
@@ -272,7 +273,7 @@ static inline NSURL * getNextFile(NSURL *file) {
 	else {
 		self.playhead.doubleValue = 1.0;
 	}
-	self.rightTimeIndicator.stringValue = [self formatTime:_player.position];
+	self.leftTimeIndicator.stringValue = [self formatTime:_player.position];
 }
 
 - (IBAction)changeVolume:(id)sender {

@@ -50,14 +50,16 @@
 			
 			// Next
 		case NX_KEYTYPE_FAST:
-//			if (state == YES)
-//				[(AppDelegate *)[self delegate] seekForward:self];
+			if (state == YES && ((Document *)self.orderedDocuments[0]).nextButton.enabled) {
+				[(Document *)self.orderedDocuments[0] goNext:self];
+			}
 			break;
 			
 			// Previous
 		case NX_KEYTYPE_REWIND:
-//			if (state == YES)
-//				[(AppDelegate *)[self delegate] seekBack:self];
+			if (state == YES && ((Document *)self.orderedDocuments[0]).prevButton.enabled) {
+				[(Document *)self.orderedDocuments[0] goPrevious:self];
+			}
 			break;
 	}
 }

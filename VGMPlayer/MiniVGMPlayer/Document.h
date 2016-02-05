@@ -24,6 +24,8 @@
 
 - (NSString *)formatTime:(long)samples;
 - (IBAction)playPause:(id)sender;
+- (IBAction)goNext:(id)sender;
+- (IBAction)goPrevious:(id)sender;
 - (IBAction)changeVolume:(id)sender;
 
 @end

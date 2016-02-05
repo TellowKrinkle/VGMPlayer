@@ -56,7 +56,6 @@ void handle_error_print(const char *str) {
 	if (self) {
 		_info = (track_info_t *)malloc(sizeof(track_info_t));
 		_sampleRate = sampleRate;
-		_position = 0;
 	}
 	return self;
 }
@@ -101,13 +100,15 @@ void handle_error_print(const char *str) {
 - (void)playIntoBuffer:(short *)buffer size:(int)size {
 	if (_emu && !_emu->track_ended()) {
 		handle_error_print(_emu->play(size, buffer));
-		_position += size / self.channels;
 	}
 }
 
 - (void)setPosition:(long)newPosition {
-	_position = newPosition;
 	_emu->seek((int)(newPosition * 1000 / self.sampleRate));
+}
+
+- (long)position {
+	return _emu->tell() * self.sampleRate / 1000;
 }
 
 - (void)setTrackNo:(int)trackNo {

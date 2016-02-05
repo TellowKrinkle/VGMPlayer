@@ -372,6 +372,7 @@ static NSArray *availablePlayers = nil;
 - (void)setCurrentTrack:(int)currentTrack {
 	if ([_emu respondsToSelector:@selector(setTrackNo:)]) {
 		[_emu setTrackNo:currentTrack];
+		[_emu setPosition:0];
 		_currentTrack = currentTrack;
 	}
 }

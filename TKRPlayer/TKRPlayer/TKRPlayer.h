@@ -26,6 +26,9 @@
 /// The current playback volume
 @property (nonatomic) float volume;
 
+/// The current playback speed
+@property (nonatomic) float speed;
+
 /// The current playback position in samples
 @property (nonatomic) long position;
 

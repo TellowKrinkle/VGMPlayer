@@ -225,6 +225,10 @@ static NSArray *availablePlayers = nil;
 	//setupAUGraph(&_player);
 	if (!_queue) {
 		CheckError(AudioQueueNewOutput(&_player.format, AQCallbackFunction, &_player, NULL, NULL, 0, &_queue), "AudioQueueNewOutput failed");
+		UInt32 enabled = 1;
+		UInt32 timePitchAlgorithm = kAudioQueueTimePitchAlgorithm_Varispeed;
+		CheckError(AudioQueueSetProperty(_queue, kAudioQueueProperty_EnableTimePitch, &enabled, sizeof(enabled)), "AudioQueueSetProperty EnableTimePitch failed");
+		CheckError(AudioQueueSetProperty(_queue, kAudioQueueProperty_TimePitchAlgorithm, &timePitchAlgorithm, sizeof(timePitchAlgorithm)), "AudioQueueSetProperty TimePitchAlgorithm failed");
 	}
 }
 
@@ -328,6 +332,17 @@ static NSArray *availablePlayers = nil;
 - (void)setVolume:(float)volume {
 	_volume = volume;
 	AudioQueueSetParameter(_queue, kAudioQueueParam_Volume, volume);
+}
+
+- (void)setSpeed:(float)speed {
+	if (speed > 2) {
+		speed = 2;
+	}
+	if (speed < 0.5) {
+		speed = 0.5;
+	}
+	_speed = speed;
+	AudioQueueSetParameter(_queue, kAudioQueueParam_PlayRate, speed);
 }
 
 - (long)position {

@@ -163,6 +163,10 @@ static inline NSURL * getNextFile(NSURL *file) {
 	return false;
 }
 
+- (void)setSpeed:(float)speed {
+	_player.speed = speed;
+}
+
 - (NSString *)formatTime:(long)samples {
 	int seconds = (int)(samples / _player.sampleRate);
 	int hours = seconds / 3600;

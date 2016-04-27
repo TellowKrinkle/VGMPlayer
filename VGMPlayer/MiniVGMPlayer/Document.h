@@ -27,6 +27,7 @@
 - (IBAction)goNext:(id)sender;
 - (IBAction)goPrevious:(id)sender;
 - (IBAction)changeVolume:(id)sender;
+- (void)setSpeed:(float)speed;
 
 @end
 

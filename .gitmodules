@@ -1,0 +1,3 @@
+[submodule "Kawashima/Kawashima"]
+	path = Kawashima/Kawashima
+	url = https://github.com/Hozuki/kawashima.git

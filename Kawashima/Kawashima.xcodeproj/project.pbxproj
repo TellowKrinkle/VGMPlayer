@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209124261D26EC58003A10A3 /* ks_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2091240E1D26EC58003A10A3 /* ks_decode.h */; };
+		209124271D26EC58003A10A3 /* ksapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2091240F1D26EC58003A10A3 /* ksapi.cpp */; };
+		209124281D26EC58003A10A3 /* CHCA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 209124111D26EC58003A10A3 /* CHCA.cpp */; };
+		209124291D26EC58003A10A3 /* CHCA.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124121D26EC58003A10A3 /* CHCA.h */; };
+		2091242A1D26EC58003A10A3 /* HcaNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124131D26EC58003A10A3 /* HcaNative.h */; };
+		2091242B1D26EC58003A10A3 /* CHcaAth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 209124151D26EC58003A10A3 /* CHcaAth.cpp */; };
+		2091242C1D26EC58003A10A3 /* CHcaAth.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124161D26EC58003A10A3 /* CHcaAth.h */; };
+		2091242D1D26EC58003A10A3 /* CHcaCipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 209124171D26EC58003A10A3 /* CHcaCipher.cpp */; };
+		2091242E1D26EC58003A10A3 /* CHcaCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124181D26EC58003A10A3 /* CHcaCipher.h */; };
+		2091242F1D26EC58003A10A3 /* CHcaData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 209124191D26EC58003A10A3 /* CHcaData.cpp */; };
+		209124301D26EC58003A10A3 /* CHcaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2091241A1D26EC58003A10A3 /* CHcaData.h */; };
+		209124311D26EC58003A10A3 /* HcaChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2091241B1D26EC58003A10A3 /* HcaChannel.cpp */; };
+		209124321D26EC58003A10A3 /* HcaChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2091241C1D26EC58003A10A3 /* HcaChannel.h */; };
+		209124331D26EC58003A10A3 /* Magic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2091241D1D26EC58003A10A3 /* Magic.cpp */; };
+		209124341D26EC58003A10A3 /* Magic.h in Headers */ = {isa = PBXBuildFile; fileRef = 2091241E1D26EC58003A10A3 /* Magic.h */; };
+		209124351D26EC58003A10A3 /* WaveGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2091241F1D26EC58003A10A3 /* WaveGen.cpp */; };
+		209124361D26EC58003A10A3 /* WaveGen.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124201D26EC58003A10A3 /* WaveGen.h */; };
+		209124371D26EC58003A10A3 /* hca_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124211D26EC58003A10A3 /* hca_info.h */; };
+		209124381D26EC58003A10A3 /* ksapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124221D26EC58003A10A3 /* ksapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209124391D26EC58003A10A3 /* kstypedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124231D26EC58003A10A3 /* kstypedef.h */; };
+		2091243A1D26EC58003A10A3 /* WaveNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124251D26EC58003A10A3 /* WaveNative.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		209124041D26EB73003A10A3 /* libKawashima.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKawashima.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2091240E1D26EC58003A10A3 /* ks_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ks_decode.h; sourceTree = "<group>"; };
+		2091240F1D26EC58003A10A3 /* ksapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ksapi.cpp; sourceTree = "<group>"; };
+		209124111D26EC58003A10A3 /* CHCA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHCA.cpp; sourceTree = "<group>"; };
+		209124121D26EC58003A10A3 /* CHCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCA.h; sourceTree = "<group>"; };
+		209124131D26EC58003A10A3 /* HcaNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HcaNative.h; sourceTree = "<group>"; };
+		209124151D26EC58003A10A3 /* CHcaAth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHcaAth.cpp; sourceTree = "<group>"; };
+		209124161D26EC58003A10A3 /* CHcaAth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHcaAth.h; sourceTree = "<group>"; };
+		209124171D26EC58003A10A3 /* CHcaCipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHcaCipher.cpp; sourceTree = "<group>"; };
+		209124181D26EC58003A10A3 /* CHcaCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHcaCipher.h; sourceTree = "<group>"; };
+		209124191D26EC58003A10A3 /* CHcaData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHcaData.cpp; sourceTree = "<group>"; };
+		2091241A1D26EC58003A10A3 /* CHcaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHcaData.h; sourceTree = "<group>"; };
+		2091241B1D26EC58003A10A3 /* HcaChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HcaChannel.cpp; sourceTree = "<group>"; };
+		2091241C1D26EC58003A10A3 /* HcaChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HcaChannel.h; sourceTree = "<group>"; };
+		2091241D1D26EC58003A10A3 /* Magic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Magic.cpp; sourceTree = "<group>"; };
+		2091241E1D26EC58003A10A3 /* Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magic.h; sourceTree = "<group>"; };
+		2091241F1D26EC58003A10A3 /* WaveGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveGen.cpp; sourceTree = "<group>"; };
+		209124201D26EC58003A10A3 /* WaveGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveGen.h; sourceTree = "<group>"; };
+		209124211D26EC58003A10A3 /* hca_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hca_info.h; sourceTree = "<group>"; };
+		209124221D26EC58003A10A3 /* ksapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksapi.h; sourceTree = "<group>"; };
+		209124231D26EC58003A10A3 /* kstypedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kstypedef.h; sourceTree = "<group>"; };
+		209124251D26EC58003A10A3 /* WaveNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveNative.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209124011D26EB73003A10A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209123FB1D26EB73003A10A3 = {
+			isa = PBXGroup;
+			children = (
+				2091240C1D26EC58003A10A3 /* Kawashima */,
+				209124051D26EB73003A10A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		209124051D26EB73003A10A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209124041D26EB73003A10A3 /* libKawashima.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2091240C1D26EC58003A10A3 /* Kawashima */ = {
+			isa = PBXGroup;
+			children = (
+				2091240D1D26EC58003A10A3 /* api */,
+				209124101D26EC58003A10A3 /* hca */,
+				209124211D26EC58003A10A3 /* hca_info.h */,
+				209124221D26EC58003A10A3 /* ksapi.h */,
+				209124231D26EC58003A10A3 /* kstypedef.h */,
+				209124241D26EC58003A10A3 /* wave */,
+			);
+			name = Kawashima;
+			path = Kawashima/src;
+			sourceTree = "<group>";
+		};
+		2091240D1D26EC58003A10A3 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				2091240E1D26EC58003A10A3 /* ks_decode.h */,
+				2091240F1D26EC58003A10A3 /* ksapi.cpp */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		209124101D26EC58003A10A3 /* hca */ = {
+			isa = PBXGroup;
+			children = (
+				209124111D26EC58003A10A3 /* CHCA.cpp */,
+				209124121D26EC58003A10A3 /* CHCA.h */,
+				209124131D26EC58003A10A3 /* HcaNative.h */,
+				209124141D26EC58003A10A3 /* internal */,
+				2091241D1D26EC58003A10A3 /* Magic.cpp */,
+				2091241E1D26EC58003A10A3 /* Magic.h */,
+				2091241F1D26EC58003A10A3 /* WaveGen.cpp */,
+				209124201D26EC58003A10A3 /* WaveGen.h */,
+			);
+			path = hca;
+			sourceTree = "<group>";
+		};
+		209124141D26EC58003A10A3 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				209124151D26EC58003A10A3 /* CHcaAth.cpp */,
+				209124161D26EC58003A10A3 /* CHcaAth.h */,
+				209124171D26EC58003A10A3 /* CHcaCipher.cpp */,
+				209124181D26EC58003A10A3 /* CHcaCipher.h */,
+				209124191D26EC58003A10A3 /* CHcaData.cpp */,
+				2091241A1D26EC58003A10A3 /* CHcaData.h */,
+				2091241B1D26EC58003A10A3 /* HcaChannel.cpp */,
+				2091241C1D26EC58003A10A3 /* HcaChannel.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		209124241D26EC58003A10A3 /* wave */ = {
+			isa = PBXGroup;
+			children = (
+				209124251D26EC58003A10A3 /* WaveNative.h */,
+			);
+			path = wave;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		209124021D26EB73003A10A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209124391D26EC58003A10A3 /* kstypedef.h in Headers */,
+				209124361D26EC58003A10A3 /* WaveGen.h in Headers */,
+				2091243A1D26EC58003A10A3 /* WaveNative.h in Headers */,
+				209124381D26EC58003A10A3 /* ksapi.h in Headers */,
+				209124321D26EC58003A10A3 /* HcaChannel.h in Headers */,
+				2091242E1D26EC58003A10A3 /* CHcaCipher.h in Headers */,
+				209124301D26EC58003A10A3 /* CHcaData.h in Headers */,
+				2091242A1D26EC58003A10A3 /* HcaNative.h in Headers */,
+				209124371D26EC58003A10A3 /* hca_info.h in Headers */,
+				209124261D26EC58003A10A3 /* ks_decode.h in Headers */,
+				209124291D26EC58003A10A3 /* CHCA.h in Headers */,
+				209124341D26EC58003A10A3 /* Magic.h in Headers */,
+				2091242C1D26EC58003A10A3 /* CHcaAth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		209124031D26EB73003A10A3 /* Kawashima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209124081D26EB73003A10A3 /* Build configuration list for PBXNativeTarget "Kawashima" */;
+			buildPhases = (
+				209124001D26EB73003A10A3 /* Sources */,
+				209124011D26EB73003A10A3 /* Frameworks */,
+				209124021D26EB73003A10A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kawashima;
+			productName = Kawashima;
+			productReference = 209124041D26EB73003A10A3 /* libKawashima.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209123FC1D26EB73003A10A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TellowKrinkle;
+				TargetAttributes = {
+					209124031D26EB73003A10A3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 209123FF1D26EB73003A10A3 /* Build configuration list for PBXProject "Kawashima" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 209123FB1D26EB73003A10A3;
+			productRefGroup = 209124051D26EB73003A10A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209124031D26EB73003A10A3 /* Kawashima */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209124001D26EB73003A10A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2091242F1D26EC58003A10A3 /* CHcaData.cpp in Sources */,
+				209124351D26EC58003A10A3 /* WaveGen.cpp in Sources */,
+				209124281D26EC58003A10A3 /* CHCA.cpp in Sources */,
+				2091242D1D26EC58003A10A3 /* CHcaCipher.cpp in Sources */,
+				209124331D26EC58003A10A3 /* Magic.cpp in Sources */,
+				209124271D26EC58003A10A3 /* ksapi.cpp in Sources */,
+				209124311D26EC58003A10A3 /* HcaChannel.cpp in Sources */,
+				2091242B1D26EC58003A10A3 /* CHcaAth.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		209124061D26EB73003A10A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		209124071D26EB73003A10A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		209124091D26EB73003A10A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2091240A1D26EB73003A10A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209123FF1D26EB73003A10A3 /* Build configuration list for PBXProject "Kawashima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209124061D26EB73003A10A3 /* Debug */,
+				209124071D26EB73003A10A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209124081D26EB73003A10A3 /* Build configuration list for PBXNativeTarget "Kawashima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209124091D26EB73003A10A3 /* Debug */,
+				2091240A1D26EB73003A10A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209123FC1D26EB73003A10A3 /* Project object */;
+}

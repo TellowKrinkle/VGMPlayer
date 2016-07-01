@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "209124031D26EB73003A10A3"
+               BuildableName = "libKawashima.a"
+               BlueprintName = "Kawashima"
+               ReferencedContainer = "container:../Kawashima/Kawashima.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "207690201BB5DA3400FE55BE"
                BuildableName = "libAOPSF.a"
                BlueprintName = "AOPSF"

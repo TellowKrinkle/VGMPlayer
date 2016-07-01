@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209124451D2723DD003A10A3 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 209124431D2723DD003A10A3 /* TPCircularBuffer.c */; };
+		209124461D2723DD003A10A3 /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 209124441D2723DD003A10A3 /* TPCircularBuffer.h */; };
 		20AE88DB1BC5B47800597866 /* GameMusicDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88CC1BC5B47800597866 /* GameMusicDataSource.h */; };
 		20AE88DC1BC5B47800597866 /* GameMusicEmu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AE88CD1BC5B47800597866 /* GameMusicEmu.h */; };
 		20AE88DD1BC5B47800597866 /* GameMusicEmu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20AE88CE1BC5B47800597866 /* GameMusicEmu.mm */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209124431D2723DD003A10A3 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = TPCircularBuffer/TPCircularBuffer.c; sourceTree = "<group>"; };
+		209124441D2723DD003A10A3 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = TPCircularBuffer/TPCircularBuffer.h; sourceTree = "<group>"; };
 		20AE88BF1BC5B43600597866 /* libTKRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTKRPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AE88CC1BC5B47800597866 /* GameMusicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicDataSource.h; sourceTree = "<group>"; };
 		20AE88CD1BC5B47800597866 /* GameMusicEmu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMusicEmu.h; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				20AE88EB1BC5B49E00597866 /* AOPSF.m */,
 				20AE88D51BC5B47800597866 /* VGMStream.h */,
 				20AE88D61BC5B47800597866 /* VGMStream.m */,
+				209124431D2723DD003A10A3 /* TPCircularBuffer.c */,
+				209124441D2723DD003A10A3 /* TPCircularBuffer.h */,
 			);
 			path = TKRPlayer;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 				20AE88DE1BC5B47800597866 /* LazyUSF2.h in Headers */,
 				20AE88EC1BC5B49E00597866 /* AOPSF.h in Headers */,
 				20AE88E41BC5B47800597866 /* VGMStream.h in Headers */,
+				209124461D2723DD003A10A3 /* TPCircularBuffer.h in Headers */,
 				20AE88DB1BC5B47800597866 /* GameMusicDataSource.h in Headers */,
 				20AE88DC1BC5B47800597866 /* GameMusicEmu.h in Headers */,
 				20AE88E01BC5B47800597866 /* SSEQPlayer.h in Headers */,
@@ -220,6 +227,7 @@
 				20AE88DD1BC5B47800597866 /* GameMusicEmu.mm in Sources */,
 				20AE88E11BC5B47800597866 /* SSEQPlayer.mm in Sources */,
 				20AE88ED1BC5B49E00597866 /* AOPSF.m in Sources */,
+				209124451D2723DD003A10A3 /* TPCircularBuffer.c in Sources */,
 				20AE88DF1BC5B47800597866 /* LazyUSF2.m in Sources */,
 				20AE88E91BC5B47800597866 /* VioGSF.mm in Sources */,
 			);

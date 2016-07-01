@@ -1,0 +1,3 @@
+[submodule "TKRPlayer/TKRPlayer/TPCircularBuffer"]
+	path = TKRPlayer/TKRPlayer/TPCircularBuffer
+	url = https://github.com/michaeltyson/TPCircularBuffer.git

@@ -10,6 +10,7 @@
 #include "PSFLib/PSFLib/psflib.h"
 #include "VioGSF/VioGSF/gba/GBA.h"
 #include "VioGSF/VioGSF/gba/Sound.h"
+#include "TPCircularBuffer/TPCircularBuffer.h"
 #define BUFFER_SIZE 65536
 
 struct gsf_loader_state {
@@ -26,70 +27,43 @@ struct gsf_loader_state {
 };
 
 struct gsf_sound_out : public GBASoundOut {
-	unsigned long bytesInBuffer;
-	unsigned writeOffset;
-	unsigned readOffset;
-	uint8_t *buffer;
+	TPCircularBuffer buffer;
+	int32_t bytesInBuffer;
 	
 	gsf_sound_out() {
-		buffer = (uint8_t *)malloc(sizeof(uint8_t) * BUFFER_SIZE);
+		TPCircularBufferInit(&buffer, BUFFER_SIZE);
 		bytesInBuffer = 0;
-		writeOffset = 0;
-		readOffset = 0;
 	}
 	~gsf_sound_out() {
-		free(buffer);
+		TPCircularBufferCleanup(&buffer);
 	}
 	virtual void write(const void *samples, unsigned long bytes) {
-		if (bytes + bytesInBuffer > BUFFER_SIZE) {
-			printf("GSF Sound Out buffer overflowed by %lu bytes!\n", BUFFER_SIZE - (bytes + bytesInBuffer));
-			bytes = BUFFER_SIZE - bytesInBuffer;
+		int32_t availableBytes = 0;
+		void *head = TPCircularBufferHead(&buffer, &availableBytes);
+		if (bytes > availableBytes) {
+			printf("GSF Sound Out buffer overflowed by %lu bytes!\n", bytes - availableBytes);
+			bytes = availableBytes;
 		}
-		// Are we about to write off the end of the buffer?
-		if (writeOffset + bytes > BUFFER_SIZE) {
-			unsigned firstChunk = BUFFER_SIZE - writeOffset;
-			memcpy(buffer + writeOffset, samples, firstChunk);
-			memcpy(buffer, (uint8_t *)samples + firstChunk, bytes - firstChunk);
-			writeOffset = (unsigned)(bytes - firstChunk);
-		}
-		else {
-			memcpy(buffer + writeOffset, samples, bytes);
-			writeOffset += bytes;
-		}
-		bytesInBuffer += bytes;
+		memcpy(head, samples, bytes);
+		TPCircularBufferProduce(&buffer, (int32_t)bytes);
+		bytesInBuffer = buffer.fillCount;
 	}
 	
 	virtual void read(uint8_t *samples, unsigned long numBytes) {
-		if (numBytes > bytesInBuffer) {
-			printf("GSF Sound Out buffer underflowed by %lu bytes!\n", bytesInBuffer - numBytes);
-			numBytes = bytesInBuffer;
+		int32_t availableBytes = 0;
+		void *tail = TPCircularBufferTail(&buffer, &availableBytes);
+		if (numBytes > availableBytes) {
+			printf("GSF Sound Out buffer underflowed by %lu bytes!\n", availableBytes - numBytes);
+			numBytes = availableBytes;
 		}
-		// Are we about to read off the end of the buffer?
-		if (readOffset + numBytes > BUFFER_SIZE) {
-			unsigned firstChunk = BUFFER_SIZE - readOffset;
-			memcpy(samples, buffer + readOffset, firstChunk);
-			memcpy(samples + firstChunk, buffer, numBytes - firstChunk);
-			readOffset = (unsigned)(numBytes - firstChunk);
-		}
-		else {
-			memcpy(samples, buffer + readOffset, numBytes);
-			readOffset += numBytes;
-		}
-		bytesInBuffer -= numBytes;
+		memcpy(samples, tail, numBytes);
+		TPCircularBufferConsume(&buffer, (int32_t)numBytes);
+		bytesInBuffer = buffer.fillCount;
 	}
 	
 	virtual void clear(unsigned long numBytes) {
-		if (numBytes > bytesInBuffer) {
-			printf("GSF Sound Out buffer underflowed by %lu bytes!", bytesInBuffer - numBytes);
-			numBytes = bytesInBuffer;
-		}
-		if (readOffset + numBytes > BUFFER_SIZE) {
-			readOffset = (unsigned)(numBytes - (BUFFER_SIZE - readOffset));
-		}
-		else {
-			readOffset += numBytes;
-		}
-		bytesInBuffer -= numBytes;
+		TPCircularBufferClear(&buffer);
+		bytesInBuffer = buffer.fillCount;
 	}
 };
 

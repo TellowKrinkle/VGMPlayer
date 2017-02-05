@@ -378,7 +378,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = TellowKrinkle;
 				TargetAttributes = {
 					20AE87EA1BC5B0BE00597866 = {
@@ -562,8 +562,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -606,8 +608,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -626,6 +630,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -771,6 +776,7 @@
 				20AE88081BC5B0BE00597866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20AE88091BC5B0BE00597866 /* Build configuration list for PBXNativeTarget "VGMPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -779,6 +785,7 @@
 				20AE880B1BC5B0BE00597866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20AE88141BC5B0D500597866 /* Build configuration list for PBXNativeTarget "GameMusicEmu-ObjC" */ = {
 			isa = XCConfigurationList;
@@ -787,6 +794,7 @@
 				20AE88161BC5B0D500597866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20AE883A1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayer" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +803,7 @@
 				20AE883C1BC5B0FC00597866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20AE883D1BC5B0FC00597866 /* Build configuration list for PBXNativeTarget "MiniVGMPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -803,6 +812,7 @@
 				20AE883F1BC5B0FC00597866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

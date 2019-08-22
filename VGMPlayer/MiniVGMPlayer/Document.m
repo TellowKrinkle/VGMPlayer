@@ -9,9 +9,16 @@
 #import "Document.h"
 #import "../../TKRPlayer/TKRPlayer/TKRPlayer.h"
 
+static NSComparisonResult urlCompare(NSURL * _Nonnull url1, NSURL * _Nonnull url2, void *context) {
+	NSString *a = [url1 lastPathComponent];
+	NSString *b = [url2 lastPathComponent];
+	return [a compare:b];
+}
+
 static inline NSURL * getPreviousFile(NSURL *file) {
 	NSURL *directory = [file URLByDeletingLastPathComponent];
 	NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:directory includingPropertiesForKeys:nil options:NSDirectoryEnumerationSkipsHiddenFiles error:nil];
+	files = [files sortedArrayUsingFunction:urlCompare context:NULL];
 	int fileID = (int)[files indexOfObject:[file filePathURL]];
 	do {
 		fileID--;
@@ -22,6 +29,7 @@ static inline NSURL * getPreviousFile(NSURL *file) {
 static inline NSURL * getNextFile(NSURL *file) {
 	NSURL *directory = [file URLByDeletingLastPathComponent];
 	NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:directory includingPropertiesForKeys:nil options:NSDirectoryEnumerationSkipsHiddenFiles error:nil];
+	files = [files sortedArrayUsingFunction:urlCompare context:NULL];
 	int fileID = (int)[files indexOfObject:[file filePathURL]];
 	do {
 		fileID++;
